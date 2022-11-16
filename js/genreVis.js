@@ -30,13 +30,14 @@ class GenreViz {
 
         console.log(d3.max(this.data, d => d.weeks_on_board));
         // axes and legends
-        vis.x = d3.scaleSqrt()
-            .domain([0, d3.max(this.data, d => d.weeks_on_board)])
+        vis.x = d3.scaleLinear()
+            // .domain([dateParser("1/1/57"), d3.max(this.data, d => d.date)])
+            .domain([0, 60])
             .range([0, vis.width])
 
         vis.y = d3.scaleLinear()
-            .domain([0, d3.max(this.data, d => d.peak_rank)])
-            .range([0, vis.height])
+            .domain([0, 1])
+            .range([vis.height, 0])
 
         vis.xAxis = d3.axisBottom()
             .scale(vis.x);
@@ -59,13 +60,60 @@ class GenreViz {
 
     wrangleData() {
         let vis = this;
-        this.displayData = this.data.slice(0,1000);
+        this.displayData = this.data;
 
-        this.displayData.sort( function(a,b) {
-            return a.weeks_on_board - b.weeks_on_board;
-        });
+        // this.displayData.sort( function(a,b) {
+        //     return a.date - b.date;
+        // });
+        vis.years = d3.group(this.displayData, (d) => d.date.slice(0, 4));
 
-        this.displayData = this.displayData.filter(d => d.peak_rank < 70);
+
+        vis.years = Array.from(vis.years);
+
+        vis.years.sort(function (a,b) {
+            return parseInt(a[0]) - parseInt(b[0])
+        })
+
+        vis.percentages = [];
+
+        for (let i =0; i < 4; i++) {
+            vis.percentages.push([]);
+        }
+
+        console.log(vis.years);
+        // get percentage of each genre per year
+        vis.years.forEach(function (el) {
+            let song_array = el[1];
+            let len = song_array.length;
+            let popCount = 0;
+            let rapCount = 0;
+            let rockCount = 0;
+            let otherCount = 0;
+            song_array.forEach(function (d) {
+                if (d.genres.includes('pop')) {
+                    popCount += 1;
+                } else if (d.genres.includes('rap')) {
+                    rapCount += 1;
+                } else if (d.genres.includes('rock')) {
+                    rockCount += 1;
+                } else {
+                    otherCount += 1;
+                }
+            })
+
+            let popPercentage = Math.random()//popCount / len;
+            let rapPercentage = Math.random()//rapCount / len;
+            let rockPercentage = Math.random(); //rockCount / len;
+            let otherPercentage = Math.random(); // otherCount / len;
+
+
+            vis.percentages[0].push(popPercentage);
+            vis.percentages[1].push(rapPercentage);
+            vis.percentages[2].push(rockPercentage);
+            vis.percentages[3].push(otherPercentage);
+        })
+
+        console.log(vis.percentages);
 
         vis.updateViz();
 
@@ -73,34 +121,38 @@ class GenreViz {
 
     updateViz() {
         let vis = this;
-        vis.svg.select('.y-axis').call(vis.yAxis)
-        vis.svg.select('.x-axis').call(vis.xAxis)
+        vis.svg.select('.y-axis').transition().call(vis.yAxis)
+        vis.svg.select('.x-axis').transition().call(vis.xAxis)
 
         console.log(this.displayData);
-        // Add the links
+        // Add the lines
         vis.svg
-            .selectAll('.mylinks')
-            .data(vis.displayData)
+            .selectAll('.mylines')
+            .data(vis.percentages)
             .enter()
             .append('path')
-            .attr('class', 'mylinks')
-            .attr('d', function (d) {
-                let start = vis.x(0);    // X position of start node on the X axis
-                let startY = vis.y(d.peak_rank);
-                let end = vis.x(d.weeks_on_board) ;     // X position of end node
-                return vis.curve([[start, startY], [(start + end) / 2, startY / 1.25], [end, vis.y(99)]]);
-             })
+            .attr('class', 'mylines')
+            .attr('d', function (d, i) {
+                console.log(d);
+                let points = d.map((el,j) => [vis.x(j), vis.y(el)])
+                console.log("points", points)
+                return vis.curve(points);
+            })
             .style("fill", "none")
             .attr('stroke-width', "2px")
             .attr("stroke", function (d) {
-                if (d.genres.includes('pop')) {
-                    return '#b9767e'
-                } else if (d.genres.includes('rap')) {
-                    return "#6da87f"
-                } else {
-                    return '#3f6969'
-                }
+                // if (d.genres !== null) {
+                //     if (d.genres.includes('pop')) {
+                //         return '#b9767e99'
+                //     } else if (d.genres.includes('rap')) {
+                //         return "#6da87f99"
+                //     } else {
+                //         return '#3f696999'
+                //     }
+                // }
+                return 'black'
             });
+
 
     }
 }
