@@ -1,19 +1,15 @@
 
 // Variables for the visualization instances
 let genreViz;
-<<<<<<< HEAD
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
-=======
 let lyricViz;
->>>>>>> 73e289ee03d5746cebb8f231704c64129a8d43d6
 let selectBox = "default";
 
 // Start application by loading the data
 loadData();
 
 function loadData() {
-<<<<<<< HEAD
     // d3.csv("data/chart_with_genres_8950.csv", row => {
     //     row.weeks_on_board = parseInt(row.weeks_on_board);
     //     row.rank = parseInt(row.rank);
