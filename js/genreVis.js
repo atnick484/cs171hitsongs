@@ -8,7 +8,7 @@ class GenreViz {
     initViz() {
         let vis = this;
 
-        vis.margin = {top: 20, right: 20, bottom: 60, left: 20};
+        vis.margin = {top: 80, right: 20, bottom: 40, left: 20};
 
         // Set width and height to the height of the parent element - margins
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right; // NEW!!
