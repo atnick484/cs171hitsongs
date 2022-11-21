@@ -14,11 +14,6 @@ d3.select("#theme-box").on('change', updateVisualization2);
 // Start application by loading the data
 loadData();
 
-const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-const fadeElms = document.querySelectorAll('.fade');
-fadeElms.forEach(el => observer.observe(el));
-
 function loadData() {
     // d3.csv("data/chart_with_genres_8950.csv", row => {
     //     row.weeks_on_board = parseInt(row.weeks_on_board);
