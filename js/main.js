@@ -14,21 +14,10 @@ d3.select("#theme-box").on('change', updateVisualization2);
 // Start application by loading the data
 loadData();
 
-let elementsArray = document.querySelectorAll('.tile');
-console.log(elementsArray);
-window.addEventListener('scroll', fadeIn );
-function fadeIn() {
-    for (var i = 0; i < elementsArray.length; i++) {
-        var elem = elementsArray[i]
-        var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
-        if (distInView < 0) {
-            elem.classList.add("inView");
-        } else {
-            elem.classList.remove("inView");
-        }
-    }
-}
-fadeIn();
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+const fadeElms = document.querySelectorAll('.fade');
+fadeElms.forEach(el => observer.observe(el));
 
 function loadData() {
     // d3.csv("data/chart_with_genres_8950.csv", row => {
