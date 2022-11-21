@@ -4,7 +4,9 @@ let genreViz;
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
 let lyricViz;
-let selectBox = "default";
+let selectBox = "pop";
+
+d3.select("#select-box").on('change', updateVisualization);
 
 // Start application by loading the data
 loadData();
@@ -52,8 +54,8 @@ function loadData() {
     });
 }
 
-
-// function updateVisualization() {
-//     selectBox = d3.select("#select-box").property("value");
-//     genreViz.updateVis();
-// }
+function updateVisualization() {
+    selectBox = d3.select("#select-box").property("value");
+    console.log(selectBox);
+    genreViz.updateViz();
+}
