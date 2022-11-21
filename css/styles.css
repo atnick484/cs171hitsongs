@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'GothamBold'; /*a name to be used later*/
+    src: url('fonts/GothamBold.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'GothamMedium'; /*a name to be used later*/
+    src: url('fonts/GothamMedium.ttf'); /*URL to font*/
+}
+
 #main {
     height: 100vh;
     padding-top: 5vh;
@@ -34,4 +44,26 @@
     padding: 1vh;
     border: None;
     border-radius: 5px;
+}
+
+h1 {
+    padding-top: 0%;
+    margin-left: 10%;
+    color: #1DB954;
+    font-size: 84px;
+    font-family: GothamBold;
+}
+
+h2 {
+    color: #1DB954;
+    font-family: GothamMedium;
+}
+
+.col {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.row {
+    margin-top: 15%;
 }
