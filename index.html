@@ -12,62 +12,61 @@
 <!-- HEADING -->
 <div class="row d-flex align-items-center" id="heading">
     <h1>Can you write a hit song?</h1>
-
+    <p>An interactive story by Chris Barber, Xavier Evans, and Andrew Nickerson</p>
 
 </div>
 <!-- INTRO -->
 <div class="row d-flex align-items-center">
     <div class="col">
-        <h2>First, pick a genre</h2>
+        <h2>Step 1</h2>
+        <p>Pick a genre to discover more about that genre's success on the billboard top 100 music board. The genre you pick will be the type of song you write!</p>
         <div class="form-group">
             <!-- Select box to choose the ranking type -->
-            <select class="form-control" id="genre-choice">
+            <select class="form-select" id="genre-box">
+                <option selected value="none">Choose a genre</option>
                 <option value="pop">Pop</option>
+                <option value="rap">Rap</option>
                 <option value="rock">Rock</option>
-                <option value="rock">Rap</option>
+                <option value="other">Other</option>
             </select>
         </div>
         <div id="genreViz"></div>
     </div>
 </div>
-<!--    <div class="row">-->
-<!--        <div class="col-md-10 offset-1">-->
 
-<!--            &lt;!&ndash; HEADING &ndash;&gt;-->
-<!--            <div class="row d-flex align-items-center" id="heading">-->
-<!--                <h2>Genre visualization</h2>-->
-<!--            </div>-->
-
-<!--            &lt;!&ndash; BODY &ndash;&gt;-->
-<!--            <div class="row" id="body">-->
-<!--                <div class="col">-->
-<!--                    <div id="genreViz">-->
-
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!-- INTRO -->
 <div class="row d-flex align-items-center">
     <div class="col">
-        <h2>Lyric visualization</h2>
+        <div class="textContainer" id="genreTextContainer">
+            <p class='textInContainer' id="genreTextPop"> Nice choice! Here is some info about the pop genre that we generated from analysis of the data we have. Isn't that nuts?!</p>
+            <p class='textInContainer' id="genreTextRock"> Nice choice! Here is some info about the rock genre that we generated from analysis of the data we have. Isn't that nuts?!</p>
+            <p class='textInContainer' id="genreTextRap"> Nice choice! Here is some info about the rap genre that we generated from analysis of the data we have. Isn't that nuts?!</p>
+        </div>
+    </div>
+</div>
+
+<div class="row d-flex align-items-center">
+    <div class="col">
+        <h2>Step 2</h2>
+        <p>Tell us more about what your song's about. Pick a theme from the selector that you'd like to explore.</p>
+        <div class="form-group">
+            <!-- Select box to choose the ranking type -->
+            <select class="form-select" id="theme-box">
+                <option selected value="none">Choose a theme</option>
+                <option value="love">Express love</option>
+                <option value="heartbreak">Heartbreak</option>
+                <option value="party">It's party time</option>
+                <option value="feels">In my feels</option>
+            </select>
+        </div>
+        <div class="textContainer" id="themeTextContainer">
+            <p class='textInContainer' id="themeTextLove"> Oooooo. We like this one. We picked a few songs based on the theme you chose below, and highlighted their sentiment throughout each song.</p>
+            <p class='textInContainer' id="themeTextHeartbreak"> Sad but so real. We picked a few songs based on the theme you chose below, and highlighted their sentiment throughout each song.</p>
+            <p class='textInContainer' id="themeTextParty"> Party time!! We picked a few songs based on the theme you chose below, and highlighted their sentiment throughout each song.</p>
+            <p class='textInContainer' id="themeTextFeels"> Sometimes being in your feels is the vibe. We picked a few songs based on the theme you chose below, and highlighted their sentiment throughout each song.</p>
+        </div>
         <div id="lyricViz"></div>
     </div>
 </div>
-<!--<div class="row">-->
-<!--    <div class="col-md-10 offset-1">-->
-
-<!--        &lt;!&ndash; HEADING &ndash;&gt;-->
-<!--        <div class="row d-flex align-items-center" id="heading2">-->
-<!--            <div class="col">-->
-<!--                <h2>Lyric visualization</h2>-->
-<!--                <div id="lyricViz"></div>-->
-<!--            <h2>Lyric visualization</h2>-->
-<!--        </div>-->
-<!--            -->
-<!--    </div>-->
-<!--</div>-->
 
 
 <!-- - - - - - - - - - - - >

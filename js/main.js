@@ -4,7 +4,12 @@ let genreViz;
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
 let lyricViz;
-let selectBox = "default";
+let selectBox = "pop";
+let selectBox2 = 'love'
+
+d3.select("#genre-box").on('change', updateVisualization);
+
+d3.select("#theme-box").on('change', updateVisualization2);
 
 // Start application by loading the data
 loadData();
@@ -52,8 +57,70 @@ function loadData() {
     });
 }
 
+function updateVisualization() {
+    selectBox = d3.select("#genre-box").property("value");
+    let textContainer = document.getElementById('genreTextContainer');
+    if (selectBox != 'none') {
+        textContainer.style.display = 'block';
+    }
+    let textPop = document.getElementById('genreTextPop');
+    let textRock = document.getElementById('genreTextRock');
+    let textRap = document.getElementById('genreTextRap');
+    if (selectBox == 'pop') {
+        console.log(selectBox)
+        textPop.style.display = 'block';
+        textRock.style.display = 'none';
+        textRap.style.display = 'none';
+    }
+    else if (selectBox == 'rock') {
+        textPop.style.display = 'none';
+        textRock.style.display = 'block';
+        textRap.style.display = 'none';
+    }
+    else if (selectBox == 'rap') {
+        textPop.style.display = 'none';
+        textRock.style.display = 'none';
+        textRap.style.display = 'block';
+    }
+    // console.log(selectBox);
+    genreViz.updateViz();
+}
 
-// function updateVisualization() {
-//     selectBox = d3.select("#select-box").property("value");
-//     genreViz.updateVis();
-// }
+function updateVisualization2() {
+    selectBox2 = d3.select("#theme-box").property("value");
+
+    let textLove = document.getElementById('themeTextLove');
+    let textHeartbreak = document.getElementById('themeTextHeartbreak');
+    let textParty = document.getElementById('themeTextParty');
+    let textFeels = document.getElementById('themeTextFeels');
+
+    let textContainer = document.getElementById('themeTextContainer');
+    if (selectBox2 != 'none') {
+        textContainer.style.display = 'block';
+    }
+
+    if (selectBox2 == 'love') {
+        textLove.style.display = 'block';
+        textHeartbreak.style.display = 'none';
+        textParty.style.display = 'none';
+        textFeels.style.display = 'none';
+    }
+    else if (selectBox2 == 'heartbreak') {
+        textLove.style.display = 'none';
+        textHeartbreak.style.display = 'block';
+        textParty.style.display = 'none';
+        textFeels.style.display = 'none';
+    }
+    else if (selectBox2 == 'party') {
+        textLove.style.display = 'none';
+        textHeartbreak.style.display = 'none';
+        textParty.style.display = 'block';
+        textFeels.style.display = 'none';
+    }
+    else if (selectBox2 == 'feels') {
+        textLove.style.display = 'none';
+        textHeartbreak.style.display = 'none';
+        textParty.style.display = 'none';
+        textFeels.style.display = 'block';
+    }
+}

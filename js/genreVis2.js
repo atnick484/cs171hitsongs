@@ -3,12 +3,14 @@ class GenreViz {
         this.parentElement = parentElement;
         this.data = data;
         this.displayData = [];
+
+        this.colors = ['#b9767e', '#6da87f', '#ffa64a'];
     }
 
     initViz() {
         let vis = this;
 
-        vis.margin = {top: 20, right: 20, bottom: 60, left: 25};
+        vis.margin = {top: 30, right: 20, bottom: 60, left: 40};
 
         // Set width and height to the height of the parent element - margins
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right; // NEW!!
@@ -28,7 +30,6 @@ class GenreViz {
             .attr("width", vis.width)
             .attr("height", vis.height);
 
-        console.log(d3.max(this.data, d => d.weeks_on_board));
         // axes and legends
         vis.x = d3.scaleSqrt()
             .domain([1, 50])
@@ -37,9 +38,46 @@ class GenreViz {
         vis.y = d3.scaleLinear()
             .domain([1, 100])
             .range([0, vis.height])
-        // vis.y = d3.scaleBand()
-        //     .domain(["pop", "rock", "rap", "other"])
-        //     .range([0, vis.height])
+
+        // axis
+        vis.svg.append("text")
+            .attr("class", "x label")
+            .attr("text-anchor", "middle")
+            .attr("x", vis.width / 2)
+            .attr("y", vis.height + 40)
+            .text("Weeks on Billboard Top 100");
+
+        vis.svg.append("text")
+            .attr("class", "y label")
+            .attr("text-anchor", "middle")
+            .attr("y", -40)
+            .attr("dy", ".75em")
+            .attr('x', - vis.height/2)
+            .attr("transform", "rotate(-90)")
+            .text("Ranking");
+
+        // legend
+        vis.svg.selectAll("mylabels")
+            .data(["pop", "rap", "rock"])
+            .enter()
+            .append("text")
+            .attr("x", vis.width - 150 + 20)
+            .attr("y", function(d,i){ return 500 + i*25 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
+            .style("fill", function(d, i){ return vis.colors[i]})
+            .text(function(d){ return d})
+            .attr("text-anchor", "left")
+            .style("alignment-baseline", "middle")
+
+        vis.svg.selectAll("mydots")
+            .data(["pop", "rap", "rock"])
+            .enter()
+            .append("rect")
+            .attr("x", vis.width - 150)
+            .attr("y", function(d,i){ return 500 + i*25 - 7 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
+            .attr("height", 15)
+            .attr("width", 15)
+            .style("fill", function(d, i){ return vis.colors[i]})
+
 
         vis.xAxis = d3.axisBottom()
             .scale(vis.x);
@@ -54,7 +92,7 @@ class GenreViz {
             .attr("class", "x-axis axis")
             .attr('transform', 'translate(0,' + vis.height + ")")
 
-        vis.curve = d3.line();
+        vis.curve = d3.line().curve(d3.curveNatural);
 
         vis.wrangleData();
 
@@ -105,7 +143,7 @@ class GenreViz {
             return a.points.length - b.points.length
         })
 
-        vis.displayData = vis.data.slice(28000, 29680);
+        vis.displayData = vis.data.slice(29580, 29680);
 
         vis.updateViz();
 
@@ -118,23 +156,17 @@ class GenreViz {
 
         console.log(this.displayData);
         // Add the links
-        vis.svg
+        let lines = vis.svg
             .selectAll('.mylinks')
             .data(vis.displayData)
-            .enter()
+
+        lines.enter()
             .append('path')
+            .merge(lines)
             .attr('class', 'mylinks')
             .attr('d', function (d) {
                 let start = vis.x(0);    // X position of start node on the X axis
                 let startY = vis.y(d.points[0][1]);
-                // let genre = "other";
-                // if (d.genres.includes('pop')) {
-                //     genre = "pop"
-                // } else if (d.genres.includes('rock')) {
-                //     genre = "rock"
-                // } else if (d.genres.includes('rap')) {
-                //     genre = "rap"
-                // }
                 let end = vis.x(d.weeks_on_board) ;     // X position of end node
                 let points = d.points.map(d => {
                     return [vis.x(d[0]), vis.y(d[1])];
@@ -142,17 +174,22 @@ class GenreViz {
                 return vis.curve(points);
             })
             .style("fill", "none")
-            .attr('stroke-width', "2px")
+            .attr('stroke-width', "5px")
             .attr("stroke", function (d) {
                 if (d.id > 29495) {
                     return 'red';
                 }
+
                 if (d.genres.includes('pop')) {
-                    return '#b9767e99'
+                    return (selectBox === "pop") ? vis.colors[0] : vis.colors[0] + "22";
                 } else if (d.genres.includes('rap')) {
-                    return "#6da87f99"
+                    return (selectBox === "rap") ? vis.colors[1] : vis.colors[1] + "22";
+                } else if (d.genres.includes('rock')) {
+                    return (selectBox === "rock") ? vis.colors[2] : vis.colors[2] + "22";
                 } else {
-                    return Math.random() < .5 ? '#b9767e22' : "#00000022";
+                    let r = Math.random()*4;
+                    let genre = ["pop", "rap", "rock"][Math.floor(r)];
+                    return (selectBox === genre) ? vis.colors[Math.floor(r)] : vis.colors[Math.floor(r)] + "22";
                 }
             });
 

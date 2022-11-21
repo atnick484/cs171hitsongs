@@ -6,6 +6,7 @@
 @font-face {
     font-family: 'GothamMedium'; /*a name to be used later*/
     src: url('fonts/GothamMedium.ttf'); /*URL to font*/
+    ascent-override: 70%;
 }
 
 #main {
@@ -48,10 +49,14 @@
 
 h1 {
     padding-top: 0%;
-    margin-left: 10%;
     color: #1DB954;
-    font-size: 84px;
+    font-size: 64px;
     font-family: GothamBold;
+}
+
+body {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 h2 {
@@ -59,11 +64,39 @@ h2 {
     font-family: GothamMedium;
 }
 
-.col {
-    margin-left: 15%;
-    margin-right: 15%;
+h3 {
+    color: #1DB954;
+    font-family: GothamMedium;
+}
+
+p {
+    color: rgba(7, 51, 26, 0.37);
+    font-family: GothamMedium;
+    font-size: 24px;
 }
 
 .row {
     margin-top: 15%;
+}
+
+.form-select {
+    background-color: #1DB954;
+    font-family: GothamMedium;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.textContainer {
+    background-color: rgba(29, 185, 84, 0.33);
+    font-family: GothamMedium;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.textInContainer {
+    display: none;
+    color: rgba(0, 0, 0, 0.68);
 }
