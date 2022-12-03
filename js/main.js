@@ -1,11 +1,10 @@
 
 // Variables for the visualization instances
-let genreViz;
+let genreViz, wordTree, lyricViz;
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
-let lyricViz;
 let selectBox = "pop";
-let selectBox2 = 'love'
+let selectBox2 = 'love';
 
 d3.select("#genre-box").on('change', updateVisualization);
 
@@ -15,20 +14,6 @@ d3.select("#theme-box").on('change', updateVisualization2);
 loadData();
 
 function loadData() {
-    // d3.csv("data/chart_with_genres_8950.csv", row => {
-    //     row.weeks_on_board = parseInt(row.weeks_on_board);
-    //     row.rank = parseInt(row.rank);
-    //     return row;
-    // }).then(data=>{
-    //
-    //     // prepare data
-    //     console.log(data);
-    //
-    //     genreViz = new GenreViz("genreViz", data)
-    //     genreViz.initViz();
-    //
-    //
-    // });
     d3.json("data/data.json").then(data_genres=>{
 
         d3.csv("data/sentiment_sample_happiness.csv", row => {
@@ -46,6 +31,15 @@ function loadData() {
 
             lyricViz = new LyricViz("lyricViz", data_sentiment);
             lyricViz.initViz();
+
+            lyrics = "";
+
+            d3.csv("data_scrape/chart_with_lyrics_genres_split_1.csv", row => {
+                return row
+            }).then(lyric_data => {
+                wordTree = new wordTreeViz("wordTreeViz", lyric_data);
+                wordTree.initViz();
+            })
 
             // prepare data
             console.log(data_sentiment);
