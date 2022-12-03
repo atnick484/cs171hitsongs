@@ -30,7 +30,6 @@
                 <option value="other">Other</option>
             </select>
         </div>
-        <div id="genreViz"></div>
     </div>
 </div>
 
@@ -41,37 +40,42 @@
             <p class='textInContainer' id="genreTextRock"> Nice choice! Here is some info about the rock genre that we generated from analysis of the data we have. Isn't that nuts?!</p>
             <p class='textInContainer' id="genreTextRap"> Nice choice! Here is some info about the rap genre that we generated from analysis of the data we have. Isn't that nuts?!</p>
         </div>
+        <div id="genreViz"></div>
     </div>
 </div>
 
 <div class="row d-flex align-items-center">
     <div class="col">
         <h2>Step 2</h2>
-        <p>Tell us more about what your song's about. Pick a theme from the selector that you'd like to explore.</p>
+        <p>Tell us which decade you'd like your hit song to be from! We'll use this to help you create a hit chorus.</p>
         <div class="form-group">
             <!-- Select box to choose the ranking type -->
-            <select class="form-select" id="theme-box">
-                <option selected value="none">Choose a theme</option>
-                <option value="love">Express love</option>
-                <option value="heartbreak">Heartbreak</option>
-                <option value="party">It's party time</option>
-                <option value="feels">In my feels</option>
+            <select class="form-select" id="decade-box">
+                <option selected value="none">Choose a decade</option>
+                <option value=1980>1980</option>
+                <option value=1990>1990</option>
+                <option value=2000>2000</option>
+                <option value=2010>2010</option>
+                <option value=2020>2020</option>
             </select>
         </div>
-        <div class="textContainer" id="themeTextContainer">
-            <p class='textInContainer' id="themeTextLove"> Oooooo. We like this one. We picked a few songs based on the theme you chose below, and highlighted their sentiment throughout each song.</p>
-            <p class='textInContainer' id="themeTextHeartbreak"> Sad but so real. We picked a few songs based on the theme you chose below, and highlighted their sentiment throughout each song.</p>
-            <p class='textInContainer' id="themeTextParty"> Party time!! We picked a few songs based on the theme you chose below, and highlighted their sentiment throughout each song.</p>
-            <p class='textInContainer' id="themeTextFeels"> Sometimes being in your feels is the vibe. We picked a few songs based on the theme you chose below, and highlighted their sentiment throughout each song.</p>
+        <div class="textContainer" id="decadeTextContainer">
+            <p class='textInContainer' id="decade1980"> You chose 1980! Here are a few top songs from that decade in your selected genre</p>
+            <p class='textInContainer' id="decade1990"> You chose 1990! Here are a few top songs from that decade in your selected genre</p>
+            <p class='textInContainer' id="decade2000"> You chose 2000! It's giving y2k... Here are a few top songs from that decade in your selected genre</p>
+            <p class='textInContainer' id="decade2010"> You chose 2010! Here are a few top songs from that decade in your selected genre</p>
+            <p class='textInContainer' id="decade2020"> You chose 2020! Here are a few top songs from that decade in your selected genre</p>
         </div>
         <div id="lyricViz"></div>
+        <p>[example text] From the positivity score, we can generally see whether these kind of songs tend to be positive or negative. These pop songs from
+        the 2010s were on the happier side!</p>
     </div>
 </div>
 
 <div class="row d-flex align-items-center">
     <div class="col">
         <h2>Step 3</h2>
-        <p>It's time to write a chorus for your song! Don't worry-we will give you some hints along the way. Check out the most popular phrases used in the songs that fit your theme and genre below.</p>
+        <p>It's time to write a chorus for your song! Check out the most popular phrases used in the songs that fit your theme and genre below to help you write a few lines in the text box underneath.</p>
     </div>
 </div>
 

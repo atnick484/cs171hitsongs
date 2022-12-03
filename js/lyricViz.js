@@ -30,11 +30,11 @@ class LyricViz {
 
         // axes and legends
         vis.x = d3.scaleLinear()
-            .domain([0, 100])
+            .domain([0, 1])
             .range([0, vis.width])
 
         vis.y = d3.scaleLinear()
-            .domain([0, 10])
+            .domain([-1, 1])
             .range([vis.height, 0])
 
         vis.xAxis = d3.axisBottom()
@@ -116,7 +116,7 @@ class LyricViz {
             .attr("dy", ".75em")
             .attr('x', - vis.height/2)
             .attr("transform", "rotate(-90)")
-            .text("Happiness Score");
+            .text("Positivity Score");
 
 
         // legend

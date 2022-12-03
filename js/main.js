@@ -9,7 +9,7 @@ let selectBox2 = 'love'
 
 d3.select("#genre-box").on('change', updateVisualization);
 
-d3.select("#theme-box").on('change', updateVisualization2);
+d3.select("#decade-box").on('change', updateVisualization2);
 
 // Start application by loading the data
 loadData();
@@ -31,7 +31,7 @@ function loadData() {
     // });
     d3.json("data/data.json").then(data_genres=>{
 
-        d3.csv("data/sentiment_sample_happiness.csv", row => {
+        d3.csv("data/df_positivity_2010_pop_processed.csv", row => {
             row.percent = +row.percent;
             row.song1 = parseFloat(row.song1);
             row.song2 = parseFloat(row.song2);
@@ -87,40 +87,52 @@ function updateVisualization() {
 }
 
 function updateVisualization2() {
-    selectBox2 = d3.select("#theme-box").property("value");
+    selectBox2 = d3.select("#decade-box").property("value");
 
-    let textLove = document.getElementById('themeTextLove');
-    let textHeartbreak = document.getElementById('themeTextHeartbreak');
-    let textParty = document.getElementById('themeTextParty');
-    let textFeels = document.getElementById('themeTextFeels');
+    let decade1980 = document.getElementById('decade1980');
+    let decade1990 = document.getElementById('decade1990');
+    let decade2000 = document.getElementById('decade2000');
+    let decade2010 = document.getElementById('decade2010');
+    let decade2020 = document.getElementById('decade2020');
 
-    let textContainer = document.getElementById('themeTextContainer');
+    let textContainer = document.getElementById('decadeTextContainer');
     if (selectBox2 != 'none') {
         textContainer.style.display = 'block';
     }
 
-    if (selectBox2 == 'love') {
-        textLove.style.display = 'block';
-        textHeartbreak.style.display = 'none';
-        textParty.style.display = 'none';
-        textFeels.style.display = 'none';
+    if (selectBox2 == 1980) {
+        decade1980.style.display = 'block';
+        decade1990.style.display = 'none';
+        decade2000.style.display = 'none';
+        decade2010.style.display = 'none';
+        decade2020.style.display = 'none';
     }
-    else if (selectBox2 == 'heartbreak') {
-        textLove.style.display = 'none';
-        textHeartbreak.style.display = 'block';
-        textParty.style.display = 'none';
-        textFeels.style.display = 'none';
+    else if (selectBox2 == 1990) {
+        decade1980.style.display = 'none';
+        decade1990.style.display = 'block';
+        decade2000.style.display = 'none';
+        decade2010.style.display = 'none';
+        decade2020.style.display = 'none';
     }
-    else if (selectBox2 == 'party') {
-        textLove.style.display = 'none';
-        textHeartbreak.style.display = 'none';
-        textParty.style.display = 'block';
-        textFeels.style.display = 'none';
+    else if (selectBox2 == 2000) {
+        decade1980.style.display = 'none';
+        decade1990.style.display = 'none';
+        decade2000.style.display = 'block';
+        decade2010.style.display = 'none';
+        decade2020.style.display = 'none';
     }
-    else if (selectBox2 == 'feels') {
-        textLove.style.display = 'none';
-        textHeartbreak.style.display = 'none';
-        textParty.style.display = 'none';
-        textFeels.style.display = 'block';
+    else if (selectBox2 == 2010) {
+        decade1980.style.display = 'none';
+        decade1990.style.display = 'none';
+        decade2000.style.display = 'none';
+        decade2010.style.display = 'block';
+        decade2020.style.display = 'none';
+    }
+    else if (selectBox2 == 2020) {
+        decade1980.style.display = 'none';
+        decade1990.style.display = 'none';
+        decade2000.style.display = 'none';
+        decade2010.style.display = 'none';
+        decade2020.style.display = 'block';
     }
 }
