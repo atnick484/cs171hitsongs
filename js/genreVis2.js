@@ -149,6 +149,25 @@ class GenreViz {
 
     }
 
+    strokeColor(d) {
+        let vis = this;
+        if (d.id > 29495) {
+            return 'red';
+        }
+
+        if (d.genres.includes('pop')) {
+            return (selectBox === "pop") ? vis.colors[0] : vis.colors[0] + "22";
+        } else if (d.genres.includes('rap')) {
+            return (selectBox === "rap") ? vis.colors[1] : vis.colors[1] + "22";
+        } else if (d.genres.includes('rock')) {
+            return (selectBox === "rock") ? vis.colors[2] : vis.colors[2] + "22";
+        } else {
+            let r = Math.random()*4;
+            let genre = ["pop", "rap", "rock"][Math.floor(r)];
+            return (selectBox === genre) ? vis.colors[Math.floor(r)] : vis.colors[Math.floor(r)] + "22";
+        }
+    }
+
     updateViz() {
         let vis = this;
         vis.svg.select('.y-axis').transition().call(vis.yAxis)
@@ -159,6 +178,27 @@ class GenreViz {
         let lines = vis.svg
             .selectAll('.mylinks')
             .data(vis.displayData)
+
+        let shadows = vis.svg
+            .selectAll('.shadows')
+            .data(vis.displayData);
+
+        shadows.enter()
+            .append('path')
+            .merge(shadows)
+            .attr('class', 'shadows')
+            .attr('d', function (d) {
+                let start = vis.x(0);    // X position of start node on the X axis
+                let startY = vis.y(d.points[0][1]);
+                let end = vis.x(d.weeks_on_board) ;     // X position of end node
+                let points = d.points.map(d => {
+                    return [vis.x(d[0]), vis.y(d[1])];
+                })
+                return vis.curve(points);
+            })
+            .style("fill", "none")
+            .attr('stroke-width', "7px")
+            .attr("stroke", 'black');
 
         lines.enter()
             .append('path')
@@ -174,24 +214,18 @@ class GenreViz {
                 return vis.curve(points);
             })
             .style("fill", "none")
+            // .on("mouseover", function (event, d) {
+            //     console.log('hello');
+            //     d3.selectAll('.mylinks').attr('stroke', '#00000033');
+            //     d3.select(this).attr('stroke', 'blue');
+            // })
+            // .on("mouseout", function (event, d) {
+            //     console.log('hello');
+            //     d3.selectAll('.mylinks').attr('stroke', j => vis.strokeColor(j));
+            // })
             .attr('stroke-width', "5px")
-            .attr("stroke", function (d) {
-                if (d.id > 29495) {
-                    return 'red';
-                }
+            .attr("stroke", d => vis.strokeColor(d));
 
-                if (d.genres.includes('pop')) {
-                    return (selectBox === "pop") ? vis.colors[0] : vis.colors[0] + "22";
-                } else if (d.genres.includes('rap')) {
-                    return (selectBox === "rap") ? vis.colors[1] : vis.colors[1] + "22";
-                } else if (d.genres.includes('rock')) {
-                    return (selectBox === "rock") ? vis.colors[2] : vis.colors[2] + "22";
-                } else {
-                    let r = Math.random()*4;
-                    let genre = ["pop", "rap", "rock"][Math.floor(r)];
-                    return (selectBox === genre) ? vis.colors[Math.floor(r)] : vis.colors[Math.floor(r)] + "22";
-                }
-            });
 
     }
 }

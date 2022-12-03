@@ -32,6 +32,10 @@
     padding: 0 1vh 1vh 1vh;
 }
 
+body, html {
+    /*background-color: #252020;*/
+}
+
 #body-inner {
     border: none;
     border-radius: 5px;
@@ -99,4 +103,8 @@ p {
 .textInContainer {
     display: none;
     color: rgba(0, 0, 0, 0.68);
+}
+
+.tree {
+    font-size: 10px;
 }
