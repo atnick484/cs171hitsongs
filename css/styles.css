@@ -91,6 +91,19 @@ p {
     border-radius: 15px;
 }
 
+.btn-primary {
+    background-color: #1DB954;
+    font-family: GothamMedium;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+}
+
+.btn-primary:hover {
+    background-color: rgb(22, 136, 61);
+}
+
 .textContainer {
     background-color: rgba(29, 185, 84, 0.33);
     font-family: GothamMedium;

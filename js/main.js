@@ -10,6 +10,10 @@ d3.select("#genre-box").on('change', updateVisualization);
 
 d3.select("#decade-box").on('change', updateVisualization2);
 
+d3.select("#play-button1").on('click', playLyricVis1);
+
+d3.select("#stop-button1").on('click', stopLyricVis1);
+
 // Start application by loading the data
 loadData();
 
@@ -129,4 +133,18 @@ function updateVisualization2() {
         decade2010.style.display = 'none';
         decade2020.style.display = 'block';
     }
+}
+
+function playLyricVis1() {
+    let audio = document.getElementById("audio1");
+    audio.play();
+    lyricViz.paths.forEach(function (pathObj, index) {
+        lyricViz.repeat(pathObj, 187000);
+    })
+}
+
+function stopLyricVis1() {
+    let audio = document.getElementById("audio1");
+    audio.pause();
+    lyricViz.updateViz();
 }

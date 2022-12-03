@@ -3,6 +3,7 @@ class LyricViz {
         this.parentElement = parentElement;
         this.data = data;
         this.displayData = data;
+        this.paths = [];
     }
 
     initViz() {
@@ -63,6 +64,18 @@ class LyricViz {
 
     }
 
+    repeat(pathObj, timems) {
+        const length = pathObj.node().getTotalLength();
+        // Animate the path by setting the initial offset and dasharray and then transition the offset to 0
+        pathObj.attr("stroke-dasharray", length + " " + length)
+            .attr("stroke-dashoffset", length)
+            .transition()
+            .ease(d3.easeLinear)
+            .attr("stroke-dashoffset", 0)
+            .duration(1000)
+            .on("end", () => setTimeout(repeat, 1000)); // this will repeat the animation after waiting 1 second
+    }
+
 
 
     updateViz() {
@@ -76,7 +89,7 @@ class LyricViz {
         //     .datum(vis.displayData)
         //     .attr("class", "line");
 
-        vis.colors = ['#b9767e', '#6da87f', '#ffa64a']
+        vis.colors = ['#b9767e', '#6da87f', '#ffa64a', '#b61629', '#6da87f', '#ffa64a']
 
         // Add the links
         let pathSelect = vis.svg
@@ -89,7 +102,7 @@ class LyricViz {
                 .curve(d3.curveBasis)
                 .x(d => vis.x(d.percent))
                 .y(d => vis.y(d[songName]))
-            pathSelect
+            let path = pathSelect
                 .append("path")
                 .datum(vis.displayData)
                 .attr("class", "line")
@@ -100,6 +113,11 @@ class LyricViz {
                 .attr("stroke", function (d) {
                     return vis.colors[index]
                 });
+
+            vis.paths.push(path);
+            // vis.repeat(path, 10000);
+
+
         })
 
         vis.svg.append("text")
