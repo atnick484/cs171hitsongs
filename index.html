@@ -19,7 +19,7 @@
 <div class="row d-flex align-items-center">
     <div class="col">
         <h2>Step 1</h2>
-        <p>Pick a genre to discover more about that genre's success on the billboard top 100 music board. The genre you pick will be the type of song you write!</p>
+        <p>Pick a genre to discover more about that genre's success on the billboard top 100 music board. The genre you pick will be the type of song you write! Hover over each line to learn which song it is!</p>
         <div class="form-group">
             <!-- Select box to choose the ranking type -->
             <select class="form-select" id="genre-box">
@@ -31,9 +31,9 @@
             </select>
         </div>
         <div class="textContainer" id="genreTextContainer">
-            <p class='textInContainer' id="genreTextPop"> Nice choice! Here is some info about the pop genre that we generated from analysis of the data we have. Isn't that nuts?!</p>
-            <p class='textInContainer' id="genreTextRock"> Nice choice! Here is some info about the rock genre that we generated from analysis of the data we have. Isn't that nuts?!</p>
-            <p class='textInContainer' id="genreTextRap"> Nice choice! Here is some info about the rap genre that we generated from analysis of the data we have. Isn't that nuts?!</p>
+            <p class='textInContainer' id="genreTextPop"> Nice choice! Close to 90% of the songs with the most weeks on the board in the last 20 years are pop songs. Isn't that nuts?!</p>
+            <p class='textInContainer' id="genreTextRock"> Nice choice! Surprisingly, out of the top 50 songs with the most weeks on the board in the last 20 years, only 6 of them have been rock songs. Crazy!</p>
+            <p class='textInContainer' id="genreTextRap"> Nice choice! Rap seems to rarely be on the billboard top 100 for a long amount of time, but it's on the rise in recent years.</p>
         </div>
         <div id="genreViz"></div>
     </div>
@@ -75,6 +75,17 @@
         <p>It's time to write a chorus for your song! Check out the most popular phrases used in the songs that fit your theme and genre below to help you write a few lines in the text box underneath.</p>
         <div class="row">
             <div class="col-md-8">
+                <div class="form-group">
+                    <!-- Select box to choose the ranking type -->
+                    <select class="form-select" id="song-box">
+                        <option selected value="none">Choose a song</option>
+                        <option value="1">Song 1</option>
+                        <option value="2">Song 2</option>
+                        <option value="3">Song 3</option>
+                        <option value="4">Song 4</option>
+                        <option value="12">Song 5</option>
+                    </select>
+                </div>
                 <div id="wordTreeViz"></div>
             </div>
             <div class="col-md-4">

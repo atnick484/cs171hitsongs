@@ -118,6 +118,30 @@ p {
     color: rgba(0, 0, 0, 0.68);
 }
 
+.lyricContainer {
+    overflow: scroll;
+    width: auto;
+    height: 100%;
+}
+.tooltip {
+    position: absolute;
+    text-align: center;
+    font: 12px sans-serif;
+    /*  pointer-events: none;	This line needs to be removed */
+}
+
+.tooltip p {
+    color: antiquewhite;
+}
+
 .tree {
     font-size: 10px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.unhighlight {
+    background-color: transparent;
 }
