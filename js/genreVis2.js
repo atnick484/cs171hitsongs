@@ -4,7 +4,7 @@ class GenreViz {
         this.data = data;
         this.displayData = [];
 
-        this.colors = ['#b9767e', '#6da87f', '#ffa64a'];
+        this.colors = ['#b9767e', '#6da87f', '#ffa64a', "#000000"];
     }
 
     initViz() {
@@ -32,11 +32,11 @@ class GenreViz {
 
         // axes and legends
         vis.x = d3.scaleSqrt()
-            .domain([1, 50])
+            .domain([1, 90])
             .range([0, vis.width])
 
         vis.y = d3.scaleLinear()
-            .domain([1, 100])
+            .domain([1, 105])
             .range([0, vis.height])
 
         // axis
@@ -58,10 +58,10 @@ class GenreViz {
 
         // legend
         vis.svg.selectAll("mylabels")
-            .data(["pop", "rap", "rock"])
+            .data(["pop", "rap", "rock", "other"])
             .enter()
             .append("text")
-            .attr("x", vis.width - 150 + 20)
+            .attr("x", vis.width - 50 + 20)
             .attr("y", function(d,i){ return 500 + i*25 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
             .style("fill", function(d, i){ return vis.colors[i]})
             .text(function(d){ return d})
@@ -69,15 +69,20 @@ class GenreViz {
             .style("alignment-baseline", "middle")
 
         vis.svg.selectAll("mydots")
-            .data(["pop", "rap", "rock"])
+            .data(["pop", "rap", "rock", "other"])
             .enter()
             .append("rect")
-            .attr("x", vis.width - 150)
+            .attr("x", vis.width - 50)
             .attr("y", function(d,i){ return 500 + i*25 - 7 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
             .attr("height", 15)
             .attr("width", 15)
             .style("fill", function(d, i){ return vis.colors[i]})
 
+
+        // append tooltip
+        vis.tooltip = d3.select("body").append('div')
+            .attr('class', "tooltip")
+            .attr('id', 'genreTooltip')
 
         vis.xAxis = d3.axisBottom()
             .scale(vis.x);
@@ -100,53 +105,53 @@ class GenreViz {
 
     wrangleData() {
         let vis = this;
-        // this.displayData = this.data;
-        //
-        // this.displayData.sort( function(a,b) {
-        //     return a.weeks_on_board - b.weeks_on_board;
-        // });
 
-        // this.displayData = this.displayData.filter(d => d.peak_rank < 70);
+        console.log(vis.data);
 
-        // let unique_songs = [
-        //     {
-        //         song: "Easy On Me by Adele",
-        //         points: [[week_on_board, rank_that_week]],
-        //
-        // ];
         vis.unique_songs = [];
-        // let idx = 0;
-        // // need to figure out how to group the data based on each song
-        // this.displayData.forEach(function (d) {
-        //     let song = d.song + " by " + d.artist;
-        //     const found = vis.unique_songs.some(el => el.song === song);
-        //     if (!found) {
-        //         vis.unique_songs.push({
-        //             song: song,
-        //             id: idx,
-        //             points: [[d.weeks_on_board, d.rank]],
-        //             genres: d.genres
-        //         })
-        //         idx += 1;
-        //     } else {
-        //         vis.unique_songs.find(obj => obj.song === song).points.push([d.weeks_on_board, d.rank]);
-        //         // .push([d.weeks_on_board, d.rank]);
-        //     }
-        // })
-        //
-        // console.log("hello", vis.unique_songs);
-        //
-        // exportToJsonFile(vis.unique_songs);
-       // vis.unique_songs = vis.unique_songs.slice(600, 750);
 
-        vis.displayData = vis.data.sort(function (a, b) {
-            return a.points.length - b.points.length
+        vis.displayData = [];
+        vis.data.forEach(function (d) {
+            let rank = d.rank.reverse();
+            let newRank = [];
+            d.rank.forEach(function (elt, i) {
+                let key = Object.keys(elt)[0];
+                newRank.push([i + 1, elt[key]])
+            })
+            vis.displayData.push({
+                song: d.song,
+                artist: d.artist,
+                genres: d.genre,
+                points: newRank
+            })
         })
+        console.log(vis.displayData);
 
-        vis.displayData = vis.data.slice(29580, 29680);
+        vis.displayData = vis.displayData.slice(0,50);
 
         vis.updateViz();
 
+    }
+
+    strokeColor(d) {
+        let vis = this;
+        if (d.id > 29495) {
+            return 'red';
+        }
+        let alpha = "00"
+        if (selectBox === "all") {
+            alpha = ""
+        }
+
+        if (d.genres.includes('pop')) {
+            return (selectBox === "pop") ? vis.colors[0] : vis.colors[0] + alpha;
+        } else if (d.genres.includes('rap')) {
+            return (selectBox === "rap") ? vis.colors[1] : vis.colors[1] + alpha;
+        } else if (d.genres.includes('rock')) {
+            return (selectBox === "rock") ? vis.colors[2] : vis.colors[2] + alpha;
+        } else {
+            return '#00000022';
+        }
     }
 
     updateViz() {
@@ -154,15 +159,37 @@ class GenreViz {
         vis.svg.select('.y-axis').transition().call(vis.yAxis)
         vis.svg.select('.x-axis').transition().call(vis.xAxis)
 
-        console.log(this.displayData);
+        // console.log(this.displayData);
         // Add the links
         let lines = vis.svg
             .selectAll('.mylinks')
             .data(vis.displayData)
 
+        let shadows = vis.svg
+            .selectAll('.shadows')
+            .data(vis.displayData);
+
+        shadows.enter()
+            .append('path')
+            .attr('class', 'shadows')
+            .attr('d', function (d) {
+                let start = vis.x(0);    // X position of start node on the X axis
+                let startY = vis.y(d.points[0][1]);
+                let end = vis.x(d.weeks_on_board) ;     // X position of end node
+                let points = d.points.map(d => {
+                    return [vis.x(d[0]), vis.y(d[1])];
+                })
+                return vis.curve(points);
+            })
+            .merge(shadows)
+            .transition()
+            .duration(500)
+            .style("fill", "none")
+            .attr('stroke-width', "5px")
+            .attr("stroke", 'black');
+
         lines.enter()
             .append('path')
-            .merge(lines)
             .attr('class', 'mylinks')
             .attr('d', function (d) {
                 let start = vis.x(0);    // X position of start node on the X axis
@@ -173,25 +200,40 @@ class GenreViz {
                 })
                 return vis.curve(points);
             })
-            .style("fill", "none")
-            .attr('stroke-width', "5px")
-            .attr("stroke", function (d) {
-                if (d.id > 29495) {
-                    return 'red';
-                }
+            .on("mouseover", function (event, d) {
+                console.log('hello');
+                d3.selectAll('.mylinks').transition().attr('stroke', '#00000033').attr('stroke-width', "3px");
+                d3.select(this).transition().attr('stroke', "#1DB954").attr('stroke-width', "8px");
 
-                if (d.genres.includes('pop')) {
-                    return (selectBox === "pop") ? vis.colors[0] : vis.colors[0] + "22";
-                } else if (d.genres.includes('rap')) {
-                    return (selectBox === "rap") ? vis.colors[1] : vis.colors[1] + "22";
-                } else if (d.genres.includes('rock')) {
-                    return (selectBox === "rock") ? vis.colors[2] : vis.colors[2] + "22";
-                } else {
-                    let r = Math.random()*4;
-                    let genre = ["pop", "rap", "rock"][Math.floor(r)];
-                    return (selectBox === genre) ? vis.colors[Math.floor(r)] : vis.colors[Math.floor(r)] + "22";
-                }
-            });
+                vis.tooltip
+                    .style("opacity", 1)
+                    .style("left", event.pageX + 20 + "px")
+                    .style("top", event.pageY + 50 + "px")
+                    .html(`
+                     <div style="border: thin solid grey; border-radius: 5px; background: #212121; padding: 5px; text-align: left">
+                         <h3>${d.song}</h3>  
+                          <p><b>Artist:</b> ${d.artist}</p> 
+                           <p>Weeks on board: ${d.points.length}</p>            
+                     </div>`
+                    );
+            })
+            .on("mouseout", function (event, d) {
+                console.log('hello');
+                d3.selectAll('.mylinks').transition().attr('stroke', j => vis.strokeColor(j)).attr('stroke-width', "3px");
+
+                vis.tooltip
+                    .style("opacity", 0)
+                    .style("left", 0)
+                    .style("top", 0)
+                    .html(``);
+            })
+            .merge(lines)
+            .transition()
+            .duration(500)
+            .style("fill", "none")
+            .attr('stroke-width', "3px")
+            .attr("stroke", d => vis.strokeColor(d))
+
 
     }
 }

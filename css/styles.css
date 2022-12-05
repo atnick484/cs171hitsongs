@@ -32,6 +32,10 @@
     padding: 0 1vh 1vh 1vh;
 }
 
+body, html {
+    /*background-color: #252020;*/
+}
+
 #body-inner {
     border: none;
     border-radius: 5px;
@@ -87,6 +91,19 @@ p {
     border-radius: 15px;
 }
 
+.btn-primary {
+    background-color: #1DB954;
+    font-family: GothamMedium;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+}
+
+.btn-primary:hover {
+    background-color: rgb(22, 136, 61);
+}
+
 .textContainer {
     background-color: rgba(29, 185, 84, 0.33);
     font-family: GothamMedium;
@@ -99,4 +116,135 @@ p {
 .textInContainer {
     display: none;
     color: rgba(0, 0, 0, 0.68);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+::selection{
+    color: #fff;
+    background: #664AFF;
+}
+
+.wrapper{
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+.wrapper .search-input{
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+    border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+    display: block;
+}
+
+.autocom-box li:hover{
+    background: #efefef;
+}
+
+.search-input .icon{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+    color: #644bff;
+    cursor: pointer;
+}
+
+.lyricContainer {
+    overflow: scroll;
+    width: auto;
+    height: 100%;
+}
+.tooltip {
+    position: absolute;
+    text-align: center;
+    font: 12px sans-serif;
+    /*  pointer-events: none;	This line needs to be removed */
+}
+
+.tooltip p {
+    color: antiquewhite;
+}
+
+.tree {
+    font-size: 10px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.unhighlight {
+    background-color: transparent;
+}
+
+.tooltip2 {
+    position: absolute;
+    text-align: left;
+    font-family: "SuisseIntl";
+    font-size: 12px;
+    width: 80px;
+    height: 52px;
+    padding: 8px;
+    background: white;
+    pointer-events: none;
+    background-color: white;
+    line-height: 0.05em;
+    /* border: solid;
+    border-width: 1px; */
 }
