@@ -61,7 +61,6 @@ class LyricViz {
         let vis = this;
 
         vis.updateViz();
-
     }
 
     repeat(pathObj, timems) {
@@ -76,18 +75,10 @@ class LyricViz {
             .on("end", () => setTimeout(repeat, 1000)); // this will repeat the animation after waiting 1 second
     }
 
-
-
     updateViz() {
         let vis = this;
         vis.svg.select('.y-axis').call(vis.yAxis)
         vis.svg.select('.x-axis').call(vis.xAxis)
-
-        // console.log(this.displayData);
-
-        // let path = vis.svg.append("path")
-        //     .datum(vis.displayData)
-        //     .attr("class", "line");
 
         vis.colors = ['#b9767e', '#6da87f', '#ffa64a']
 
@@ -109,7 +100,6 @@ class LyricViz {
             .enter();
 
         vis.displayData.columns.slice(1).forEach(function (songName, index) {
-            console.log(index)
             if (vis.genre == 'pop' && (index == vis.idxPop || index == vis.idxPop + 1 || index == vis.idxPop + 2)) {
                 let line = d3.line()
                     .curve(d3.curveBasis)
@@ -262,28 +252,10 @@ class LyricViz {
                 .attr("width", 15)
                 .style("fill", function(d, i){ return vis.colors[i]})
         }
-        // // legend
-        // vis.svg.selectAll("mylabels")
-        //     .data(vis.displayData.columns.slice(1))
-        //     .enter()
-        //     .append("text")
-        //     .attr("x", vis.width - 350 + 20)
-        //     .attr("y", function(d,i){ return 100 + i*25 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
-        //     .style("fill", function(d, i){ return vis.colors[i]})
-        //     .text(function(d){ return d})
-        //     .attr("text-anchor", "left")
-        //     .style("alignment-baseline", "middle")
-        //
-        // vis.svg.selectAll("mydots")
-        //     .data(vis.displayData.columns.slice(1))
-        //     .enter()
-        //     .append("rect")
-        //     .attr("x", vis.width - 350)
-        //     .attr("y", function(d,i){ return 100 + i*25 - 7 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
-        //     .attr("height", 15)
-        //     .attr("width", 15)
-        //     .style("fill", function(d, i){ return vis.colors[i]})
+
+
 
 
     }
+
 }

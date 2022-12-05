@@ -14,7 +14,7 @@ class wordTreeViz {
 
         // Set width and height to the height of the parent element - margins
         vis.width = document.getElementById(vis.parentElement).getBoundingClientRect().width - vis.margin.left - vis.margin.right; // NEW!!
-        vis.height = 500 - vis.margin.top - vis.margin.bottom;//document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom; // NEW!!
+        vis.height = 700 - vis.margin.top - vis.margin.bottom;//document.getElementById(vis.parentElement).getBoundingClientRect().height - vis.margin.top - vis.margin.bottom; // NEW!!
 
         // SVG drawing area
         vis.svg = d3.select("#" + vis.parentElement).append("svg")
@@ -31,7 +31,7 @@ class wordTreeViz {
             .attr("height", vis.height);
 
         // Declares a tree layout and assigns the size
-        vis.treemap = d3.tree().size([vis.height, vis.width/5])
+        vis.treemap = d3.tree().size([vis.height, vis.width/4])
          .separation(function (a, b) {
             return a.parent === b.parent ? 5 : 20;
          })
@@ -49,19 +49,14 @@ class wordTreeViz {
 
         let tree = new Tree();
 
-        console.log(i);
         let lyric = vis.data[i]['lyrics_text'];
-        console.log(lyric);
-        document.getElementById("lyricContainer").innerText = lyric;
+        document.getElementById("lyricContainer").innerText = vis.data[i]['lyrics'];
         let lyrics = lyric.split(" ");
         for (let i = 0; i < lyrics.length; i++) {
             tree.addNode(lyrics.slice(i, lyrics.length));
         }
 
         tree.sortTree();
-
-
-        console.log("tree", tree);
 
         vis.displayData = tree.root.children[0];
 
@@ -97,7 +92,7 @@ class wordTreeViz {
 
         vis.svg.selectAll("*").remove();
 
-        vis.treemap = d3.tree().size([vis.height, vis.width/5])
+        vis.treemap = d3.tree().size([vis.height, vis.width/4])
             .separation(function(a,b){
                 return (a.width+b.width)/2+50;
             });
@@ -112,8 +107,6 @@ class wordTreeViz {
     updateViz() {
         let vis = this;
 
-        console.log("nodes", vis.displayData);
-
         let first = true;
         // vis.displayData.forEach(function(d) {
         //     if (!first) {
@@ -124,26 +117,13 @@ class wordTreeViz {
         //     first = false;
         // });
 
-        // vis.displayData.forEach(function (d) {
-        //     let mult = d.data.word.length < 10 ? 10 : 5;
-        //     d.y = d.y + d.data.word.length * mult;
-        // });
-        const node = vis.svg.selectAll(".node")
-            .data(vis.displayData)
-            .enter().append("g")
-            .attr("class", d => "node" + (d.children ? " node--internal"
-                : " node--leaf"))
-            .attr("transform", function (d,i) {
-                    return "translate(" + (d.y) + "," +
-                        d.x + ")"
-            });
-
         const link = vis.svg.selectAll(".link")
             .data(vis.displayData.slice(1))
             .enter().append("path")
             .attr("class", "link")
             .attr('fill', 'none')
-            .attr('stroke', 'black')
+            .attr('stroke', "#1DB954")
+            .attr('stroke-width', '3px')
             .attr("d", (d, i) => {
                 let add = 0;
                 if (i === 0) {
@@ -155,9 +135,35 @@ class wordTreeViz {
                     + " " + (d.parent.y) + "," + d.parent.x;
             });
 
+        const node = vis.svg.selectAll(".node")
+            .data(vis.displayData)
+            .enter().append("g")
+            .attr("class", d => "node" + (d.children ? " node--internal"
+                : " node--leaf"))
+            .attr("transform", function (d,i) {
+                return "translate(" + (d.y) + "," +
+                    d.x + ")"
+            });
+
+        node.append("rect")
+            .attr('width', function (d) {
+                let len = d.data.word.length;
+                if (len < 10) {
+                    return d.width + 20
+                } else if (len > 10) {
+                    return d.width
+                }
+            })
+            .attr('transform', 'translate(-40, -10)')
+            .attr('height', "20px")
+            .attr('fill', '#212121')
+            .attr('stroke', 'black')
+
         node.append("text")
             .attr("class", "tree")
+            .attr('transform', 'translate(-30, 0)')
             .attr("dy", ".35em")
+            .attr('fill', '#FAEBD7FF')
             .style("font-size", function (d) {
                 let len = d.data.word.length;
                 if (len < 10) {
@@ -167,14 +173,14 @@ class wordTreeViz {
                 }
             })
             .on('mouseover', function (event, d) {
-                d3.select(this).attr('fill', 'blue');
+                d3.select(this).attr('fill', "#1DB954");
                 var inputText = document.getElementById("lyricContainer");
                 var innerHTML = inputText.innerHTML;
                 inputText.innerHTML = innerHTML.replaceAll(d.data.word, "<span class='highlight'>"+d.data.word+"</span>");;
 
             })
             .on('mouseout', function (event, d) {
-                d3.select(this).attr('fill', 'black');
+                d3.select(this).attr('fill', '#FAEBD7FF');
                 var inputText = document.getElementById("lyricContainer");
                 var innerHTML = inputText.innerHTML;
                 inputText.innerHTML = innerHTML.replaceAll(`<span class="highlight">`+d.data.word+"</span>", d.data.word);
@@ -236,13 +242,4 @@ class Tree {
             })
         })
     }
-}
-
-const widths = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.2796875,0.2765625,0.3546875,0.5546875,0.5546875,0.8890625,0.665625,0.190625,0.3328125,0.3328125,0.3890625,0.5828125,0.2765625,0.3328125,0.2765625,0.3015625,0.5546875,0.5546875,0.5546875,0.5546875,0.5546875,0.5546875,0.5546875,0.5546875,0.5546875,0.5546875,0.2765625,0.2765625,0.584375,0.5828125,0.584375,0.5546875,1.0140625,0.665625,0.665625,0.721875,0.721875,0.665625,0.609375,0.7765625,0.721875,0.2765625,0.5,0.665625,0.5546875,0.8328125,0.721875,0.7765625,0.665625,0.7765625,0.721875,0.665625,0.609375,0.721875,0.665625,0.94375,0.665625,0.665625,0.609375,0.2765625,0.3546875,0.2765625,0.4765625,0.5546875,0.3328125,0.5546875,0.5546875,0.5,0.5546875,0.5546875,0.2765625,0.5546875,0.5546875,0.221875,0.240625,0.5,0.221875,0.8328125,0.5546875,0.5546875,0.5546875,0.5546875,0.3328125,0.5,0.2765625,0.5546875,0.5,0.721875,0.5,0.5,0.5,0.3546875,0.259375,0.353125,0.5890625]
-const avg = 0.5279276315789471
-
-function measureText(str, fontSize) {
-    return Array.from(str).reduce(
-        (acc, cur) => acc + (widths[cur.charCodeAt(0)] ?? avg), 0
-    ) * fontSize
 }

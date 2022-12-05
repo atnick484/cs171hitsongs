@@ -2,6 +2,10 @@
 let genreViz, wordTree, lyricViz, durationViz, tempoViz, repetitionMatrix;
 
 let songData;
+let lyricData;
+let myChorusLines;
+let myDuration;
+let myTempo;
 
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
@@ -21,6 +25,10 @@ d3.select("#play-button1").on('click', playLyricVis1);
 
 d3.select("#stop-button1").on('click', stopLyricVis1);
 
+d3.select("#submit-chorus-button").on('click', chorusWritten);
+
+d3.select("#submit-duration-tempo").on('click', updateVisualization4);
+
 
 
 // Start application by loading the data
@@ -29,7 +37,6 @@ loadData();
 function loadData() {
     Promise.all([
         d3.csv("data_scrape/genre_viz_data.csv", row => {
-            // console.log(row.rank);
             let newRank = row.rank.replaceAll("{", "");
             newRank = newRank.replaceAll("}", "");
             newRank = "[{" + newRank + "}]";
@@ -48,12 +55,13 @@ function loadData() {
             // lyrics = "";
 
 
-            // d3.csv("data_scrape/chart_with_lyrics_genres_split_1.csv", row => {
-            //     return row
-            // }).then(lyric_data => {
-            //     wordTree = new wordTreeViz("wordTreeViz", lyric_data);
-            //     wordTree.initViz();
-            // })
+            d3.csv("data/positivity_on_selection.csv", row => {
+                return row
+            }).then(lyric_data => {
+                lyricData = lyric_data;
+                wordTree = new wordTreeViz("wordTreeViz", lyric_data);
+                wordTree.initViz();
+            })
         });
     };
 
@@ -86,7 +94,6 @@ function updateVisualization() {
     let textRock = document.getElementById('genreTextRock');
     let textRap = document.getElementById('genreTextRap');
     if (selectBox == 'pop') {
-        console.log(selectBox)
         textPop.style.display = 'block';
         textRock.style.display = 'none';
         textRap.style.display = 'none';
@@ -101,8 +108,7 @@ function updateVisualization() {
         textRock.style.display = 'none';
         textRap.style.display = 'block';
     }
-    // console.log(selectBox);
-    // genreViz.updateViz();
+    genreViz.updateViz();
 }
 
 function updateVisualization2() {
@@ -118,6 +124,20 @@ function updateVisualization2() {
     if (selectBox2 != 'none') {
         textContainer.style.display = 'block';
     }
+    let num = 0;
+    if (selectBox === "pop") {
+        num = (Math.round( selectBox2 / 10) - 198) * 9
+    } else if (selectBox === "rap") {
+        num = (Math.round( selectBox2 / 10) - 198) * 9 + 3
+    } else {
+        num = (Math.round( selectBox2 / 10) - 198) * 9 + 6
+    }
+    document.getElementById('song1').innerHTML = lyricData[num].song
+    document.getElementById('song1').setAttribute('value', num)
+    document.getElementById('song2').innerHTML = lyricData[num + 1].song
+    document.getElementById('song2').setAttribute('value', num + 1)
+    document.getElementById('song3').innerHTML = lyricData[num + 2].song
+    document.getElementById('song3').setAttribute('value', num + 2)
 
     if (selectBox2 == 1980) {
         decade1980.style.display = 'block';
@@ -125,6 +145,7 @@ function updateVisualization2() {
         decade2000.style.display = 'none';
         decade2010.style.display = 'none';
         decade2020.style.display = 'none';
+
     }
     else if (selectBox2 == 1990) {
         decade1980.style.display = 'none';
@@ -174,7 +195,6 @@ function updateVisualization2() {
         row.tempo = parseFloat(row.tempo);
         return row;
     }).then(data_specific=> {
-        console.log(data_specific);
 
         document.getElementById('frequencyInstructions').innerHTML =
             "We plotted the distribution of song durations and tempos for all " + d3.select("#genre-box").property("value") + " songs from the " + selectBox2.toString() + "s!"
@@ -192,9 +212,7 @@ function select(element) {
     let selectData = element.textContent;
     inputBox.value = selectData.trim();
     icon.onclick = () => {
-        console.log(inputBox.value);
         let index = songData.map(song => Object.values(song)[0].song).indexOf(inputBox.value);
-        console.log(songData[index][index]);
         document.getElementById("repetition-matrix").innerHTML = "";
         repetitionMatrix = new RepetitionMatrix("repetition-matrix", songData[index][index]);
     }
@@ -287,6 +305,19 @@ function stopLyricVis1() {
     let audio = document.getElementById(audioString);
     audio.pause();
     lyricViz.updateViz();
+}
+
+function chorusWritten(){
+    let myChorus = document.getElementById("chorusTextArea").value;
+    myChorusLines = myChorus.split(/\r?\n|\r|\n/g);
+    console.log(myChorusLines);
+}
+
+function updateVisualization4(){
+    myDuration = durationViz.getChosenDuration()[0];
+    myTempo = tempoViz.getChosenTempo()[0];
+    console.log(myDuration);
+    console.log(myTempo);
 }
 
 // function createRadarChart() {

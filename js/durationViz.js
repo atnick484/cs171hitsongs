@@ -91,15 +91,12 @@ class DurationViz {
         vis.svg.select('.y-axis').transition().call(vis.yAxis)
         vis.svg.select('.x-axis').transition().call(vis.xAxis)
 
-        console.log(this.displayData);
         // Add the links
 
         let kde = vis.kernelDensityEstimator(vis.kernelEpanechnikov(7),vis.x.ticks(1000))
         vis.density =  kde( vis.data.map(function(d){  return d.duration_ms; }) )
 
         vis.y.domain([0, d3.max(vis.density, function (d) { return d[1]; })])
-
-        console.log(vis.density);
 
         vis.svg.append("path")
             .attr("class", "mypath")
@@ -137,7 +134,6 @@ class DurationViz {
                 }
             })
             .on("click", function (event) {
-                console.log("test");
                 vis.mouseUnclick(event);
             })
         vis.tooltipLine = vis.tooltipGroup
@@ -176,12 +172,8 @@ class DurationViz {
 
     mouseClick(event) {
         let vis = this;
-        let x_pos = d3.pointer(event)[0];
-        let x_inv = vis.x.invert(x_pos);
-        let loc = vis.bisectDuration(vis.density, x_inv);
-        vis.datum = vis.density[loc];
         vis.chosenDuration = vis.datum;
-        // let shift = x_pos +  vis.margin.left;
+        console.log(vis.datum);
         vis.tooltipLine
             .attr("stroke", "black")
             .attr("stroke-width", 5);
@@ -207,5 +199,9 @@ class DurationViz {
         return function(v) {
             return Math.abs(v /= k) <= 1 ? 0.75 * (1 - v * v) / k : 0;
         };
+    }
+    getChosenDuration() {
+        let vis = this;
+        return vis.chosenDuration;
     }
 }
