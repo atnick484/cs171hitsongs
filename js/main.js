@@ -41,8 +41,8 @@ function loadData() {
     ]).then(function(files) {
 
 
-            genreViz = new GenreViz("genreViz", files[0]);
-            genreViz.initViz();
+        genreViz = new GenreViz("genreViz", files[0]);
+        genreViz.initViz();
 
 
             // lyrics = "";
