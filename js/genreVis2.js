@@ -159,7 +159,7 @@ class GenreViz {
         vis.svg.select('.y-axis').transition().call(vis.yAxis)
         vis.svg.select('.x-axis').transition().call(vis.xAxis)
 
-        console.log(this.displayData);
+        // console.log(this.displayData);
         // Add the links
         let lines = vis.svg
             .selectAll('.mylinks')

@@ -83,7 +83,7 @@ class LyricViz {
         vis.svg.select('.y-axis').call(vis.yAxis)
         vis.svg.select('.x-axis').call(vis.xAxis)
 
-        console.log(this.displayData);
+        // console.log(this.displayData);
 
         // let path = vis.svg.append("path")
         //     .datum(vis.displayData)

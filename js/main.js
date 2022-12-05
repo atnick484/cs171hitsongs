@@ -1,8 +1,11 @@
-
 // Variables for the visualization instances
-let genreViz, wordTree, lyricViz, durationViz, tempoViz;
+let genreViz, wordTree, lyricViz, durationViz, tempoViz, repetitionMatrix;
+
+let songData;
+
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
+
 let selectBox = "all";
 let selectBox2 = 'love';
 let selectBox3 = 1;
@@ -11,7 +14,6 @@ let selectBox3 = 1;
 d3.select("#genre-box").on('change', updateVisualization);
 
 d3.select("#decade-box").on('change', updateVisualization2);
-
 
 d3.select("#song-box").on('change', updateVisualization3);
 
@@ -42,7 +44,9 @@ function loadData() {
             genreViz = new GenreViz("genreViz", files[0]);
             genreViz.initViz();
 
+
             // lyrics = "";
+
 
             // d3.csv("data_scrape/chart_with_lyrics_genres_split_1.csv", row => {
             //     return row
@@ -50,10 +54,16 @@ function loadData() {
             //     wordTree = new wordTreeViz("wordTreeViz", lyric_data);
             //     wordTree.initViz();
             // })
-
         });
+    };
 
-}
+
+d3.json("data/all_songs.json", row => {
+    row.chorus = eval(row.chorus);
+    return row
+}).then(data => {
+    songData = Object.entries(data).map((song) => ( { [song[0]]: song[1] } ));
+});
 
 function updateVisualization() {
     selectBox = d3.select("#genre-box").property("value");
@@ -167,6 +177,19 @@ function updateVisualization2() {
     })
 }
 
+function select(element) {
+    let selectData = element.textContent;
+    inputBox.value = selectData.trim();
+    icon.onclick = () => {
+        console.log(inputBox.value);
+        let index = songData.map(song => Object.values(song)[0].song).indexOf(inputBox.value);
+        console.log(songData[index][index]);
+        document.getElementById("repetition-matrix").innerHTML = "";
+        repetitionMatrix = new RepetitionMatrix("repetition-matrix", songData[index][index]);
+    }
+    searchWrapper.classList.remove("active");
+}
+
 function updateVisualization3() {
     selectBox3 = d3.select("#song-box").property("value");
 
@@ -255,7 +278,6 @@ function stopLyricVis1() {
     lyricViz.updateViz();
 }
 
-function updateVisualization4() {
-    console.log('testing');
-}
-
+// function createRadarChart() {
+//
+// }
