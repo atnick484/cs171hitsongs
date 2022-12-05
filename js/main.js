@@ -134,6 +134,18 @@ function updateVisualization2() {
         decade2020.style.display = 'block';
     }
     lyricViz.updateViz();
+
+    let csv_string = "data_scrape/chart_" + selectBox2.toString() + "_" + d3.select("#genre-box").property("value") + ".csv"
+
+    d3.csv("csv_string", row => {
+        row.percent = +row.percent;
+        row.song1 = parseFloat(row.song1);
+        row.song2 = parseFloat(row.song2);
+        return row;
+    }).then(data_sentiment=> {
+
+
+    })
 }
 
 function playLyricVis1() {
