@@ -29,27 +29,27 @@ class LyricViz {
             .attr("width", vis.width)
             .attr("height", vis.height);
 
-        // axes and legends
-        vis.x = d3.scaleLinear()
-            .domain([0, 0.9])
-            .range([0, vis.width])
-
-        vis.y = d3.scaleLinear()
-            .domain([-1, 1])
-            .range([vis.height, 0])
-
-        vis.xAxis = d3.axisBottom()
-            .scale(vis.x);
-
-        vis.yAxis = d3.axisLeft()
-            .scale(vis.y);
-
-        vis.svg.append("g")
-            .attr("class", "y-axis axis")
-
-        vis.svg.append("g")
-            .attr("class", "x-axis axis")
-            .attr('transform', 'translate(0,' + vis.height + ")")
+        // // axes and legends
+        // vis.x = d3.scaleLinear()
+        //     .domain([0, 0.9])
+        //     .range([0, vis.width])
+        //
+        // vis.y = d3.scaleLinear()
+        //     .domain([-1, 1])
+        //     .range([vis.height, 0])
+        //
+        // vis.xAxis = d3.axisBottom()
+        //     .scale(vis.x);
+        //
+        // vis.yAxis = d3.axisLeft()
+        //     .scale(vis.y);
+        //
+        // vis.svg.append("g")
+        //     .attr("class", "y-axis axis")
+        //
+        // vis.svg.append("g")
+        //     .attr("class", "x-axis axis")
+        //     .attr('transform', 'translate(0,' + vis.height + ")")
 
         vis.curve = d3.line().curve(d3.curveNatural);
 
@@ -77,6 +77,28 @@ class LyricViz {
 
     updateViz() {
         let vis = this;
+        // axes and legends
+        vis.x = d3.scaleLinear()
+            .domain([0, 0.9])
+            .range([0, vis.width])
+
+        vis.y = d3.scaleLinear()
+            .domain([-1, 1])
+            .range([vis.height, 0])
+
+        vis.xAxis = d3.axisBottom()
+            .scale(vis.x);
+
+        vis.yAxis = d3.axisLeft()
+            .scale(vis.y);
+
+        vis.svg.append("g")
+            .attr("class", "y-axis axis")
+
+        vis.svg.append("g")
+            .attr("class", "x-axis axis")
+            .attr('transform', 'translate(0,' + vis.height + ")")
+
         vis.svg.select('.y-axis').call(vis.yAxis)
         vis.svg.select('.x-axis').call(vis.xAxis)
 

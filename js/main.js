@@ -7,6 +7,7 @@ let myChorusLines;
 let myDuration;
 let myTempo;
 let myRepetitiveness;
+let firstSelection = true;
 // let myReadability = getScores(myChorusLines.join(' '));
 // let myUniqueness = calculateTFIDF(myChorusLines);
 
@@ -219,18 +220,23 @@ function updateVisualization2() {
         decade2010.style.display = 'none';
         decade2020.style.display = 'block';
     }
-    d3.csv("data/df_positivity_all_processed.csv", row => {
-        row.percent = +row.percent;
-        return row;
-    }).then(data_sentiment=>{
+    if (firstSelection) {
+        firstSelection = false;
+        d3.csv("data/df_positivity_all_processed.csv", row => {
+            row.percent = +row.percent;
+            return row;
+        }).then(data_sentiment => {
 
 
-        lyricViz = new LyricViz("lyricViz", data_sentiment);
-        lyricViz.initViz();
+            lyricViz = new LyricViz("lyricViz", data_sentiment);
+            lyricViz.initViz();
 
 
-    });
-    // lyricViz.updateViz();
+        });
+    } else {
+        lyricViz.svg.selectAll("*").remove();
+        lyricViz.updateViz();
+    }
 
     let csv_string = "data_scrape/chart_" + selectBox2.toString() + "_" + d3.select("#genre-box").property("value") + ".csv"
 
@@ -238,7 +244,7 @@ function updateVisualization2() {
         row.duration_ms = parseFloat(row.duration_ms) / 1000;
         row.tempo = parseFloat(row.tempo);
         return row;
-    }).then(data_specific=> {
+    }).then(data_specific => {
 
         document.getElementById('frequencyInstructions').innerHTML =
             "We plotted the distribution of song durations and tempos for all " + d3.select("#genre-box").property("value") + " songs from the " + selectBox2.toString() + "s!"
