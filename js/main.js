@@ -46,8 +46,8 @@ function loadData() {
         // files[1] will contain file2.csv
 
 
-            genreViz = new GenreViz("genreViz", files[0]);
-            genreViz.initViz();
+        genreViz = new GenreViz("genreViz", files[0]);
+        genreViz.initViz();
 
         lyricViz = new LyricViz("lyricViz", data_sentiment);
         lyricViz.initViz();
