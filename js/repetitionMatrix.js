@@ -1,6 +1,9 @@
 class RepetitionMatrix {
-    constructor (parentElement, song) {
+    constructor (parentElement, tooltipParentElements, similarityParentElement, song) {
         this.parentElement = parentElement;
+        this.tooltipParentElements = tooltipParentElements;
+        this.similarityParentElement = similarityParentElement;
+
         this.song = song;
         this.displayData = [];
 
@@ -88,9 +91,9 @@ class RepetitionMatrix {
                     .attr("height", vis.boxSize)
                     .style("fill", `rgb(0,${vis.displayData.similarityArray[row][col] * 255},0)`)
                     .on("mouseover", () => {
-                        document.getElementById("tooltip-line-1").innerText = `Line ${+row + 1}: ${vis.displayData.chorus[row]}`;
-                        document.getElementById("tooltip-line-2").innerText = `Line ${+col + 1}: ${vis.displayData.chorus[col]}`;
-                        document.getElementById("similarity").innerText = `Similarity Score: ${Math.round(vis.displayData.similarityArray[row][col] * 100) / 100}`;
+                        document.getElementById(vis.tooltipParentElements[0]).innerText = `Line ${+row + 1}: ${vis.displayData.chorus[row]}`;
+                        document.getElementById(vis.tooltipParentElements[1]).innerText = `Line ${+col + 1}: ${vis.displayData.chorus[col]}`;
+                        document.getElementById(vis.similarityParentElement).innerText = `Similarity Score: ${Math.round(vis.displayData.similarityArray[row][col] * 100) / 100}`;
                     });
 
                 xPos += vis.boxSize;
@@ -109,6 +112,7 @@ class RepetitionMatrix {
             repetitiveness = 0;
         }
         console.log(repetitiveness);
+        return repetitiveness;
     }
 }
 

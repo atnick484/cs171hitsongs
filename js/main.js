@@ -6,6 +6,9 @@ let lyricData;
 let myChorusLines;
 let myDuration;
 let myTempo;
+let myRepetitiveness;
+// let myReadability = getScores(myChorusLines.join(' '));
+// let myUniqueness = calculateTFIDF(myChorusLines);
 
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
@@ -13,6 +16,30 @@ let dateParser = d3.timeParse("%d/%m/%Y");
 let selectBox = "all";
 let selectBox2 = 'love';
 let selectBox3 = 1;
+
+let durationGenres = {
+    'pop': 0.2967372499160073,
+    'rap': 0.2665232064116793,
+    'rock': 0.2659479192314834
+};
+
+let repetitivenessGenres = {
+    'pop': 0.2967372499160073,
+    'rap': 0.2665232064116793,
+    'rock': 0.2659479192314834
+};
+
+let readabilityGenres = {
+    'pop': 0.5259932773108245,
+    'rap': 0.5337738281249558,
+    'rock': 0.5850028985507277
+};
+
+let uniquenessGenres = {
+    'pop': 0.20255929429143196,
+    'rap': 0.2025261539447777,
+    'rock': 0.22668782240691968
+};
 
 
 d3.select("#genre-box").on('change', updateVisualization);
@@ -33,6 +60,7 @@ d3.select("#submit-duration-tempo").on('click', updateVisualization4);
 
 // Start application by loading the data
 loadData();
+// createRadarChart();
 
 function loadData() {
     Promise.all([
@@ -70,7 +98,14 @@ d3.json("data/all_songs.json", row => {
     row.chorus = eval(row.chorus);
     return row
 }).then(data => {
-    songData = Object.entries(data).map((song) => ( { [song[0]]: song[1] } ));
+    songData = data;
+    console.log(songData);
+
+    let choruses = [];
+    songData.forEach(song => choruses.push(song.chorus));
+    console.log(choruses);
+
+    // console.log(calculateRepetitiveness(choruses[0]));
 });
 
 function updateVisualization() {
@@ -208,6 +243,7 @@ function updateVisualization2() {
         document.getElementById('frequencyInstructions').innerHTML =
             "We plotted the distribution of song durations and tempos for all " + d3.select("#genre-box").property("value") + " songs from the " + selectBox2.toString() + "s!"
 
+        console.log("Hello")
         durationViz = new DurationViz("durationViz", data_specific);
         durationViz.initViz();
 
@@ -223,7 +259,7 @@ function select(element) {
     icon.onclick = () => {
         let index = songData.map(song => Object.values(song)[0].song).indexOf(inputBox.value);
         document.getElementById("repetition-matrix").innerHTML = "";
-        repetitionMatrix = new RepetitionMatrix("repetition-matrix", songData[index][index]);
+        repetitionMatrix = new RepetitionMatrix("repetition-matrix", ['tooltip-line-1', 'tooltip-line-2'], 'similarity', songData[index][index]);
     }
     searchWrapper.classList.remove("active");
 }
@@ -320,6 +356,9 @@ function chorusWritten(){
     let myChorus = document.getElementById("chorusTextArea").value;
     myChorusLines = myChorus.split(/\r?\n|\r|\n/g);
     console.log(myChorusLines);
+    myRepetitiveness = calculateRepetitiveness(myChorusLines);
+    document.getElementById('repetition-matrix-mine').innerHTML = '';
+    let myRepetitionMatrix = new RepetitionMatrix('repetition-matrix-mine', ['tooltip-line-1-mine', 'tooltip-line-2-mine'],  'similarity-mine', {'chorus': myChorusLines})
 }
 
 function updateVisualization4(){
@@ -327,8 +366,145 @@ function updateVisualization4(){
     myTempo = tempoViz.getChosenTempo()[0];
     console.log(myDuration);
     console.log(myTempo);
+    createRadarChart();
 }
 
-// function createRadarChart() {
-//
+function createRadarChart() {
+    //Data
+    var data = [
+        {
+            className: 'germany', // optional, can be used for styling
+            axes: [
+                {axis: "strength", value: 13, yOffset: 10},
+                {axis: "intelligence", value: 6},
+                {axis: "charisma", value: 5},
+                {axis: "dexterity", value: 9},
+                {axis: "luck", value: 2, xOffset: -20}
+            ]
+        },
+        {
+            className: 'argentina',
+            axes: [
+                {axis: "strength", value: 6},
+                {axis: "intelligence", value: 7},
+                {axis: "charisma", value: 10},
+                {axis: "dexterity", value: 13},
+                {axis: "luck", value: 9}
+            ]
+        }
+    ];
+
+    let chart = RadarChart.chart();
+    var svg = d3.select('body').append('svg')
+        .attr('width', 600)
+        .attr('height', 800);
+
+// draw one
+    svg.append('g').classed('focus', 1).datum(data).call(chart);
+
+// draw many radars
+    var game = svg.selectAll('g.game').data(
+        [
+            data,
+            data,
+            data,
+            data
+        ]
+    );
+    game.enter().append('g').classed('game', 1);
+    game
+        .attr('transform', function(d, i) { return 'translate(150,600)'; })
+        .call(chart);
+
+    // retrieve config
+    chart.config();
+// all options with default values
+    chart.config({
+        containerClass: 'radar-chart', // target with css, the default stylesheet targets .radar-chart
+        w: 600,
+        h: 600,
+        factor: 0.95,
+        factorLegend: 1,
+        levels: 3,
+        maxValue: 0,
+        minValue: 0,
+        radians: 2 * Math.PI,
+        color: d3.scale.category10(), // pass a noop (function() {}) to decide color via css
+        axisLine: true,
+        axisText: true,
+        circles: true,
+        radius: 5,
+        open: false,  // whether or not the last axis value should connect back to the first axis value
+                      // if true, consider modifying the chart opacity (see "Style with CSS" section above)
+        axisJoin: function(d, i) {
+            return d.className || i;
+        },
+        tooltipFormatValue: function(d) {
+            return d;
+        },
+        tooltipFormatClass: function(d) {
+            return d;
+        },
+        transitionDuration: 300
+    });
+}
+
+function calculateRepetitiveness(chorus) {
+
+    async function createSimilarityArray() {
+        let embeddings = await use.load().then(model => {
+            return model.embed(chorus);
+        });
+        let embeddingsArray = embeddings.arraySync();
+        console.log(embeddingsArray);
+
+        let similarityArray = Array(embeddingsArray.length).fill().map(() => Array(embeddingsArray.length));
+        let lineIndices = [...Array(embeddingsArray.length).keys()];
+        const dot = (a, b) => a.map((x, i) => a[i] * b[i]).reduce((m, n) => m + n);
+        for (let i in lineIndices) {
+            for (let j in lineIndices) {
+                similarityArray[i][j] = dot(embeddingsArray[i], embeddingsArray[j]);
+                if (similarityArray[i][j] > 0.99) {
+                    similarityArray[i][j] = 1;
+                }
+            }
+        }
+
+        let countNotIdentity = Math.pow(similarityArray.length, 2) - similarityArray.length;
+        let repetitiveness = 0;
+
+        let arrayIndices = [...Array(similarityArray.length).keys()];
+        for (let row in arrayIndices) {
+            for (let col in arrayIndices) {
+                if (row != col) {
+                    repetitiveness += similarityArray[row][col] / countNotIdentity;
+                }
+            }
+        }
+        console.log(similarityArray);
+
+        repetitiveness = Math.round(repetitiveness * 100) / 100
+        if (repetitiveness > 1) {
+            repetitiveness = 1;
+        } else if (repetitiveness < 0) {
+            repetitiveness = 0;
+        }
+        console.log("Repetitiveness:", repetitiveness);
+        return repetitiveness;
+    }
+
+    createSimilarityArray();
+}
+
+// function calculateTFIDF(chorus) {
+//     // let text = chorus.join(' ');
+//     // console.log(text);
+//     //
+//     // const totalWords = [
+//     //     ...new Set(
+//     //         review.flatMap((a) =>
+//     //             a.text.split(" ").filter((a) => stopwords.indexOf(a) === -1)
+//     //         )
+//     //     ),
+//     // ];
 // }

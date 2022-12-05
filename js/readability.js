@@ -1,4 +1,4 @@
-var getScores = function(text) {
+function getScores(text) {
 
     /*
      * To speed the script up, you can set a sampling rate in words. For example, if you set

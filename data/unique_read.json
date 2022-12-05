@@ -1,0 +1,6350 @@
+{
+    "pop": [
+        {
+            "Easy On Me by Adele": {
+                "readability": 0.7724,
+                "uniqueness": 0.2010214856990363
+            }
+        },
+        {
+            "Stay by The Kid LAROI & Justin Bieber": {
+                "readability": 0.2107,
+                "uniqueness": 0.1351845727632272
+            }
+        },
+        {
+            "Industry Baby by Lil Nas X & Jack Harlow": {
+                "readability": 0.275,
+                "uniqueness": 0.17456676959568806
+            }
+        },
+        {
+            "Bad Habits by Ed Sheeran": {
+                "readability": 0.6573,
+                "uniqueness": 0.24119685985945924
+            }
+        },
+        {
+            "Shivers by Ed Sheeran": {
+                "readability": 0.5457,
+                "uniqueness": 0.18953333703726105
+            }
+        },
+        {
+            "Good 4 U by Olivia Rodrigo": {
+                "readability": 0.6133,
+                "uniqueness": 0.24824557610547643
+            }
+        },
+        {
+            "Need To Know by Doja Cat": {
+                "readability": 0.6506000000000001,
+                "uniqueness": 0.23035170601783383
+            }
+        },
+        {
+            "Levitating by Dua Lipa": {
+                "readability": 0.6303,
+                "uniqueness": 0.24028604959604133
+            }
+        },
+        {
+            "Essence by Wizkid Featuring Justin Bieber & Tems": {
+                "readability": 0.4238,
+                "uniqueness": 0.5190890286534412
+            }
+        },
+        {
+            "Kiss Me More by Doja Cat Featuring SZA": {
+                "readability": 1.0,
+                "uniqueness": 0.38360902480411113
+            }
+        },
+        {
+            "Heat Waves by Glass Animals": {
+                "readability": 0.23440000000000003,
+                "uniqueness": 0.2250039184572327
+            }
+        },
+        {
+            "You Right by Doja Cat & The Weeknd": {
+                "readability": 1.0,
+                "uniqueness": 0.27049844145384494
+            }
+        },
+        {
+            "Save Your Tears by The Weeknd & Ariana Grande": {
+                "readability": 0.8823000000000001,
+                "uniqueness": 0.1955031578523649
+            }
+        },
+        {
+            "Traitor by Olivia Rodrigo": {
+                "readability": 0.30210000000000004,
+                "uniqueness": 0.15662480152999492
+            }
+        },
+        {
+            "My Universe by Coldplay x BTS": {
+                "readability": 0.3461,
+                "uniqueness": 0.22525506382015514
+            }
+        },
+        {
+            "Meet Me At Our Spot by THE ANXIETY: WILLOW & Tyler Cole": {
+                "readability": 0.4289,
+                "uniqueness": 0.11715157775989796
+            }
+        },
+        {
+            "Montero (Call Me By Your Name) by Lil Nas X": {
+                "readability": 0.7318000000000001,
+                "uniqueness": 0.14001836298095333
+            }
+        },
+        {
+            "Chasing After You by Ryan Hurd With Maren Morris": {
+                "readability": 0.5727,
+                "uniqueness": 0.16444633399514377
+            }
+        },
+        {
+            "Moth To A Flame by Swedish House Mafia & The Weeknd": {
+                "readability": 0.7521,
+                "uniqueness": 0.17600596326247567
+            }
+        },
+        {
+            "Thats What I Want by Lil Nas X": {
+                "readability": 0.522,
+                "uniqueness": 0.26917018705893553
+            }
+        },
+        {
+            "Happier Than Ever by Billie Eilish": {
+                "readability": 0.7521,
+                "uniqueness": 0.2036660921862548
+            }
+        },
+        {
+            "Better Days by NEIKED X Mae Muller X Polo G": {
+                "readability": 0.44420000000000004,
+                "uniqueness": 0.38307193766065273
+            }
+        },
+        {
+            "Ghost by Justin Bieber": {
+                "readability": 0.9043000000000001,
+                "uniqueness": 0.15499237688711873
+            }
+        },
+        {
+            "A-O-K by Tai Verdes": {
+                "readability": 1.0,
+                "uniqueness": 0.1741714815091486
+            }
+        },
+        {
+            "Leave The Door Open by Silk Sonic (Bruno Mars & Anderson .Paak)": {
+                "readability": 0.45770000000000005,
+                "uniqueness": 0.24313021114460162
+            }
+        },
+        {
+            "Cold Beer Calling My Name by Jameson Rodgers Featuring Luke Combs": {
+                "readability": 0.7587999999999999,
+                "uniqueness": 0.19400522291447816
+            }
+        },
+        {
+            "Woman by Doja Cat": {
+                "readability": 0.813,
+                "uniqueness": 0.1942485496813943
+            }
+        },
+        {
+            "Love Again by Dua Lipa": {
+                "readability": 0.8096,
+                "uniqueness": 0.2454012724898984
+            }
+        },
+        {
+            "For Tonight by Giveon": {
+                "readability": 0.9246,
+                "uniqueness": 0.2264942819451157
+            }
+        },
+        {
+            "Get Into It (Yuh) by Doja Cat": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.22083780224915472
+            }
+        },
+        {
+            "Half Of My Hometown by Kelsea Ballerini Featuring Kenny Chesney": {
+                "readability": 0.45770000000000005,
+                "uniqueness": 0.21068368366894566
+            }
+        },
+        {
+            "Who's In Your Head by Jonas Brothers": {
+                "readability": 0.0,
+                "uniqueness": 0.08108401499191147
+            }
+        },
+        {
+            "Just About Over You by Priscilla Block": {
+                "readability": 0.34950000000000003,
+                "uniqueness": 0.14948910244932212
+            }
+        },
+        {
+            "Come Through by H.E.R. Featuring Chris Brown": {
+                "readability": 0.6167,
+                "uniqueness": 0.3038380495799678
+            }
+        },
+        {
+            "Leave Before You Love Me by Marshmello X Jonas Brothers": {
+                "readability": 0.3258,
+                "uniqueness": 0.12792022503492442
+            }
+        },
+        {
+            "Deja Vu by Olivia Rodrigo": {
+                "readability": 0.7994,
+                "uniqueness": 0.26825299775504147
+            }
+        },
+        {
+            "Let Somebody Go by Coldplay X Selena Gomez": {
+                "readability": 0.4391,
+                "uniqueness": 0.14573087550661085
+            }
+        },
+        {
+            "Peaches by Justin Bieber Featuring Daniel Caesar & Giveon": {
+                "readability": 0.7994,
+                "uniqueness": 0.21352115757527193
+            }
+        },
+        {
+            "Summer Of Love by Shawn Mendes & Tainy": {
+                "readability": 0.7149,
+                "uniqueness": 0.2269836498322993
+            }
+        },
+        {
+            "Waves by Luke Bryan": {
+                "readability": 0.884,
+                "uniqueness": 0.34419989771356674
+            }
+        },
+        {
+            "The Feels by TWICE": {
+                "readability": 0.505,
+                "uniqueness": 0.21577313903384807
+            }
+        },
+        {
+            "Love Train by Meek Mill": {
+                "readability": 0.7724,
+                "uniqueness": 0.25619562882603203
+            }
+        },
+        {
+            "Love All by Drake Featuring JAY-Z": {
+                "readability": 0.6759000000000001,
+                "uniqueness": 0.1554717852523847
+            }
+        },
+        {
+            "No Where by YoungBoy Never Broke Again": {
+                "readability": 0.4239,
+                "uniqueness": 0.21358181703605258
+            }
+        },
+        {
+            "Things A Man Oughta Know by Lainey Wilson": {
+                "readability": 0.8468000000000001,
+                "uniqueness": 0.2695756245456119
+            }
+        },
+        {
+            "Hold Me Down by YoungBoy Never Broke Again": {
+                "readability": 0.5254,
+                "uniqueness": 0.18805083059646258
+            }
+        },
+        {
+            "Moon by Kanye West": {
+                "readability": 0.4746,
+                "uniqueness": 0.2208150429221867
+            }
+        },
+        {
+            "Wildest Dreams (Taylor's Version) by Taylor Swift": {
+                "readability": 0.4205,
+                "uniqueness": 0.22604702579885186
+            }
+        },
+        {
+            "Arcade by Duncan Laurence": {
+                "readability": 0.7825,
+                "uniqueness": 0.19354575982262534
+            }
+        },
+        {
+            "Scoop by Lil Nas X Featuring Doja Cat": {
+                "readability": 0.41369999999999996,
+                "uniqueness": 0.1802495016627274
+            }
+        },
+        {
+            "Dolla Sign Slime by Lil Nas X Featuring Megan Thee Stallion": {
+                "readability": 0.7521,
+                "uniqueness": 0.1841294096806358
+            }
+        },
+        {
+            "Dead Right Now by Lil Nas X": {
+                "readability": 0.5964,
+                "uniqueness": 0.1910042981863983
+            }
+        },
+        {
+            "Tales Of Dominica by Lil Nas X": {
+                "readability": 0.434,
+                "uniqueness": 0.18893699747030962
+            }
+        },
+        {
+            "One Of Me by Lil Nas X Featuring Elton John": {
+                "readability": 0.7927,
+                "uniqueness": 0.22156688947861586
+            }
+        },
+        {
+            "Lost In The Citadel by Lil Nas X": {
+                "readability": 0.0,
+                "uniqueness": 0.6467597795454029
+            }
+        },
+        {
+            "Skate by Silk Sonic (Bruno Mars & Anderson .Paak)": {
+                "readability": 0.7521,
+                "uniqueness": 0.17786329882406826
+            }
+        },
+        {
+            "Am I Dreaming by Lil Nas X Featuring Miley Cyrus": {
+                "readability": 0.0,
+                "uniqueness": 0.09596642160494954
+            }
+        },
+        {
+            "Lalisa by Lisa": {
+                "readability": 0.8231,
+                "uniqueness": 0.21761360408334313
+            }
+        },
+        {
+            "Heartbreak Anniversary by Giveon": {
+                "readability": 0.3765,
+                "uniqueness": 0.17538719876485517
+            }
+        },
+        {
+            "24 by Kanye West": {
+                "readability": 0.5288,
+                "uniqueness": 0.23903064046596623
+            }
+        },
+        {
+            "I Am Not A Woman, I'm A God by Halsey": {
+                "readability": 0.7219,
+                "uniqueness": 0.18313057619072126
+            }
+        },
+        {
+            "Brutal by Olivia Rodrigo": {
+                "readability": 1.0,
+                "uniqueness": 0.26668445954330594
+            }
+        },
+        {
+            "Blinding Lights by The Weeknd": {
+                "readability": 0.8532,
+                "uniqueness": 0.18248517981694595
+            }
+        },
+        {
+            "Glad You Exist by Dan + Shay": {
+                "readability": 0.7757999999999999,
+                "uniqueness": 0.39600287675994145
+            }
+        },
+        {
+            "Without You by The Kid LAROI": {
+                "readability": 0.7825,
+                "uniqueness": 0.1738780233477028
+            }
+        },
+        {
+            "Beautiful Mistakes by Maroon 5 Featuring Megan Thee Stallion": {
+                "readability": 0.2953,
+                "uniqueness": 0.21715098759626808
+            }
+        },
+        {
+            "Visiting Hours by Ed Sheeran": {
+                "readability": 0.4543,
+                "uniqueness": 0.19550528312504892
+            }
+        },
+        {
+            "You by Regard x Troye Sivan x Tate McRae": {
+                "readability": 0.2852,
+                "uniqueness": 0.18164042027430263
+            }
+        },
+        {
+            "I Guess I'm In Love by Clinton Kane": {
+                "readability": 0.0,
+                "uniqueness": 0.5729321447437518
+            }
+        },
+        {
+            "Tick Tock by Young Thug": {
+                "readability": 0.3833,
+                "uniqueness": 0.15640175069635043
+            }
+        },
+        {
+            "Permission To Dance by BTS": {
+                "readability": 0.41369999999999996,
+                "uniqueness": 0.13790610496191014
+            }
+        },
+        {
+            "Favorite Crime by Olivia Rodrigo": {
+                "readability": 0.8366,
+                "uniqueness": 0.3371427112212757
+            }
+        },
+        {
+            "Steal My Love by Dan + Shay": {
+                "readability": 0.5761,
+                "uniqueness": 0.17465168403883943
+            }
+        },
+        {
+            "Telepatia by Kali Uchis": {
+                "readability": 0.7115,
+                "uniqueness": 0.20183364771146453
+            }
+        },
+        {
+            "NDA by Billie Eilish": {
+                "readability": 0.8637,
+                "uniqueness": 0.18411269289739354
+            }
+        },
+        {
+            "I Hope Ur Miserable Until Ur Dead by Nessa Barrett": {
+                "readability": 0.34600000000000003,
+                "uniqueness": 0.15467498500604693
+            }
+        },
+        {
+            "Not Sober by The Kid LAROI Featuring Polo G & Stunna Gambino": {
+                "readability": 0.9906,
+                "uniqueness": 0.19553359528199105
+            }
+        },
+        {
+            "One Too Many by Keith Urban Duet With P!nk": {
+                "readability": 0.7081000000000001,
+                "uniqueness": 0.1995086523905513
+            }
+        },
+        {
+            "Getting Older by Billie Eilish": {
+                "readability": 0.6167,
+                "uniqueness": 0.22609563809634076
+            }
+        },
+        {
+            "Billie Bossa Nova by Billie Eilish": {
+                "readability": 0.0,
+                "uniqueness": 0.12092352773302067
+            }
+        },
+        {
+            "Oxytocin by Billie Eilish": {
+                "readability": 0.2547,
+                "uniqueness": 0.2407606294905792
+            }
+        },
+        {
+            "I Didn't Change My Number by Billie Eilish": {
+                "readability": 0.7724,
+                "uniqueness": 0.19978982484997523
+            }
+        },
+        {
+            "Lost Cause by Billie Eilish": {
+                "readability": 0.9043000000000001,
+                "uniqueness": 0.2649469177901661
+            }
+        },
+        {
+            "Halley's Comet by Billie Eilish": {
+                "readability": 0.35960000000000003,
+                "uniqueness": 0.47471577862839304
+            }
+        },
+        {
+            "Build A Bitch by Bella Poarch": {
+                "readability": 0.8739,
+                "uniqueness": 0.20496577377951006
+            }
+        },
+        {
+            "Still Chose You by The Kid LAROI Featuring Mustard": {
+                "readability": 0.9889,
+                "uniqueness": 0.27100264200389573
+            }
+        },
+        {
+            "Drivers License by Olivia Rodrigo": {
+                "readability": 0.6201,
+                "uniqueness": 0.3174021575360134
+            }
+        },
+        {
+            "pov by Ariana Grande": {
+                "readability": 0.7825,
+                "uniqueness": 0.4293456785664393
+            }
+        },
+        {
+            "More Time by Pop Smoke": {
+                "readability": 0.6167,
+                "uniqueness": 0.2853560854893823
+            }
+        },
+        {
+            "Jealousy, Jealousy by Olivia Rodrigo": {
+                "readability": 0.5288,
+                "uniqueness": 0.16842510382822765
+            }
+        },
+        {
+            "Breaking Up Was Easy In The 90's by Sam Hunt": {
+                "readability": 0.44420000000000004,
+                "uniqueness": 0.15282443933236983
+            }
+        },
+        {
+            "All I Know So Far by P!nk": {
+                "readability": 0.769,
+                "uniqueness": 0.16003767119693424
+            }
+        },
+        {
+            "Levitating by Dua Lipa Featuring DaBaby": {
+                "readability": 0.6167,
+                "uniqueness": 0.17985073603617063
+            }
+        },
+        {
+            "Essence by Wizkid Featuring Tems": {
+                "readability": 0.7047,
+                "uniqueness": 0.2293865571981899
+            }
+        },
+        {
+            "Enough For You by Olivia Rodrigo": {
+                "readability": 0.0,
+                "uniqueness": 0.14121895212893398
+            }
+        },
+        {
+            "I Don't Do Drugs by Doja Cat Featuring Ariana Grande": {
+                "readability": 0.6844,
+                "uniqueness": 0.21096049378274248
+            }
+        },
+        {
+            "Rise! by Tyler, The Creator Featuring Daisy World": {
+                "readability": 0.5592,
+                "uniqueness": 0.2525653243016928
+            }
+        },
+        {
+            "Nobody by Dylan Scott": {
+                "readability": 0.3664,
+                "uniqueness": 0.21572969108675102
+            }
+        },
+        {
+            "Toxic by Polo G": {
+                "readability": 0.7165,
+                "uniqueness": 0.22116423550036912
+            }
+        },
+        {
+            "Solar Power by Lorde": {
+                "readability": 0.5829,
+                "uniqueness": 0.2513363814850453
+            }
+        },
+        {
+            "Malibu by Migos Featuring Polo G": {
+                "readability": 1.0,
+                "uniqueness": 0.4937416762743
+            }
+        },
+        {
+            "1 Step Forward, 3 Steps Back by Olivia Rodrigo": {
+                "readability": 0.4374,
+                "uniqueness": 0.19519830100026714
+            }
+        },
+        {
+            "Okay by Lil Baby & Lil Durk": {
+                "readability": 0.7521,
+                "uniqueness": 0.16389684302217167
+            }
+        },
+        {
+            "Your Power by Billie Eilish": {
+                "readability": 0.30210000000000004,
+                "uniqueness": 0.2158280392231173
+            }
+        },
+        {
+            "Hope Ur OK by Olivia Rodrigo": {
+                "readability": 0.6776000000000001,
+                "uniqueness": 0.32100502743529785
+            }
+        },
+        {
+            "The Good Ones by Gabby Barrett": {
+                "readability": 1.0,
+                "uniqueness": 0.45415398823688813
+            }
+        },
+        {
+            "The Business by Tiesto": {
+                "readability": 0.5253,
+                "uniqueness": 0.31378083439191673
+            }
+        },
+        {
+            "interlude by J. Cole": {
+                "readability": 0.522,
+                "uniqueness": 0.23828492725199996
+            }
+        },
+        {
+            "Streets by Doja Cat": {
+                "readability": 0.6776000000000001,
+                "uniqueness": 0.16606163096006124
+            }
+        },
+        {
+            "Higher Power by Coldplay": {
+                "readability": 0.9279999999999999,
+                "uniqueness": 0.12620047245428848
+            }
+        },
+        {
+            "34+35 by Ariana Grande Feat. Doja Cat & Megan Thee Stallion": {
+                "readability": 0.7893000000000001,
+                "uniqueness": 0.250342481177434
+            }
+        },
+        {
+            "Positions by Ariana Grande": {
+                "readability": 0.6912,
+                "uniqueness": 0.44453857308358447
+            }
+        },
+        {
+            "You Broke Me First. by Tate McRae": {
+                "readability": 0.5085000000000001,
+                "uniqueness": 0.14396831676770666
+            }
+        },
+        {
+            "Therefore I Am by Billie Eilish": {
+                "readability": 0.7487,
+                "uniqueness": 0.17295682710620705
+            }
+        },
+        {
+            "Just The Way by Parmalee x Blanco Brown": {
+                "readability": 0.5355,
+                "uniqueness": 0.20968089859022224
+            }
+        },
+        {
+            "What You Need by Don Toliver": {
+                "readability": 0.6201,
+                "uniqueness": 0.19046505289271273
+            }
+        },
+        {
+            "Let It Go by DJ Khaled Featuring Justin Bieber & 21 Savage": {
+                "readability": 0.2615,
+                "uniqueness": 0.1480990959185782
+            }
+        },
+        {
+            "Go! by Moneybagg Yo Featuring BIG30": {
+                "readability": 0.231,
+                "uniqueness": 0.15303418035812194
+            }
+        },
+        {
+            "Without You by The Kid LAROI & Miley Cyrus": {
+                "readability": 0.884,
+                "uniqueness": 0.19526526164487054
+            }
+        },
+        {
+            "Go Crazy by Chris Brown & Young Thug": {
+                "readability": 0.0,
+                "uniqueness": 0.16586076630828597
+            }
+        },
+        {
+            "34+35 by Ariana Grande": {
+                "readability": 0.5728,
+                "uniqueness": 0.37487296725629804
+            }
+        },
+        {
+            "Sorry Not Sorry by DJ Khaled Featuring Nas, JAY-Z & James Fauntleroy": {
+                "readability": 0.44420000000000004,
+                "uniqueness": 0.1511865157868779
+            }
+        },
+        {
+            "Somebody Like That by Tenille Arts": {
+                "readability": 0.3859,
+                "uniqueness": 0.1018046440370866
+            }
+        },
+        {
+            "Willow by Taylor Swift": {
+                "readability": 0.9956999999999999,
+                "uniqueness": 0.21731546851545777
+            }
+        },
+        {
+            "Anyone by Justin Bieber": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.2883140074081122
+            }
+        },
+        {
+            "My Head And My Heart by Ava Max": {
+                "readability": 0.38670000000000004,
+                "uniqueness": 0.2246545926512784
+            }
+        },
+        {
+            "Save Your Tears by The Weeknd": {
+                "readability": 0.9788,
+                "uniqueness": 0.3612269785397055
+            }
+        },
+        {
+            "Mr. Perfectly Fine (Taylor's Version) (From The Vault) by Taylor Swift": {
+                "readability": 0.6709,
+                "uniqueness": 0.2235076261190507
+            }
+        },
+        {
+            "You Got It by VEDO": {
+                "readability": 0.8671,
+                "uniqueness": 0.2643024689518936
+            }
+        },
+        {
+            "Love Story (Taylor's Version) by Taylor Swift": {
+                "readability": 0.7419,
+                "uniqueness": 0.4561370480007431
+            }
+        },
+        {
+            "Forever & Always (Taylor's Version) by Taylor Swift": {
+                "readability": 0.9384999999999999,
+                "uniqueness": 0.2006837455227989
+            }
+        },
+        {
+            "Fearless (Taylor's Version) by Taylor Swift": {
+                "readability": 0.2716,
+                "uniqueness": 0.25233793633979773
+            }
+        },
+        {
+            "You All Over Me (Taylor's Version) (From The Vault) by Taylor Swift Featuring Maren Morris": {
+                "readability": 0.3697,
+                "uniqueness": 0.2934861567434336
+            }
+        },
+        {
+            "You Belong With Me (Taylor's Version) by Taylor Swift": {
+                "readability": 0.43060000000000004,
+                "uniqueness": 0.16705928256300842
+            }
+        },
+        {
+            "Fifteen (Taylor's Version) by Taylor Swift": {
+                "readability": 0.0,
+                "uniqueness": 0.1278791235374567
+            }
+        },
+        {
+            "Met Him Last Night by Demi Lovato Featuring Ariana Grande": {
+                "readability": 0.1295,
+                "uniqueness": 0.13826137842813072
+            }
+        },
+        {
+            "The Way I Loved You (Taylor's Version) by Taylor Swift": {
+                "readability": 0.5558,
+                "uniqueness": 0.12821942769155453
+            }
+        },
+        {
+            "Put Your Records On by Ritt Momney": {
+                "readability": 0.3934,
+                "uniqueness": 0.17182585237149792
+            }
+        },
+        {
+            "Film Out by BTS": {
+                "readability": 0.7927,
+                "uniqueness": 0.13759907641464345
+            }
+        },
+        {
+            "Body by Megan Thee Stallion": {
+                "readability": 0.7587999999999999,
+                "uniqueness": 0.2836993701845028
+            }
+        },
+        {
+            "Dynamite by BTS": {
+                "readability": 0.9601000000000001,
+                "uniqueness": 0.18468862914485176
+            }
+        },
+        {
+            "Don't Forget by Rod Wave": {
+                "readability": 1.0,
+                "uniqueness": 0.24933448222439494
+            }
+        },
+        {
+            "Unstable by Justin Bieber Featuring The Kid LAROI": {
+                "readability": 0.37310000000000004,
+                "uniqueness": 0.21174558985556036
+            }
+        },
+        {
+            "Off My Face by Justin Bieber": {
+                "readability": 0.2243,
+                "uniqueness": 0.20641516702684293
+            }
+        },
+        {
+            "2 Much by Justin Bieber": {
+                "readability": 0.8992,
+                "uniqueness": 0.17275056769374217
+            }
+        },
+        {
+            "Deserve You by Justin Bieber": {
+                "readability": 1.0,
+                "uniqueness": 0.26731953299490674
+            }
+        },
+        {
+            "Die For You by Justin Bieber Featuring Dominic Fike": {
+                "readability": 0.8671,
+                "uniqueness": 0.30713225122488486
+            }
+        },
+        {
+            "Love You Different by Justin Bieber Featuring BEAM": {
+                "readability": 0.34259999999999996,
+                "uniqueness": 0.18294111505724017
+            }
+        },
+        {
+            "Somebody by Justin Bieber": {
+                "readability": 0.8197,
+                "uniqueness": 0.37485618666038134
+            }
+        },
+        {
+            "On The Ground by ROSE": {
+                "readability": 0.8843000000000001,
+                "uniqueness": 0.3495785608042123
+            }
+        },
+        {
+            "Lost by NF Featuring Hopsin": {
+                "readability": 0.1295,
+                "uniqueness": 0.1563243387033416
+            }
+        },
+        {
+            "Baila Conmigo by Selena Gomez With Rauw Alejandro": {
+                "readability": 0.7419,
+                "uniqueness": 0.17647633934198328
+            }
+        },
+        {
+            "Like I Want You by Giveon": {
+                "readability": 1.0,
+                "uniqueness": 0.3750157853359575
+            }
+        },
+        {
+            "Golden by Harry Styles": {
+                "readability": 0.8976000000000001,
+                "uniqueness": 0.26009861112009897
+            }
+        },
+        {
+            "AP by Pop Smoke": {
+                "readability": 1.0,
+                "uniqueness": 0.22324749382072576
+            }
+        },
+        {
+            "I Hope by Gabby Barrett Featuring Charlie Puth": {
+                "readability": 1.0,
+                "uniqueness": 0.22885862402365492
+            }
+        },
+        {
+            "Hole In The Bottle by Kelsea Ballerini": {
+                "readability": 0.769,
+                "uniqueness": 0.19533006374044143
+            }
+        },
+        {
+            "Test Drive by Ariana Grande": {
+                "readability": 1.0,
+                "uniqueness": 0.17636594868258929
+            }
+        },
+        {
+            "Chicken Tendies by Clinton Kane": {
+                "readability": 0.4476,
+                "uniqueness": 0.19458681032638614
+            }
+        },
+        {
+            "Afterglow by Ed Sheeran": {
+                "readability": 0.6065999999999999,
+                "uniqueness": 0.2546569107588702
+            }
+        },
+        {
+            "Before You Go by Lewis Capaldi": {
+                "readability": 0.44079999999999997,
+                "uniqueness": 0.16815056690199298
+            }
+        },
+        {
+            "What It Feels Like by Nipsey Hussle & JAY-Z": {
+                "readability": 1.0,
+                "uniqueness": 0.2828361468987503
+            }
+        },
+        {
+            "So Done by The Kid LAROI": {
+                "readability": 0.8231,
+                "uniqueness": 0.2375961212539051
+            }
+        },
+        {
+            "Kings & Queens by Ava Max": {
+                "readability": 0.8332999999999999,
+                "uniqueness": 0.1749491829834089
+            }
+        },
+        {
+            "Provide by G-Eazy Featuring Chris Brown & Mark Morrison": {
+                "readability": 0.4036,
+                "uniqueness": 0.15367238605810768
+            }
+        },
+        {
+            "Prisoner by Miley Cyrus Featuring Dua Lipa": {
+                "readability": 0.9551000000000001,
+                "uniqueness": 0.21292292771772572
+            }
+        },
+        {
+            "Diamonds by Sam Smith": {
+                "readability": 0.478,
+                "uniqueness": 0.18280836156558608
+            }
+        },
+        {
+            "Savage Love (Laxed - Siren Beat) by Jawsh 685 x Jason Derulo": {
+                "readability": 0.5795,
+                "uniqueness": 0.2623624667948591
+            }
+        },
+        {
+            "Lo Vas A Olvidar by Billie Eilish & ROSALIA": {
+                "readability": 0.857,
+                "uniqueness": 0.30840162144657635
+            }
+        },
+        {
+            "Champagne Night by Lady A": {
+                "readability": 0.9991,
+                "uniqueness": 0.4141891724514184
+            }
+        },
+        {
+            "I Should Probably Go To Bed by Dan + Shay": {
+                "readability": 0.6709,
+                "uniqueness": 0.2219331545537461
+            }
+        },
+        {
+            "De Una Vez by Selena Gomez": {
+                "readability": 0.28859999999999997,
+                "uniqueness": 0.22308836445531272
+            }
+        },
+        {
+            "Better Days by Ant Clemons Featuring Justin Timberlake": {
+                "readability": 0.8231,
+                "uniqueness": 0.2199911791533476
+            }
+        },
+        {
+            "B.S. by Jhene Aiko Featuring H.E.R.": {
+                "readability": 0.39,
+                "uniqueness": 0.16915318498820445
+            }
+        },
+        {
+            "Midnight Sky by Miley Cyrus": {
+                "readability": 0.816,
+                "uniqueness": 0.1805004781686978
+            }
+        },
+        {
+            "Watermelon Sugar by Harry Styles": {
+                "readability": 0.5051,
+                "uniqueness": 0.15888874066562275
+            }
+        },
+        {
+            "Some Girls by Jameson Rodgers": {
+                "readability": 0.3224,
+                "uniqueness": 0.1750438918775766
+            }
+        },
+        {
+            "Everywhere But On by Matt Stell": {
+                "readability": 0.8353,
+                "uniqueness": 0.1490266564446914
+            }
+        },
+        {
+            "All I Want For Christmas Is You by Mariah Carey": {
+                "readability": 0.9077,
+                "uniqueness": 0.20475676818662028
+            }
+        },
+        {
+            "It's The Most Wonderful Time Of The Year by Andy Williams": {
+                "readability": 0.3901,
+                "uniqueness": 0.19675771511366238
+            }
+        },
+        {
+            "Feliz Navidad by Jose Feliciano": {
+                "readability": 0.7199,
+                "uniqueness": 0.17649472221414353
+            }
+        },
+        {
+            "Underneath The Tree by Kelly Clarkson": {
+                "readability": 0.5964,
+                "uniqueness": 0.19012143954250638
+            }
+        },
+        {
+            "Redman by Lil Durk": {
+                "readability": 0.5321,
+                "uniqueness": 0.2183329548084266
+            }
+        },
+        {
+            "Take Me Home For Christmas by Dan + Shay": {
+                "readability": 0.8045,
+                "uniqueness": 0.1793835794266597
+            }
+        },
+        {
+            "Sleigh Ride by The Ronettes": {
+                "readability": 0.4645,
+                "uniqueness": 0.17008936942598024
+            }
+        },
+        {
+            "It's Beginning To Look A Lot Like Christmas by Perry Como And The Fontane Sisters With Mitchell Ayres And His Orchestra": {
+                "readability": 0.478,
+                "uniqueness": 0.14125796401839086
+            }
+        },
+        {
+            "Santa Tell Me by Ariana Grande": {
+                "readability": 0.6472,
+                "uniqueness": 0.18699389498483304
+            }
+        },
+        {
+            "Happy Holiday / The Holiday Season by Andy Williams": {
+                "readability": 0.2987,
+                "uniqueness": 0.21048398991892495
+            }
+        },
+        {
+            "Christmas (Baby Please Come Home) by Darlene Love": {
+                "readability": 0.4239,
+                "uniqueness": 0.15125398939329798
+            }
+        },
+        {
+            "(There's No Place Like) Home For The Holidays by Perry Como": {
+                "readability": 0.478,
+                "uniqueness": 0.17973820731874265
+            }
+        },
+        {
+            "It's Beginning To Look A Lot Like Christmas by Michael Buble": {
+                "readability": 0.5897,
+                "uniqueness": 0.2111309315570477
+            }
+        },
+        {
+            "Please Come Home For Christmas by Eagles": {
+                "readability": 0.6065999999999999,
+                "uniqueness": 0.19099872220337438
+            }
+        },
+        {
+            "Favorite Time Of Year by Carrie Underwood": {
+                "readability": 0.8248000000000001,
+                "uniqueness": 0.1963593087457194
+            }
+        },
+        {
+            "Under The Mistletoe by Kelly Clarkson & Brett Eldredge": {
+                "readability": 0.7521,
+                "uniqueness": 0.18422105529021754
+            }
+        },
+        {
+            "Champagne Problems by Taylor Swift": {
+                "readability": 0.5389,
+                "uniqueness": 0.30116545182543203
+            }
+        },
+        {
+            "The First Noel by Gabby Barrett": {
+                "readability": 0.8299,
+                "uniqueness": 0.18067643231360223
+            }
+        },
+        {
+            "'Tis The Damn Season by Taylor Swift": {
+                "readability": 0.8332999999999999,
+                "uniqueness": 0.1927706942267274
+            }
+        },
+        {
+            "No Body, No Crime by Taylor Swift Featuring HAIM": {
+                "readability": 0.1532,
+                "uniqueness": 0.2574442968624305
+            }
+        },
+        {
+            "Gold Rush by Taylor Swift": {
+                "readability": 0.5355,
+                "uniqueness": 0.21265457710613672
+            }
+        },
+        {
+            "Tolerate It by Taylor Swift": {
+                "readability": 0.7384999999999999,
+                "uniqueness": 0.19270008802982772
+            }
+        },
+        {
+            "Ivy by Taylor Swift": {
+                "readability": 0.8806,
+                "uniqueness": 0.22271107657170747
+            }
+        },
+        {
+            "Coney Island by Taylor Swift Featuring The National": {
+                "readability": 0.8671,
+                "uniqueness": 0.17321200298968606
+            }
+        },
+        {
+            "Dorothea by Taylor Swift": {
+                "readability": 0.48479999999999995,
+                "uniqueness": 0.18814496292732744
+            }
+        },
+        {
+            "Long Story Short by Taylor Swift": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.2249154207004159
+            }
+        },
+        {
+            "Cowboy Like Me by Taylor Swift": {
+                "readability": 0.8332999999999999,
+                "uniqueness": 0.18750410365281392
+            }
+        },
+        {
+            "Marjorie by Taylor Swift": {
+                "readability": 0.5389,
+                "uniqueness": 0.17813661915420653
+            }
+        },
+        {
+            "Dive by Kid Cudi": {
+                "readability": 0.813,
+                "uniqueness": 0.194763472598376
+            }
+        },
+        {
+            "Closure by Taylor Swift": {
+                "readability": 0.1431,
+                "uniqueness": 0.3238692670150017
+            }
+        },
+        {
+            "Damaged by Kid Cudi": {
+                "readability": 0.8809999999999999,
+                "uniqueness": 0.19723794890344434
+            }
+        },
+        {
+            "Dicked Down In Dallas by Trey Lewis": {
+                "readability": 0.3224,
+                "uniqueness": 0.21346902280061206
+            }
+        },
+        {
+            "Heather by Conan Gray": {
+                "readability": 0.48479999999999995,
+                "uniqueness": 0.19467087689787338
+            }
+        },
+        {
+            "Blue & Grey by BTS": {
+                "readability": 0.61,
+                "uniqueness": 0.22945238298148865
+            }
+        },
+        {
+            "Stay by BTS": {
+                "readability": 0.6336999999999999,
+                "uniqueness": 0.26755925261698615
+            }
+        },
+        {
+            "Fly To My Room by BTS": {
+                "readability": 0.6675,
+                "uniqueness": 0.2086730810241298
+            }
+        },
+        {
+            "Telepathy by BTS": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.192801474190483
+            }
+        },
+        {
+            "Dis-ease by BTS": {
+                "readability": 0.7182,
+                "uniqueness": 0.2422163330352053
+            }
+        },
+        {
+            "Adore You by Harry Styles": {
+                "readability": 0.5558,
+                "uniqueness": 0.17420180658867485
+            }
+        },
+        {
+            "That's It by Future & Lil Uzi Vert": {
+                "readability": 0.6878,
+                "uniqueness": 0.1739450089295114
+            }
+        },
+        {
+            "Blind by DaBaby Featuring Young Thug": {
+                "readability": 0.522,
+                "uniqueness": 0.23973708637861216
+            }
+        },
+        {
+            "Plastic by Future & Lil Uzi Vert": {
+                "readability": 0.5931000000000001,
+                "uniqueness": 0.4198851404108891
+            }
+        },
+        {
+            "24 by Money Man Featuring Lil Baby": {
+                "readability": 0.5964,
+                "uniqueness": 0.17816924098605824
+            }
+        },
+        {
+            "Tragic by The Kid LAROI Featuring YoungBoy Never Brok Again & Internet Money": {
+                "readability": 0.4069,
+                "uniqueness": 0.27604417430138745
+            }
+        },
+        {
+            "Motive by Ariana Grande Featuring Doja Cat": {
+                "readability": 0.5288,
+                "uniqueness": 0.21015114263875737
+            }
+        },
+        {
+            "Always Do by The Kid LAROI": {
+                "readability": 0.8231,
+                "uniqueness": 0.22579975115568995
+            }
+        },
+        {
+            "Off The Table by Ariana Grande Featuring The Weeknd": {
+                "readability": 0.5288,
+                "uniqueness": 0.19605546048986272
+            }
+        },
+        {
+            "Just Like Magic by Ariana Grande": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.20204399735578907
+            }
+        },
+        {
+            "F*ck You, Goodbye by The Kid LAROI Featuring Machine Gun Kelly": {
+                "readability": 0.5931000000000001,
+                "uniqueness": 0.6836775372783392
+            }
+        },
+        {
+            "Thriller by Michael Jackson": {
+                "readability": 0.4374,
+                "uniqueness": 0.10823016974090852
+            }
+        },
+        {
+            "Nasty by Ariana Grande": {
+                "readability": 1.0,
+                "uniqueness": 0.19265367920241844
+            }
+        },
+        {
+            "Safety Net by Ariana Grande Featuring Ty Dolla $ign": {
+                "readability": 0.38670000000000004,
+                "uniqueness": 0.17653126587192713
+            }
+        },
+        {
+            "Six Thirty by Ariana Grande": {
+                "readability": 0.8062,
+                "uniqueness": 0.2599424381469101
+            }
+        },
+        {
+            "My Hair by Ariana Grande": {
+                "readability": 0.8062,
+                "uniqueness": 0.17805266975994974
+            }
+        },
+        {
+            "Obvious by Ariana Grande": {
+                "readability": 0.6979000000000001,
+                "uniqueness": 0.1701553268219173
+            }
+        },
+        {
+            "West Side by Ariana Grande": {
+                "readability": 0.0,
+                "uniqueness": 0.11785775554767798
+            }
+        },
+        {
+            "Don't Start Now by Dua Lipa": {
+                "readability": 0.8231,
+                "uniqueness": 0.20963289746787941
+            }
+        },
+        {
+            "Without You by Luke Combs Featuring Amanda Shires": {
+                "readability": 0.0,
+                "uniqueness": 0.12165411675560389
+            }
+        },
+        {
+            "Cardigan by Taylor Swift": {
+                "readability": 0.1025,
+                "uniqueness": 0.12291715969554977
+            }
+        },
+        {
+            "Head & Heart by Joel Corry X MNEK": {
+                "readability": 0.613,
+                "uniqueness": 0.11605995676331976
+            }
+        },
+        {
+            "Hate The Way by G-Eazy Featuring blackbear": {
+                "readability": 0.8028,
+                "uniqueness": 0.20608756279041032
+            }
+        },
+        {
+            "OK Not To Be OK by Marshmello & Demi Lovato": {
+                "readability": 0.6609999999999999,
+                "uniqueness": 0.15200634806470947
+            }
+        },
+        {
+            "Breaking Me by Topic & A7S": {
+                "readability": 0.5694,
+                "uniqueness": 0.2961145250899451
+            }
+        },
+        {
+            "If The World Was Ending by JP Saxe Featuring Julia Michaels": {
+                "readability": 0.7216,
+                "uniqueness": 0.24051811925674912
+            }
+        },
+        {
+            "Baby, I'm Jealous by Bebe Rexha Featuring Doja Cat": {
+                "readability": 0.23440000000000003,
+                "uniqueness": 0.1961847062816992
+            }
+        },
+        {
+            "Sofia by Clairo": {
+                "readability": 0.7012999999999999,
+                "uniqueness": 0.2329037475928249
+            }
+        },
+        {
+            "Fallin' by Why Don't We": {
+                "readability": 0.4476,
+                "uniqueness": 0.1826044807069094
+            }
+        },
+        {
+            "Lovesick Girls by BLACKPINK": {
+                "readability": 0.5863,
+                "uniqueness": 0.16990264600473476
+            }
+        },
+        {
+            "Rain On Me by Lady Gaga & Ariana Grande": {
+                "readability": 0.6472,
+                "uniqueness": 0.13049211817326725
+            }
+        },
+        {
+            "Always Forever by Bryson Tiller": {
+                "readability": 0.4239,
+                "uniqueness": 0.17722399616765933
+            }
+        },
+        {
+            "Like That by Doja Cat Featuring Gucci Mane": {
+                "readability": 0.2446,
+                "uniqueness": 0.13199371482175304
+            }
+        },
+        {
+            "Nobody's Love by Maroon 5": {
+                "readability": 0.5592,
+                "uniqueness": 0.13475403015473444
+            }
+        },
+        {
+            "Moral Of The Story by Ashe Featuring Niall Horan": {
+                "readability": 0.6746,
+                "uniqueness": 0.1372868124264388
+            }
+        },
+        {
+            "The Bones by Maren Morris": {
+                "readability": 0.7453,
+                "uniqueness": 0.34411183838156717
+            }
+        },
+        {
+            "Gone Too Soon by Andrew Jannakos": {
+                "readability": 0.8471,
+                "uniqueness": 0.21011602646763292
+            }
+        },
+        {
+            "One Night Standards by Ashley McBryde": {
+                "readability": 0.6353,
+                "uniqueness": 0.18885898213373944
+            }
+        },
+        {
+            "Intentions by Justin Bieber Featuring Quavo": {
+                "readability": 0.23440000000000003,
+                "uniqueness": 0.11959937589212663
+            }
+        },
+        {
+            "The Voice by Lil Durk": {
+                "readability": 0.8164,
+                "uniqueness": 0.27960959214598724
+            }
+        },
+        {
+            "Body Language by Big Sean Featuring Ty Dolla $ign & Jhene Aiko": {
+                "readability": 0.8972,
+                "uniqueness": 0.12586175711257308
+            }
+        },
+        {
+            "Stuck With U by Ariana Grande & Justin Bieber": {
+                "readability": 0.0,
+                "uniqueness": 0.12862887139166432
+            }
+        },
+        {
+            "God Whispered Your Name by Keith Urban": {
+                "readability": 0.1363,
+                "uniqueness": 0.20685891397817288
+            }
+        },
+        {
+            "The 1 by Taylor Swift": {
+                "readability": 0.6827,
+                "uniqueness": 0.14373447460242286
+            }
+        },
+        {
+            "Exile by Taylor Swift Featuring Bon Iver": {
+                "readability": 0.275,
+                "uniqueness": 0.29674038113410117
+            }
+        },
+        {
+            "Hard To Forget by Sam Hunt": {
+                "readability": 0.363,
+                "uniqueness": 0.2192158692603423
+            }
+        },
+        {
+            "Supalonely by BENEE Featuring Gus Dapperton": {
+                "readability": 0.6979000000000001,
+                "uniqueness": 0.13091591778746461
+            }
+        },
+        {
+            "Be Kind by Marshmello & Halsey": {
+                "readability": 0.0,
+                "uniqueness": 0.17410193891821793
+            }
+        },
+        {
+            "Falling by Trevor Daniel": {
+                "readability": 0.3461,
+                "uniqueness": 0.144476519934648
+            }
+        },
+        {
+            "The Last Great American Dynasty by Taylor Swift": {
+                "readability": 0.5389,
+                "uniqueness": 0.1491931046842815
+            }
+        },
+        {
+            "My Tears Ricochet by Taylor Swift": {
+                "readability": 0.7724,
+                "uniqueness": 0.18677663098323008
+            }
+        },
+        {
+            "August by Taylor Swift": {
+                "readability": 0.0,
+                "uniqueness": 0.11595958567693171
+            }
+        },
+        {
+            "Invisible String by Taylor Swift": {
+                "readability": 0.6742,
+                "uniqueness": 0.1459563865009613
+            }
+        },
+        {
+            "Mirrorball by Taylor Swift": {
+                "readability": 0.319,
+                "uniqueness": 0.13722086873470046
+            }
+        },
+        {
+            "This Is Me Trying by Taylor Swift": {
+                "readability": 0.544,
+                "uniqueness": 0.12968377243041004
+            }
+        },
+        {
+            "Illicit Affairs by Taylor Swift": {
+                "readability": 0.0,
+                "uniqueness": 0.15333385462633078
+            }
+        },
+        {
+            "Mad Woman by Taylor Swift": {
+                "readability": 0.0,
+                "uniqueness": 0.10210904257376535
+            }
+        },
+        {
+            "The Climb Back by J. Cole": {
+                "readability": 1.0,
+                "uniqueness": 0.3160701522588672
+            }
+        },
+        {
+            "Epiphany by Taylor Swift": {
+                "readability": 0.0,
+                "uniqueness": 0.09797813774345462
+            }
+        },
+        {
+            "Hoax by Taylor Swift": {
+                "readability": 0.0,
+                "uniqueness": 0.10420218531372738
+            }
+        },
+        {
+            "Go! by Kid LAROI & Juice WRLD": {
+                "readability": 0.0,
+                "uniqueness": 0.10528191852347774
+            }
+        },
+        {
+            "Perfect by Logic": {
+                "readability": 0.9111,
+                "uniqueness": 0.19226756578105203
+            }
+        },
+        {
+            "Sunday Best by Surfaces": {
+                "readability": 0.6032,
+                "uniqueness": 0.15720029466399246
+            }
+        },
+        {
+            "Stay High by Juice WRLD": {
+                "readability": 0.5694,
+                "uniqueness": 0.15593033887876742
+            }
+        },
+        {
+            "I Want It by Juice WRLD": {
+                "readability": 0.5355,
+                "uniqueness": 0.15070697148086465
+            }
+        },
+        {
+            "Let It Go by Summer Walker": {
+                "readability": 0.5897,
+                "uniqueness": 0.18250246900447198
+            }
+        },
+        {
+            "Yea Yea by Pop Smoke": {
+                "readability": 0.6809999999999999,
+                "uniqueness": 0.2357687321276213
+            }
+        },
+        {
+            "Creature by Pop Smoke Featuring Swae Lee": {
+                "readability": 0.9279999999999999,
+                "uniqueness": 0.5209246253204107
+            }
+        },
+        {
+            "P*$$y Fairy (OTW) by Jhene Aiko": {
+                "readability": 0.61,
+                "uniqueness": 0.25939146620163256
+            }
+        },
+        {
+            "Diana by Pop Smoke Featuring King Combs": {
+                "readability": 0.7622,
+                "uniqueness": 0.23353241684266413
+            }
+        },
+        {
+            "How You Like That by BLACKPINK": {
+                "readability": 0.478,
+                "uniqueness": 0.1453208965559274
+            }
+        },
+        {
+            "YaYa by 6ix9ine": {
+                "readability": 0.45770000000000005,
+                "uniqueness": 0.17126999001262339
+            }
+        },
+        {
+            "Black Parade by Beyonce": {
+                "readability": 0.6809999999999999,
+                "uniqueness": 0.20084710107012363
+            }
+        },
+        {
+            "In Your Eyes by The Weeknd": {
+                "readability": 0.2412,
+                "uniqueness": 0.21176842229885898
+            }
+        },
+        {
+            "Everything I Wanted by Billie Eilish": {
+                "readability": 0.8918,
+                "uniqueness": 0.17244466134917516
+            }
+        },
+        {
+            "Need Me by J.I The Prince Of N.Y": {
+                "readability": 0.40020000000000006,
+                "uniqueness": 0.4512018594354194
+            }
+        },
+        {
+            "July by Noah Cyrus & Leon Bridges": {
+                "readability": 0.0,
+                "uniqueness": 0.1370351534632783
+            }
+        },
+        {
+            "Ride It. by Regard": {
+                "readability": 0.7273000000000001,
+                "uniqueness": 0.09985472374287924
+            }
+        },
+        {
+            "Drinking Alone by Carrie Underwood": {
+                "readability": 0.5710000000000001,
+                "uniqueness": 0.14494794269582822
+            }
+        },
+        {
+            "Dance Monkey by Tones And I": {
+                "readability": 0.6743000000000001,
+                "uniqueness": 0.29139121056438627
+            }
+        },
+        {
+            "Sour Candy by Lady Gaga & BLACKPINK": {
+                "readability": 0.40020000000000006,
+                "uniqueness": 0.3566356981356581
+            }
+        },
+        {
+            "That Way by Lil Uzi Vert": {
+                "readability": 0.7927,
+                "uniqueness": 0.34443687044287613
+            }
+        },
+        {
+            "Stupid Love by Lady Gaga": {
+                "readability": 0.6404000000000001,
+                "uniqueness": 0.1557357519317092
+            }
+        },
+        {
+            "Alice by Lady Gaga": {
+                "readability": 0.3833,
+                "uniqueness": 0.13733800312177646
+            }
+        },
+        {
+            "Lose Somebody by Kygo & OneRepublic": {
+                "readability": 0.7318000000000001,
+                "uniqueness": 0.19173281100301845
+            }
+        },
+        {
+            "Someone You Loved by Lewis Capaldi": {
+                "readability": 0.0754,
+                "uniqueness": 0.1540494734578066
+            }
+        },
+        {
+            "I Know by Polo G": {
+                "readability": 0.8972,
+                "uniqueness": 0.15126512763590408
+            }
+        },
+        {
+            "Can I by Kehlani Featuring Tory Lanez": {
+                "readability": 0.6912,
+                "uniqueness": 0.29651179490111645
+            }
+        },
+        {
+            "Toxic by Kehlani": {
+                "readability": 0.5186,
+                "uniqueness": 0.14145384493021124
+            }
+        },
+        {
+            "I'm Ready by Sam Smith & Demi Lovato": {
+                "readability": 0.8464,
+                "uniqueness": 0.14761419144299742
+            }
+        },
+        {
+            "More Hearts Than Mine by Ingrid Andress": {
+                "readability": 0.30210000000000004,
+                "uniqueness": 0.1356211746271993
+            }
+        },
+        {
+            "I Love Me by Demi Lovato": {
+                "readability": 0.027999999999999997,
+                "uniqueness": 0.12059255212994985
+            }
+        },
+        {
+            "Homemade by Jake Owen": {
+                "readability": 0.16,
+                "uniqueness": 0.1255573893795048
+            }
+        },
+        {
+            "You Should Be Sad by Halsey": {
+                "readability": 0.0,
+                "uniqueness": 0.1153370514374908
+            }
+        },
+        {
+            "War by Drake": {
+                "readability": 0.5694,
+                "uniqueness": 0.21917685289900332
+            }
+        },
+        {
+            "10,000 Hours by Dan + Shay & Justin Bieber": {
+                "readability": 0.6335999999999999,
+                "uniqueness": 0.20346423869101493
+            }
+        },
+        {
+            "Diamonds by YoungBoy Never Broke Again": {
+                "readability": 0.5998,
+                "uniqueness": 0.1593215447224394
+            }
+        },
+        {
+            "NASTY by DaBaby Featuring Ashanti & Megan Thee Stallion": {
+                "readability": 0.5694,
+                "uniqueness": 0.18874035682345705
+            }
+        },
+        {
+            "PICK UP by DaBaby Featuring Quavo": {
+                "readability": 0.5186,
+                "uniqueness": 0.13719465314457915
+            }
+        },
+        {
+            "No Guidance by Chris Brown Featuring Drake": {
+                "readability": 0.3393,
+                "uniqueness": 0.15986215837496273
+            }
+        },
+        {
+            "TALK ABOUT IT by DaBaby": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.16530794275710434
+            }
+        },
+        {
+            "Boyfriend by Selena Gomez": {
+                "readability": 0.3461,
+                "uniqueness": 0.13568368567260108
+            }
+        },
+        {
+            "Yummy by Justin Bieber": {
+                "readability": 0.4882,
+                "uniqueness": 0.16254345427919
+            }
+        },
+        {
+            "Boss Bitch by Doja Cat": {
+                "readability": 0.9246,
+                "uniqueness": 0.14320801667374608
+            }
+        },
+        {
+            "Homesick by Kane Brown": {
+                "readability": 0.0,
+                "uniqueness": 0.13701710894602118
+            }
+        },
+        {
+            "I Remember by Rod Wave": {
+                "readability": 0.0,
+                "uniqueness": 0.13926370757383574
+            }
+        },
+        {
+            "After Hours by The Weeknd": {
+                "readability": 0.8434,
+                "uniqueness": 0.19326680041873864
+            }
+        },
+        {
+            "What A Man Gotta Do by Jonas Brothers": {
+                "readability": 0.3833,
+                "uniqueness": 0.1322423282155222
+            }
+        },
+        {
+            "Know Your Worth by Khalid x Disclosure": {
+                "readability": 0.5490999999999999,
+                "uniqueness": 0.14409059704269578
+            }
+        },
+        {
+            "Physical by Dua Lipa": {
+                "readability": 1.0,
+                "uniqueness": 0.27570035258440717
+            }
+        },
+        {
+            "Alone Again by The Weeknd": {
+                "readability": 0.1837,
+                "uniqueness": 0.1409623826096758
+            }
+        },
+        {
+            "Scared To Live by The Weeknd": {
+                "readability": 0.0,
+                "uniqueness": 0.12396786882937497
+            }
+        },
+        {
+            "Hardest To Love by The Weeknd": {
+                "readability": 0.9584999999999999,
+                "uniqueness": 0.15817643699243283
+            }
+        },
+        {
+            "Snowchild by The Weeknd": {
+                "readability": 0.0,
+                "uniqueness": 0.14483783127798527
+            }
+        },
+        {
+            "Escape From LA by The Weeknd": {
+                "readability": 0.3156,
+                "uniqueness": 0.15763260842614643
+            }
+        },
+        {
+            "Lose You To Love Me by Selena Gomez": {
+                "readability": 0.0,
+                "uniqueness": 0.10648797700099753
+            }
+        },
+        {
+            "homecoming queen? by Kelsea Ballerini": {
+                "readability": 0.18030000000000002,
+                "uniqueness": 0.12590673100477828
+            }
+        },
+        {
+            "Repeat After Me (Interlude) by The Weeknd": {
+                "readability": 0.3054,
+                "uniqueness": 0.1546688557654958
+            }
+        },
+        {
+            "Until I Bleed Out by The Weeknd": {
+                "readability": 0.434,
+                "uniqueness": 0.15705547853989688
+            }
+        },
+        {
+            "To Die For by Sam Smith": {
+                "readability": 0.0,
+                "uniqueness": 0.11067976169302579
+            }
+        },
+        {
+            "The Other Girl by Kelsea Ballerini x Halsey": {
+                "readability": 0.4239,
+                "uniqueness": 0.14828550153861322
+            }
+        },
+        {
+            "Cardigan by Don Toliver": {
+                "readability": 0.3697,
+                "uniqueness": 0.3543491610527287
+            }
+        },
+        {
+            "I'm Sorry by Lil Uzi Vert": {
+                "readability": 0.7352,
+                "uniqueness": 0.40194881891806
+            }
+        },
+        {
+            "Bust Me by Lil Uzi Vert": {
+                "readability": 0.8434,
+                "uniqueness": 0.15939498539874994
+            }
+        },
+        {
+            "Happiness Over Everything (H.O.E.) by Jhene Aiko Featuring Future & Miguel": {
+                "readability": 0.8976000000000001,
+                "uniqueness": 0.2124663628871272
+            }
+        },
+        {
+            "Triggered by Jhene Aiko": {
+                "readability": 0.0,
+                "uniqueness": 0.11106930477435493
+            }
+        },
+        {
+            "None Of Your Concern by Jhene Aiko Featuring Big Sean": {
+                "readability": 0.0,
+                "uniqueness": 0.09300307392097597
+            }
+        },
+        {
+            "SUGAR by BrockHampton": {
+                "readability": 0.6573,
+                "uniqueness": 0.16546717174908193
+            }
+        },
+        {
+            "Senorita by Shawn Mendes & Camila Cabello": {
+                "readability": 0.5223,
+                "uniqueness": 0.14027074240568763
+            }
+        },
+        {
+            "Bad Guy by Billie Eilish": {
+                "readability": 0.6912,
+                "uniqueness": 0.14281511953145476
+            }
+        },
+        {
+            "Kinfolks by Sam Hunt": {
+                "readability": 0.0,
+                "uniqueness": 0.08574404463358509
+            }
+        },
+        {
+            "How by Lil Baby": {
+                "readability": 0.4036,
+                "uniqueness": 0.14353157442705153
+            }
+        },
+        {
+            "Forever by Lil Baby Featuring Lil Wayne": {
+                "readability": 0.5223,
+                "uniqueness": 0.144606762363997
+            }
+        },
+        {
+            "ON by BTS": {
+                "readability": 0.0,
+                "uniqueness": 0.10844346011634702
+            }
+        },
+        {
+            "No Time To Die by Billie Eilish": {
+                "readability": 0.8518000000000001,
+                "uniqueness": 0.2133680072208533
+            }
+        },
+        {
+            "Trampoline by SHAED": {
+                "readability": 0.3122,
+                "uniqueness": 0.1355188056499505
+            }
+        },
+        {
+            "Sucker by Jonas Brothers": {
+                "readability": 0.3765,
+                "uniqueness": 0.1286479472387618
+            }
+        },
+        {
+            "I Don't Care by Ed Sheeran & Justin Bieber": {
+                "readability": 0.17010000000000003,
+                "uniqueness": 0.1736651746873259
+            }
+        },
+        {
+            "Only Human by Jonas Brothers": {
+                "readability": 0.8536,
+                "uniqueness": 0.13554294337838232
+            }
+        },
+        {
+            "Forever by Justin Bieber Featuring Post Malone & Clever": {
+                "readability": 0.4949,
+                "uniqueness": 0.24131032321282628
+            }
+        },
+        {
+            "Dive Bar by Garth Brooks & Blake Shelton": {
+                "readability": 0.8332999999999999,
+                "uniqueness": 0.19191247166795708
+            }
+        },
+        {
+            "South Of The Border by Ed Sheeran Featuring Camila Cabello & Cardi B": {
+                "readability": 0.7149,
+                "uniqueness": 0.3432759457481875
+            }
+        },
+        {
+            "Filter by BTS": {
+                "readability": 0.18030000000000002,
+                "uniqueness": 0.14372060952853666
+            }
+        },
+        {
+            "Come Around Me by Justin Bieber": {
+                "readability": 0.61,
+                "uniqueness": 0.14818588760757798
+            }
+        },
+        {
+            "Habitual by Justin Bieber": {
+                "readability": 0.38670000000000004,
+                "uniqueness": 0.15530740664425527
+            }
+        },
+        {
+            "Only The Young by Taylor Swift": {
+                "readability": 0.42219999999999996,
+                "uniqueness": 0.09714758872210809
+            }
+        },
+        {
+            "Anyone by Demi Lovato": {
+                "readability": 0.13699999999999998,
+                "uniqueness": 0.12313018901195324
+            }
+        },
+        {
+            "Panini by Lil Nas X": {
+                "readability": 0.38670000000000004,
+                "uniqueness": 0.13986560688481747
+            }
+        },
+        {
+            "Graveyard by Halsey": {
+                "readability": 0.6303,
+                "uniqueness": 0.2245351949731323
+            }
+        },
+        {
+            "First Man by Camila Cabello": {
+                "readability": 0.4171,
+                "uniqueness": 0.1840215526282156
+            }
+        },
+        {
+            "What If I Told You That I Love You by Ali Gatie": {
+                "readability": 0.3122,
+                "uniqueness": 0.14718617872733047
+            }
+        },
+        {
+            "Black Swan by BTS": {
+                "readability": 0.19039999999999999,
+                "uniqueness": 0.18271878772192204
+            }
+        },
+        {
+            "Talk by Khalid": {
+                "readability": 0.0757,
+                "uniqueness": 0.10785742373534303
+            }
+        },
+        {
+            "What If I Never Get Over You by Lady Antebellum": {
+                "readability": 0.6404000000000001,
+                "uniqueness": 0.19258007906257635
+            }
+        },
+        {
+            "Lover by Taylor Swift": {
+                "readability": 0.23440000000000003,
+                "uniqueness": 0.13809323248889083
+            }
+        },
+        {
+            "Eleven by Khalid": {
+                "readability": 0.26489999999999997,
+                "uniqueness": 0.20861822538113
+            }
+        },
+        {
+            "Conversations In The Dark by John Legend": {
+                "readability": 0.0,
+                "uniqueness": 0.17176886944734876
+            }
+        },
+        {
+            "Look At Her Now. by Selena Gomez": {
+                "readability": 0.8329000000000001,
+                "uniqueness": 0.13579958048726912
+            }
+        },
+        {
+            "Nice To Meet Ya by Niall Horan": {
+                "readability": 0.3325,
+                "uniqueness": 0.15212944003969112
+            }
+        },
+        {
+            "All I Want by Olivia Rodrigo": {
+                "readability": 0.3917,
+                "uniqueness": 0.11301217182039179
+            }
+        },
+        {
+            "Slow Dancing In The Dark by Joji": {
+                "readability": 0.7323999999999999,
+                "uniqueness": 0.15771396746008154
+            }
+        },
+        {
+            "Yellow Hearts by Ant Saunders": {
+                "readability": 0.0,
+                "uniqueness": 0.1028078169286248
+            }
+        },
+        {
+            "Candy by Doja Cat": {
+                "readability": 0.9279999999999999,
+                "uniqueness": 0.19869267662881623
+            }
+        },
+        {
+            "Like It's Christmas by Jonas Brothers": {
+                "readability": 0.0771,
+                "uniqueness": 0.10737347547753483
+            }
+        },
+        {
+            "Happy Xmas (War Is Over) by John Legend": {
+                "readability": 0.8468000000000001,
+                "uniqueness": 0.2375445277520208
+            }
+        },
+        {
+            "Falling by Harry Styles": {
+                "readability": 0.8079000000000001,
+                "uniqueness": 0.1493523055216538
+            }
+        },
+        {
+            "Lights Up by Harry Styles": {
+                "readability": 0.5423,
+                "uniqueness": 0.30461320620162
+            }
+        },
+        {
+            "Cherry by Harry Styles": {
+                "readability": 0.6536,
+                "uniqueness": 0.18961358745983742
+            }
+        },
+        {
+            "Prayed For You by Matt Stell": {
+                "readability": 0.0,
+                "uniqueness": 0.12365598497296369
+            }
+        },
+        {
+            "She by Harry Styles": {
+                "readability": 0.2243,
+                "uniqueness": 0.14333247965771123
+            }
+        },
+        {
+            "Christmas Tree Farm by Taylor Swift": {
+                "readability": 0.3122,
+                "uniqueness": 0.25253963473980123
+            }
+        },
+        {
+            "We Were by Keith Urban": {
+                "readability": 0.0348,
+                "uniqueness": 0.213297365523375
+            }
+        },
+        {
+            "How Do You Sleep? by Sam Smith": {
+                "readability": 0.615,
+                "uniqueness": 0.12778386814028408
+            }
+        },
+        {
+            "All The Good Girls Go To Hell by Billie Eilish": {
+                "readability": 0.0,
+                "uniqueness": 0.1514977718676662
+            }
+        },
+        {
+            "One Thing Right by Marshmello & Kane Brown": {
+                "readability": 0.9652,
+                "uniqueness": 0.1978702095736162
+            }
+        },
+        {
+            "Dancing With A Stranger by Sam Smith & Normani": {
+                "readability": 0.0,
+                "uniqueness": 0.12922237087188645
+            }
+        },
+        {
+            "Liar by Camila Cabello": {
+                "readability": 0.8367,
+                "uniqueness": 0.385908410992762
+            }
+        },
+        {
+            "Up All Night by Khalid": {
+                "readability": 0.09230000000000001,
+                "uniqueness": 0.14701757512846786
+            }
+        },
+        {
+            "You Need To Calm Down by Taylor Swift": {
+                "readability": 0.4864,
+                "uniqueness": 0.12230313906742662
+            }
+        },
+        {
+            "In My Room by Frank Ocean": {
+                "readability": 0.7521,
+                "uniqueness": 0.13055440842766097
+            }
+        },
+        {
+            "Don't Call Me Angel (Charlie's Angels) by Ariana Grande, Miley Cyrus & Lana Del Rey": {
+                "readability": 0.3765,
+                "uniqueness": 0.1582177528684682
+            }
+        },
+        {
+            "DHL by Frank Ocean": {
+                "readability": 0.6455,
+                "uniqueness": 0.13019457266578197
+            }
+        },
+        {
+            "If I Can't Have You by Shawn Mendes": {
+                "readability": 0.2141,
+                "uniqueness": 0.14461359472123225
+            }
+        },
+        {
+            "Southbound by Carrie Underwood": {
+                "readability": 0.7521,
+                "uniqueness": 0.23697098395813723
+            }
+        },
+        {
+            "Without Me by Halsey": {
+                "readability": 0.22760000000000002,
+                "uniqueness": 0.1988775535637131
+            }
+        },
+        {
+            "Speechless by Dan + Shay": {
+                "readability": 0.7774,
+                "uniqueness": 0.18281199784435753
+            }
+        },
+        {
+            "It's You by Ali Gatie": {
+                "readability": 0.5423,
+                "uniqueness": 0.18864317596870084
+            }
+        },
+        {
+            "Slide Away by Miley Cyrus": {
+                "readability": 0.6235,
+                "uniqueness": 0.20852048487299632
+            }
+        },
+        {
+            "Shameless by Camila Cabello": {
+                "readability": 0.22089999999999999,
+                "uniqueness": 0.13201567916725654
+            }
+        },
+        {
+            "Queen Of Mean by Sarah Jeffery": {
+                "readability": 0.5490999999999999,
+                "uniqueness": 0.16059298337285224
+            }
+        },
+        {
+            "All To Myself by Dan + Shay": {
+                "readability": 0.6640999999999999,
+                "uniqueness": 0.2817592941440899
+            }
+        },
+        {
+            "Buy My Own Drinks by Runaway June": {
+                "readability": 0.7216,
+                "uniqueness": 0.3147760728460035
+            }
+        },
+        {
+            "Easier by 5 Seconds Of Summer": {
+                "readability": 0.0,
+                "uniqueness": 0.08298467781399421
+            }
+        },
+        {
+            "Doin' Time by Lana Del Rey": {
+                "readability": 0.6607,
+                "uniqueness": 0.25834741456031474
+            }
+        },
+        {
+            "7 Rings by Ariana Grande": {
+                "readability": 0.7622,
+                "uniqueness": 0.2208471953883255
+            }
+        },
+        {
+            "Cruel Summer by Taylor Swift": {
+                "readability": 0.7351000000000001,
+                "uniqueness": 0.25603662128200755
+            }
+        },
+        {
+            "I Forgot That You Existed by Taylor Swift": {
+                "readability": 0.4949,
+                "uniqueness": 0.2131913214316461
+            }
+        },
+        {
+            "Call You Mine by The Chainsmokers & Bebe Rexha": {
+                "readability": 0.6472,
+                "uniqueness": 0.1905871730605967
+            }
+        },
+        {
+            "The Archer by Taylor Swift": {
+                "readability": 0.7352,
+                "uniqueness": 0.1991088595701783
+            }
+        },
+        {
+            "Paper Rings by Taylor Swift": {
+                "readability": 0.3461,
+                "uniqueness": 0.16925977243299622
+            }
+        },
+        {
+            "Miss Americana & The Heartbreak Prince by Taylor Swift": {
+                "readability": 0.8667,
+                "uniqueness": 0.35373673821295853
+            }
+        },
+        {
+            "I Think He Knows by Taylor Swift": {
+                "readability": 0.0,
+                "uniqueness": 0.12555690482771859
+            }
+        },
+        {
+            "Cornelia Street by Taylor Swift": {
+                "readability": 0.7723,
+                "uniqueness": 0.5615577730111838
+            }
+        },
+        {
+            "London Boy by Taylor Swift": {
+                "readability": 0.0,
+                "uniqueness": 0.09779792675338973
+            }
+        },
+        {
+            "Death By A Thousand Cuts by Taylor Swift": {
+                "readability": 0.2953,
+                "uniqueness": 0.16349850228527013
+            }
+        },
+        {
+            "Afterglow by Taylor Swift": {
+                "readability": 0.3122,
+                "uniqueness": 0.1618988028212331
+            }
+        },
+        {
+            "False God by Taylor Swift": {
+                "readability": 0.0,
+                "uniqueness": 0.09669483873440564
+            }
+        },
+        {
+            "Daylight by Taylor Swift": {
+                "readability": 0.6167,
+                "uniqueness": 0.14270872600014933
+            }
+        },
+        {
+            "It's Nice To Have A Friend by Taylor Swift": {
+                "readability": 0.001,
+                "uniqueness": 0.12636327242109713
+            }
+        },
+        {
+            "Never Really Over by Katy Perry": {
+                "readability": 0.8069,
+                "uniqueness": 0.21699368001711822
+            }
+        },
+        {
+            "Happier by Marshmello & Bastille": {
+                "readability": 0.5592,
+                "uniqueness": 0.1539638627830702
+            }
+        },
+        {
+            "Sweet But Psycho by Ava Max": {
+                "readability": 0.8332999999999999,
+                "uniqueness": 0.21522459166575617
+            }
+        },
+        {
+            "Better by Khalid": {
+                "readability": 0.7855,
+                "uniqueness": 0.13154145691580157
+            }
+        },
+        {
+            "Small Talk by Katy Perry": {
+                "readability": 0.6485,
+                "uniqueness": 0.10785313731526987
+            }
+        },
+        {
+            "Shallow by Lady Gaga & Bradley Cooper": {
+                "readability": 0.3122,
+                "uniqueness": 0.1369655535142074
+            }
+        },
+        {
+            "Antisocial by Ed Sheeran & Travis Scott": {
+                "readability": 0.0,
+                "uniqueness": 0.9324777119358569
+            }
+        },
+        {
+            "Before I Let Go by Beyonce": {
+                "readability": 0.2547,
+                "uniqueness": 0.13638908804956562
+            }
+        },
+        {
+            "Cool by Jonas Brothers": {
+                "readability": 0.30210000000000004,
+                "uniqueness": 0.1804970242847793
+            }
+        },
+        {
+            "Nightmare by Halsey": {
+                "readability": 0.5795,
+                "uniqueness": 0.16549746167913965
+            }
+        },
+        {
+            "GIRL by Maren Morris": {
+                "readability": 0.0077,
+                "uniqueness": 0.1260738126360291
+            }
+        },
+        {
+            "Walk Me Home by P!nk": {
+                "readability": 0.1431,
+                "uniqueness": 0.13224509391963804
+            }
+        },
+        {
+            "BLOW by Ed Sheeran With Chris Stapleton & Bruno Mars": {
+                "readability": 0.6776000000000001,
+                "uniqueness": 0.18633808940690916
+            }
+        },
+        {
+            "Spirit by Beyonce": {
+                "readability": 0.22089999999999999,
+                "uniqueness": 0.12371773285141631
+            }
+        },
+        {
+            "Mother's Daughter by Miley Cyrus": {
+                "readability": 0.7724,
+                "uniqueness": 0.3371495296158418
+            }
+        },
+        {
+            "Ocean Eyes by Billie Eilish": {
+                "readability": 0.4645,
+                "uniqueness": 0.17298171455293135
+            }
+        },
+        {
+            "Break Up With Your Girlfriend, I'm Bored by Ariana Grande": {
+                "readability": 0.2919,
+                "uniqueness": 0.14954478248475278
+            }
+        },
+        {
+            "When The Party's Over by Billie Eilish": {
+                "readability": 0.0466,
+                "uniqueness": 0.10388270130118274
+            }
+        },
+        {
+            "Miss Me More by Kelsea Ballerini": {
+                "readability": 0.884,
+                "uniqueness": 0.20260959015880708
+            }
+        },
+        {
+            "Sanctuary by Joji": {
+                "readability": 0.9398000000000001,
+                "uniqueness": 0.1951386465188646
+            }
+        },
+        {
+            "Bury A Friend by Billie Eilish": {
+                "readability": 0.6809999999999999,
+                "uniqueness": 0.2382187564128452
+            }
+        },
+        {
+            "Paradise by Bazzi": {
+                "readability": 0.3224,
+                "uniqueness": 0.1781441687300946
+            }
+        },
+        {
+            "Be Alright by Dean Lewis": {
+                "readability": 0.4645,
+                "uniqueness": 0.17881836860418268
+            }
+        },
+        {
+            "Thank U, Next by Ariana Grande": {
+                "readability": 0.6912,
+                "uniqueness": 0.22126039203126072
+            }
+        },
+        {
+            "You Should See Me In A Crown by Billie Eilish": {
+                "readability": 0.0,
+                "uniqueness": 0.10269996948029053
+            }
+        },
+        {
+            "Wish You Were Gay by Billie Eilish": {
+                "readability": 0.1041,
+                "uniqueness": 0.12313819425312894
+            }
+        },
+        {
+            "Youngblood by 5 Seconds Of Summer": {
+                "readability": 0.8220999999999999,
+                "uniqueness": 0.13824539391671167
+            }
+        },
+        {
+            "Light It Up by Marshmello, Tyga & Chris Brown": {
+                "readability": 0.5897,
+                "uniqueness": 0.20238622004188253
+            }
+        },
+        {
+            "Kill This Love by BLACKPINK": {
+                "readability": 0.3799,
+                "uniqueness": 0.1863878257367744
+            }
+        },
+        {
+            "My Strange Addiction by Billie Eilish": {
+                "readability": 0.0652,
+                "uniqueness": 0.22800790921888872
+            }
+        },
+        {
+            "Xanny by Billie Eilish": {
+                "readability": 0.204,
+                "uniqueness": 0.13025827846444624
+            }
+        },
+        {
+            "Tequila by Dan + Shay": {
+                "readability": 0.2581,
+                "uniqueness": 0.1482201182657176
+            }
+        },
+        {
+            "Undrunk by FLETCHER": {
+                "readability": 0.28859999999999997,
+                "uniqueness": 0.1954602816936825
+            }
+        },
+        {
+            "My Bad by Khalid": {
+                "readability": 0.6065999999999999,
+                "uniqueness": 0.16685951044491676
+            }
+        },
+        {
+            "Outta My Head by Khalid With John Mayer": {
+                "readability": 0.09910000000000001,
+                "uniqueness": 0.22068484732017682
+            }
+        },
+        {
+            "Bad Luck by Khalid": {
+                "readability": 0.2818,
+                "uniqueness": 0.20318080226786933
+            }
+        },
+        {
+            "I Love You by Billie Eilish": {
+                "readability": 0.0,
+                "uniqueness": 0.16519513384361234
+            }
+        },
+        {
+            "Ilomilo by Billie Eilish": {
+                "readability": 0.0,
+                "uniqueness": 0.138886291952459
+            }
+        },
+        {
+            "Listen Before I Go by Billie Eilish": {
+                "readability": 0.593,
+                "uniqueness": 0.1355511044153102
+            }
+        },
+        {
+            "8 by Billie Eilish": {
+                "readability": 0.22089999999999999,
+                "uniqueness": 0.2325453038979635
+            }
+        },
+        {
+            "Lovely by Billie Eilish & Khalid": {
+                "readability": 0.0,
+                "uniqueness": 0.14852143627323702
+            }
+        },
+        {
+            "Undecided by Chris Brown": {
+                "readability": 0.9699,
+                "uniqueness": 0.27659089770197964
+            }
+        },
+        {
+            "Last Hurrah by Bebe Rexha": {
+                "readability": 0.3325,
+                "uniqueness": 0.14108175940031134
+            }
+        },
+        {
+            "Love Wins by Carrie Underwood": {
+                "readability": 0.3427,
+                "uniqueness": 0.19794468260511722
+            }
+        },
+        {
+            "Always Remember Us This Way by Lady Gaga": {
+                "readability": 0.0,
+                "uniqueness": 0.11378460990643467
+            }
+        },
+        {
+            "Needy by Ariana Grande": {
+                "readability": 0.502,
+                "uniqueness": 0.12858347985361138
+            }
+        },
+        {
+            "Love Someone by Lukas Graham": {
+                "readability": 0.0043,
+                "uniqueness": 0.14090704660613368
+            }
+        },
+        {
+            "NASA by Ariana Grande": {
+                "readability": 0.33590000000000003,
+                "uniqueness": 0.15853604153695605
+            }
+        },
+        {
+            "Imagine by Ariana Grande": {
+                "readability": 0.3089,
+                "uniqueness": 0.18468091965969968
+            }
+        },
+        {
+            "Bad Idea by Ariana Grande": {
+                "readability": 0.9431999999999999,
+                "uniqueness": 0.3720067664094604
+            }
+        },
+        {
+            "Bloodline by Ariana Grande": {
+                "readability": 0.3833,
+                "uniqueness": 0.14332840291602855
+            }
+        }
+    ],
+    "rap": [
+        {
+            "Who Want Smoke?? by Nardo Wick Featuring G Herbo, Lil Durk & 21 Savage": {
+                "readability": 0.7724,
+                "uniqueness": 0.2010214856990363
+            }
+        },
+        {
+            "Let's Go Brandon by Bryson Gray Featuring Tyson James & Chandler Crump": {
+                "readability": 0.2107,
+                "uniqueness": 0.1351845727632272
+            }
+        },
+        {
+            "Pepas by Farruko": {
+                "readability": 0.275,
+                "uniqueness": 0.17456676959568806
+            }
+        },
+        {
+            "Wockesha by Moneybagg Yo": {
+                "readability": 0.6573,
+                "uniqueness": 0.24119685985945924
+            }
+        },
+        {
+            "Lets Go Brandon by Loza Alexander": {
+                "readability": 0.5457,
+                "uniqueness": 0.18953333703726105
+            }
+        },
+        {
+            "Family Ties by Baby Keem & Kendrick Lamar": {
+                "readability": 0.6133,
+                "uniqueness": 0.24824557610547643
+            }
+        },
+        {
+            "My Boy by Elvie Shane": {
+                "readability": 0.6506000000000001,
+                "uniqueness": 0.23035170601783383
+            }
+        },
+        {
+            "Chosen by Blxst & Tyga Featuring Ty Dolla $ign": {
+                "readability": 0.6303,
+                "uniqueness": 0.24028604959604133
+            }
+        },
+        {
+            "Not In The Mood by Lil Tjay, Fivio Foreign & Kay Flock": {
+                "readability": 0.4238,
+                "uniqueness": 0.5190890286534412
+            }
+        },
+        {
+            "Pissed Me Off by Lil Durk": {
+                "readability": 1.0,
+                "uniqueness": 0.38360902480411113
+            }
+        },
+        {
+            "Switches & Dracs by Moneybagg Yo Featuring Lil Durk & EST Gee": {
+                "readability": 0.23440000000000003,
+                "uniqueness": 0.2250039184572327
+            }
+        },
+        {
+            "Too Easy by Gunna & Future": {
+                "readability": 1.0,
+                "uniqueness": 0.27049844145384494
+            }
+        },
+        {
+            "2055 by Sleepy Hallow": {
+                "readability": 0.8823000000000001,
+                "uniqueness": 0.1955031578523649
+            }
+        },
+        {
+            "Poke It Out by Wale Featuring J. Cole": {
+                "readability": 0.30210000000000004,
+                "uniqueness": 0.15662480152999492
+            }
+        },
+        {
+            "Praise God by Kanye West": {
+                "readability": 0.3461,
+                "uniqueness": 0.22525506382015514
+            }
+        },
+        {
+            "Scorpio by Moneybagg Yo": {
+                "readability": 0.4289,
+                "uniqueness": 0.11715157775989796
+            }
+        },
+        {
+            "Ain't Shit by Doja Cat": {
+                "readability": 0.7318000000000001,
+                "uniqueness": 0.14001836298095333
+            }
+        },
+        {
+            "Life Goes On by Oliver Tree": {
+                "readability": 0.5727,
+                "uniqueness": 0.16444633399514377
+            }
+        },
+        {
+            "Nevada by YoungBoy Never Broke Again": {
+                "readability": 0.7521,
+                "uniqueness": 0.17600596326247567
+            }
+        },
+        {
+            "Late At Night by Roddy Ricch": {
+                "readability": 0.522,
+                "uniqueness": 0.26917018705893553
+            }
+        },
+        {
+            "Rich N***a Shit by Young Thug With Juice WRLD": {
+                "readability": 0.7521,
+                "uniqueness": 0.2036660921862548
+            }
+        },
+        {
+            "Yonaguni by Bad Bunny": {
+                "readability": 0.44420000000000004,
+                "uniqueness": 0.38307193766065273
+            }
+        },
+        {
+            "Your Heart by Joyner Lucas & J. Cole": {
+                "readability": 0.9043000000000001,
+                "uniqueness": 0.15499237688711873
+            }
+        },
+        {
+            "Life Support by YoungBoy Never Broke Again": {
+                "readability": 1.0,
+                "uniqueness": 0.1741714815091486
+            }
+        },
+        {
+            "Bad Morning by YoungBoy Never Broke Again": {
+                "readability": 0.45770000000000005,
+                "uniqueness": 0.24313021114460162
+            }
+        },
+        {
+            "Butter by BTS": {
+                "readability": 0.7587999999999999,
+                "uniqueness": 0.19400522291447816
+            }
+        },
+        {
+            "On My Side by YoungBoy Never Broke Again": {
+                "readability": 0.813,
+                "uniqueness": 0.1942485496813943
+            }
+        },
+        {
+            "50 Shots by YoungBoy Never Broke Again": {
+                "readability": 0.8096,
+                "uniqueness": 0.2454012724898984
+            }
+        },
+        {
+            "Smoke Strong by YoungBoy Never Broke Again": {
+                "readability": 0.9246,
+                "uniqueness": 0.2264942819451157
+            }
+        },
+        {
+            "Break Or Make Me by YoungBoy Never Broke Again": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.22083780224915472
+            }
+        },
+        {
+            "I Can't Take It Back by YoungBoy Never Broke Again": {
+                "readability": 0.45770000000000005,
+                "uniqueness": 0.21068368366894566
+            }
+        },
+        {
+            "Forgiato by YoungBoy Never Broke Again": {
+                "readability": 0.0,
+                "uniqueness": 0.08108401499191147
+            }
+        },
+        {
+            "Rich Shit by YoungBoy Never Broke Again": {
+                "readability": 0.34950000000000003,
+                "uniqueness": 0.14948910244932212
+            }
+        },
+        {
+            "Baddest Thing by YoungBoy Never Broke Again": {
+                "readability": 0.6167,
+                "uniqueness": 0.3038380495799678
+            }
+        },
+        {
+            "Toxic Punk by YoungBoy Never Broke Again": {
+                "readability": 0.3258,
+                "uniqueness": 0.12792022503492442
+            }
+        },
+        {
+            "Lonely by DaBaby X Lil Wayne": {
+                "readability": 0.7994,
+                "uniqueness": 0.26825299775504147
+            }
+        },
+        {
+            "Off The Grid by Kanye West": {
+                "readability": 0.4391,
+                "uniqueness": 0.14573087550661085
+            }
+        },
+        {
+            "In Da Getto by J Balvin & Skrillex": {
+                "readability": 0.7994,
+                "uniqueness": 0.21352115757527193
+            }
+        },
+        {
+            "Range Brothers by Baby Keem & Kendrick Lamar": {
+                "readability": 0.7149,
+                "uniqueness": 0.2269836498322993
+            }
+        },
+        {
+            "Jail by Kanye West": {
+                "readability": 0.884,
+                "uniqueness": 0.34419989771356674
+            }
+        },
+        {
+            "Junya by Kanye West": {
+                "readability": 0.505,
+                "uniqueness": 0.21577313903384807
+            }
+        },
+        {
+            "Believe What I Say by Kanye West": {
+                "readability": 0.7724,
+                "uniqueness": 0.25619562882603203
+            }
+        },
+        {
+            "Jonah by Kanye West": {
+                "readability": 0.6759000000000001,
+                "uniqueness": 0.1554717852523847
+            }
+        },
+        {
+            "Jesus Lord by Kanye West": {
+                "readability": 0.4239,
+                "uniqueness": 0.21358181703605258
+            }
+        },
+        {
+            "Motley Crew by Post Malone": {
+                "readability": 0.8468000000000001,
+                "uniqueness": 0.2695756245456119
+            }
+        },
+        {
+            "Remote Control by Kanye West": {
+                "readability": 0.5254,
+                "uniqueness": 0.18805083059646258
+            }
+        },
+        {
+            "God Breathed by Kanye West": {
+                "readability": 0.4746,
+                "uniqueness": 0.2208150429221867
+            }
+        },
+        {
+            "Pure Souls by Kanye West": {
+                "readability": 0.4205,
+                "uniqueness": 0.22604702579885186
+            }
+        },
+        {
+            "No Child Left Behind by Kanye West": {
+                "readability": 0.7825,
+                "uniqueness": 0.19354575982262534
+            }
+        },
+        {
+            "Donda by Kanye West": {
+                "readability": 0.41369999999999996,
+                "uniqueness": 0.1802495016627274
+            }
+        },
+        {
+            "Keep My Spirit Alive by Kanye West": {
+                "readability": 0.7521,
+                "uniqueness": 0.1841294096806358
+            }
+        },
+        {
+            "Jail Pt 2 by Kanye West": {
+                "readability": 0.5964,
+                "uniqueness": 0.1910042981863983
+            }
+        },
+        {
+            "New Again by Kanye West": {
+                "readability": 0.434,
+                "uniqueness": 0.18893699747030962
+            }
+        },
+        {
+            "Come To Life by Kanye West": {
+                "readability": 0.7927,
+                "uniqueness": 0.22156688947861586
+            }
+        },
+        {
+            "Repeat It by Lil Tecca & Gunna": {
+                "readability": 0.0,
+                "uniqueness": 0.6467597795454029
+            }
+        },
+        {
+            "Matt Hardy 999 by Trippie Redd Featuring Juice WRLD": {
+                "readability": 0.7521,
+                "uniqueness": 0.17786329882406826
+            }
+        },
+        {
+            "Rapstar by Polo G": {
+                "readability": 0.0,
+                "uniqueness": 0.09596642160494954
+            }
+        },
+        {
+            "Rich MF by Trippie Redd Featuring Lil Durk & Polo G": {
+                "readability": 0.8231,
+                "uniqueness": 0.21761360408334313
+            }
+        },
+        {
+            "Already Won by Rod Wave Featuring Lil Durk": {
+                "readability": 0.3765,
+                "uniqueness": 0.17538719876485517
+            }
+        },
+        {
+            "Don't Go by Skrillex, Justin Bieber & Don Toliver": {
+                "readability": 0.5288,
+                "uniqueness": 0.23903064046596623
+            }
+        },
+        {
+            "Holy Smokes by Trippie Redd Featuring Lil Uzi Vert": {
+                "readability": 0.7219,
+                "uniqueness": 0.18313057619072126
+            }
+        },
+        {
+            "Miss The Rage by Trippie Redd & Playboi Carti": {
+                "readability": 1.0,
+                "uniqueness": 0.26668445954330594
+            }
+        },
+        {
+            "MP5 by Trippie Redd Featuring SoFaygo": {
+                "readability": 0.8532,
+                "uniqueness": 0.18248517981694595
+            }
+        },
+        {
+            "Danny Phantom by Trippie Redd Featuring XXXTENTACION": {
+                "readability": 0.7757999999999999,
+                "uniqueness": 0.39600287675994145
+            }
+        },
+        {
+            "What's Wrong by Rod Wave": {
+                "readability": 0.7825,
+                "uniqueness": 0.1738780233477028
+            }
+        },
+        {
+            "Demon Time by Trippie Redd Featuring Ski Mask The Slump God": {
+                "readability": 0.2953,
+                "uniqueness": 0.21715098759626808
+            }
+        },
+        {
+            "Time Heals by Rod Wave": {
+                "readability": 0.4543,
+                "uniqueness": 0.19550528312504892
+            }
+        },
+        {
+            "Mind Of Melvin by YNW Melly Featuring Lil Uzi Vert": {
+                "readability": 0.2852,
+                "uniqueness": 0.18164042027430263
+            }
+        },
+        {
+            "Hats Off by Lil Baby, Lil Durk & Travis Scott": {
+                "readability": 0.0,
+                "uniqueness": 0.5729321447437518
+            }
+        },
+        {
+            "Over The Top by Smiley Featuring Drake": {
+                "readability": 0.3833,
+                "uniqueness": 0.15640175069635043
+            }
+        },
+        {
+            "Brainwashed by Tom MacDonald": {
+                "readability": 0.41369999999999996,
+                "uniqueness": 0.13790610496191014
+            }
+        },
+        {
+            "WUSYANAME by Tyler, The Creator Featuring YoungBoy Never Broke Again & Ty Dolla $ign": {
+                "readability": 0.8366,
+                "uniqueness": 0.3371427112212757
+            }
+        },
+        {
+            "Outside by MO3 X OG Bobby Billions": {
+                "readability": 0.5761,
+                "uniqueness": 0.17465168403883943
+            }
+        },
+        {
+            "Ball If I Want To by DaBaby": {
+                "readability": 0.7115,
+                "uniqueness": 0.20183364771146453
+            }
+        },
+        {
+            "EPMD 2 by Nas Featuring Eminem & EPMD": {
+                "readability": 0.8637,
+                "uniqueness": 0.18411269289739354
+            }
+        },
+        {
+            "Lose by KSI x Lil Wayne": {
+                "readability": 0.34600000000000003,
+                "uniqueness": 0.15467498500604693
+            }
+        },
+        {
+            "Happier by Olivia Rodrigo": {
+                "readability": 0.9906,
+                "uniqueness": 0.19553359528199105
+            }
+        },
+        {
+            "From The Garden by Isaiah Rashad Featuring Lil Uzi Vert": {
+                "readability": 0.7081000000000001,
+                "uniqueness": 0.1995086523905513
+            }
+        },
+        {
+            "Gone by Dierks Bentley": {
+                "readability": 0.6167,
+                "uniqueness": 0.22609563809634076
+            }
+        },
+        {
+            "Red Light Green Light by DaBaby": {
+                "readability": 0.0,
+                "uniqueness": 0.12092352773302067
+            }
+        },
+        {
+            "Ski by Young Thug & Gunna": {
+                "readability": 0.2547,
+                "uniqueness": 0.2407606294905792
+            }
+        },
+        {
+            "Calling My Phone by Lil Tjay Featuring 6LACK": {
+                "readability": 0.7724,
+                "uniqueness": 0.19978982484997523
+            }
+        },
+        {
+            "Volando by Mora, Bad Bunny & Sech": {
+                "readability": 0.9043000000000001,
+                "uniqueness": 0.2649469177901661
+            }
+        },
+        {
+            "4 Da Gang by 42 Dugg & Roddy Ricch": {
+                "readability": 0.35960000000000003,
+                "uniqueness": 0.47471577862839304
+            }
+        },
+        {
+            "De Museo by Bad Bunny": {
+                "readability": 0.8739,
+                "uniqueness": 0.20496577377951006
+            }
+        },
+        {
+            "Track Star by Mooski": {
+                "readability": 0.9889,
+                "uniqueness": 0.27100264200389573
+            }
+        },
+        {
+            "Cry No More by G Herbo Featuring Polo G & Lil Tjay": {
+                "readability": 0.6201,
+                "uniqueness": 0.3174021575360134
+            }
+        },
+        {
+            "Juggernaut by Tyler, The Creator Featuring Lil Uzi Vert & Pharrell Williams": {
+                "readability": 0.7825,
+                "uniqueness": 0.4293456785664393
+            }
+        },
+        {
+            "Tell Em by Cochise & $NOT": {
+                "readability": 0.6167,
+                "uniqueness": 0.2853560854893823
+            }
+        },
+        {
+            "Lemonhead by Tyler, The Creator Featuring 42 Dugg": {
+                "readability": 0.5288,
+                "uniqueness": 0.16842510382822765
+            }
+        },
+        {
+            "Lumberjack by Tyler, The Creator": {
+                "readability": 0.44420000000000004,
+                "uniqueness": 0.15282443933236983
+            }
+        },
+        {
+            "Hot Wind Blows by Tyler, The Creator Featuring Lil Wayne": {
+                "readability": 0.769,
+                "uniqueness": 0.16003767119693424
+            }
+        },
+        {
+            "Corso by Tyler, The Creator": {
+                "readability": 0.6167,
+                "uniqueness": 0.17985073603617063
+            }
+        },
+        {
+            "Sir Baudelaire by Tyler, The Creator Featuring DJ Drama": {
+                "readability": 0.7047,
+                "uniqueness": 0.2293865571981899
+            }
+        },
+        {
+            "Sweet / I Thought You Wanted To Dance by Tyler, The Creator Featuring Brent Faiyaz & Fana Hues": {
+                "readability": 0.0,
+                "uniqueness": 0.14121895212893398
+            }
+        },
+        {
+            "Massa by Tyler, The Creator": {
+                "readability": 0.6844,
+                "uniqueness": 0.21096049378274248
+            }
+        },
+        {
+            "RunItUp by Tyler, The Creator Featuring Teezo Touchdown": {
+                "readability": 0.5592,
+                "uniqueness": 0.2525653243016928
+            }
+        },
+        {
+            "Manifesto by Tyler, The Creator Featuring Domo Genesis": {
+                "readability": 0.3664,
+                "uniqueness": 0.21572969108675102
+            }
+        },
+        {
+            "Wilshire by Tyler, The Creator": {
+                "readability": 0.7165,
+                "uniqueness": 0.22116423550036912
+            }
+        },
+        {
+            "Time Today by Moneybagg Yo": {
+                "readability": 0.5829,
+                "uniqueness": 0.2513363814850453
+            }
+        },
+        {
+            "Beat Box by SpotemGottem Featuring Pooh Shiesty Or DaBaby": {
+                "readability": 1.0,
+                "uniqueness": 0.4937416762743
+            }
+        },
+        {
+            "No Return by Polo G Featuring The Kid LAROI & Lil Durk": {
+                "readability": 0.4374,
+                "uniqueness": 0.19519830100026714
+            }
+        },
+        {
+            "No More Parties by Coi Leray Featuring Lil Durk": {
+                "readability": 0.7521,
+                "uniqueness": 0.16389684302217167
+            }
+        },
+        {
+            "Gang Gang by Polo G & Lil Wayne": {
+                "readability": 0.30210000000000004,
+                "uniqueness": 0.2158280392231173
+            }
+        },
+        {
+            "Still Runnin by Lil Baby, Lil Durk & Meek Mill": {
+                "readability": 0.6776000000000001,
+                "uniqueness": 0.32100502743529785
+            }
+        },
+        {
+            "How It Feels by Lil Baby & Lil Durk": {
+                "readability": 1.0,
+                "uniqueness": 0.45415398823688813
+            }
+        },
+        {
+            "Black Hearted by Polo G": {
+                "readability": 0.5253,
+                "uniqueness": 0.31378083439191673
+            }
+        },
+        {
+            "Painting Pictures by Polo G": {
+                "readability": 0.522,
+                "uniqueness": 0.23828492725199996
+            }
+        },
+        {
+            "Type Shit by Migos & Cardi B": {
+                "readability": 0.6776000000000001,
+                "uniqueness": 0.16606163096006124
+            }
+        },
+        {
+            "Clueless by Polo G Featuring Pop Smoke & Fivio Foreign": {
+                "readability": 0.9279999999999999,
+                "uniqueness": 0.12620047245428848
+            }
+        },
+        {
+            "Voice Of The Heroes by Lil Baby & Lil Durk": {
+                "readability": 0.7893000000000001,
+                "uniqueness": 0.250342481177434
+            }
+        },
+        {
+            "Heart Of A Giant by Polo G Featuring Rod Wave": {
+                "readability": 0.6912,
+                "uniqueness": 0.44453857308358447
+            }
+        },
+        {
+            "Party Lyfe by Polo G Featuring DaBaby": {
+                "readability": 0.5085000000000001,
+                "uniqueness": 0.14396831676770666
+            }
+        },
+        {
+            "Go Part 1 by Polo G Featuring G Herbo": {
+                "readability": 0.7487,
+                "uniqueness": 0.17295682710620705
+            }
+        },
+        {
+            "Epidemic by Polo G": {
+                "readability": 0.5355,
+                "uniqueness": 0.20968089859022224
+            }
+        },
+        {
+            "2040 by Lil Baby & Lil Durk": {
+                "readability": 0.6201,
+                "uniqueness": 0.19046505289271273
+            }
+        },
+        {
+            "Bloody Canvas by Polo G": {
+                "readability": 0.2615,
+                "uniqueness": 0.1480990959185782
+            }
+        },
+        {
+            "Who I Want by Lil Baby & Lil Durk": {
+                "readability": 0.231,
+                "uniqueness": 0.15303418035812194
+            }
+        },
+        {
+            "Back In Blood by Pooh Shiesty Featuring Lil Durk": {
+                "readability": 0.884,
+                "uniqueness": 0.19526526164487054
+            }
+        },
+        {
+            "Still Hood by Lil Baby & Lil Durk": {
+                "readability": 0.0,
+                "uniqueness": 0.16586076630828597
+            }
+        },
+        {
+            "Man Of My Word by Lil Baby & Lil Durk": {
+                "readability": 0.5728,
+                "uniqueness": 0.37487296725629804
+            }
+        },
+        {
+            "Medical by Lil Baby & Lil Durk": {
+                "readability": 0.44420000000000004,
+                "uniqueness": 0.1511865157868779
+            }
+        },
+        {
+            "Rich Off Pain by Lil Baby, Lil Durk & Rod Wave": {
+                "readability": 0.3859,
+                "uniqueness": 0.1018046440370866
+            }
+        },
+        {
+            "Lying by Lil Baby & Lil Durk": {
+                "readability": 0.9956999999999999,
+                "uniqueness": 0.21731546851545777
+            }
+        },
+        {
+            "Snowflakes by Tom MacDonald": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.2883140074081122
+            }
+        },
+        {
+            "That's Facts by Lil Baby & Lil Durk": {
+                "readability": 0.38670000000000004,
+                "uniqueness": 0.2246545926512784
+            }
+        },
+        {
+            "Please by Lil Baby & Lil Durk": {
+                "readability": 0.9788,
+                "uniqueness": 0.3612269785397055
+            }
+        },
+        {
+            "Up The Side by Lil Baby, Lil Durk & Young Thug": {
+                "readability": 0.6709,
+                "uniqueness": 0.2235076261190507
+            }
+        },
+        {
+            "Goosebumps by Travis Scott & HVME": {
+                "readability": 0.8671,
+                "uniqueness": 0.2643024689518936
+            }
+        },
+        {
+            "Solid by Young Thug & Gunna Featuring Drake": {
+                "readability": 0.7419,
+                "uniqueness": 0.4561370480007431
+            }
+        },
+        {
+            "Drankin N Smokin by Future & Lil Uzi Vert": {
+                "readability": 0.9384999999999999,
+                "uniqueness": 0.2006837455227989
+            }
+        },
+        {
+            "Botella Tras Botella by Gera MX + Christian Nodal": {
+                "readability": 0.2716,
+                "uniqueness": 0.25233793633979773
+            }
+        },
+        {
+            "100.mil' by J. Cole & Bas": {
+                "readability": 0.3697,
+                "uniqueness": 0.2934861567434336
+            }
+        },
+        {
+            "24 Hours by A Boogie Wit da Hoodie Featuring Lil Durk": {
+                "readability": 0.43060000000000004,
+                "uniqueness": 0.16705928256300842
+            }
+        },
+        {
+            "White Teeth by YoungBoy Never Broke Again": {
+                "readability": 0.0,
+                "uniqueness": 0.1278791235374567
+            }
+        },
+        {
+            "Street Runner by Rod Wave": {
+                "readability": 0.1295,
+                "uniqueness": 0.13826137842813072
+            }
+        },
+        {
+            "La Noche de Anoche by Bad Bunny & Rosalia": {
+                "readability": 0.5558,
+                "uniqueness": 0.12821942769155453
+            }
+        },
+        {
+            "Shottas (Lala) by Moneybagg Yo": {
+                "readability": 0.3934,
+                "uniqueness": 0.17182585237149792
+            }
+        },
+        {
+            "Never Left by Lil Tecca": {
+                "readability": 0.7927,
+                "uniqueness": 0.13759907641464345
+            }
+        },
+        {
+            "Crocodile Teeth by Nicki Minaj & Skillibeng": {
+                "readability": 0.7587999999999999,
+                "uniqueness": 0.2836993701845028
+            }
+        },
+        {
+            "Dakiti by Bad Bunny & Jhay Cortez": {
+                "readability": 0.9601000000000001,
+                "uniqueness": 0.18468862914485176
+            }
+        },
+        {
+            "Hard For The Next by Moneybagg Yo & Future": {
+                "readability": 1.0,
+                "uniqueness": 0.24933448222439494
+            }
+        },
+        {
+            "I Did It by DJ Khaled Featuring Post Malone, Megan Thee Stallion, Lil Baby & DaBaby": {
+                "readability": 0.37310000000000004,
+                "uniqueness": 0.21174558985556036
+            }
+        },
+        {
+            "Hellcats & Trackhawks by Lil Durk": {
+                "readability": 0.2243,
+                "uniqueness": 0.20641516702684293
+            }
+        },
+        {
+            "Richer by Rod Wave Featuring Polo G": {
+                "readability": 0.8992,
+                "uniqueness": 0.17275056769374217
+            }
+        },
+        {
+            "Headshot by Lil Tjay, Polo G & Fivio Foreign": {
+                "readability": 1.0,
+                "uniqueness": 0.26731953299490674
+            }
+        },
+        {
+            "Big Paper by DJ Khaled Featuring Cardi B": {
+                "readability": 0.8671,
+                "uniqueness": 0.30713225122488486
+            }
+        },
+        {
+            "Durag Activity by Baby Keem & Travis Scott": {
+                "readability": 0.34259999999999996,
+                "uniqueness": 0.18294111505724017
+            }
+        },
+        {
+            "Final Warning by NLE Choppa": {
+                "readability": 0.8197,
+                "uniqueness": 0.37485618666038134
+            }
+        },
+        {
+            "If Pain Was A Person by Moneybagg Yo": {
+                "readability": 0.8843000000000001,
+                "uniqueness": 0.3495785608042123
+            }
+        },
+        {
+            "Free Promo by Moneybagg Yo Featuring Polo G & Lil Durk": {
+                "readability": 0.1295,
+                "uniqueness": 0.1563243387033416
+            }
+        },
+        {
+            "Just Say Det by Moneybagg Yo": {
+                "readability": 0.7419,
+                "uniqueness": 0.17647633934198328
+            }
+        },
+        {
+            "Masterpiece by DaBaby": {
+                "readability": 1.0,
+                "uniqueness": 0.3750157853359575
+            }
+        },
+        {
+            "Clear Da Air by Moneybagg Yo": {
+                "readability": 0.8976000000000001,
+                "uniqueness": 0.26009861112009897
+            }
+        },
+        {
+            "Came And Saw by Young Thug Featuring Rowdy Rebel": {
+                "readability": 1.0,
+                "uniqueness": 0.22324749382072576
+            }
+        },
+        {
+            "Paid The Fine by Young Thug & Gunna Featuring Lil Baby & YTB Trench": {
+                "readability": 1.0,
+                "uniqueness": 0.22885862402365492
+            }
+        },
+        {
+            "Run It Up by Lil Tjay Featuring Offset & Moneybagg Yo": {
+                "readability": 0.769,
+                "uniqueness": 0.19533006374044143
+            }
+        },
+        {
+            "Slatty by Young Thug & Gunna Featuring Yak Gotti & Lil Duke": {
+                "readability": 1.0,
+                "uniqueness": 0.17636594868258929
+            }
+        },
+        {
+            "Big Purr (Prrdd) by Coi Leray & Pooh Shiesty": {
+                "readability": 0.4476,
+                "uniqueness": 0.19458681032638614
+            }
+        },
+        {
+            "Real As It Gets by Lil Baby Featuring EST Gee": {
+                "readability": 0.6065999999999999,
+                "uniqueness": 0.2546569107588702
+            }
+        },
+        {
+            "Whoopty by CJ": {
+                "readability": 0.44079999999999997,
+                "uniqueness": 0.16815056690199298
+            }
+        },
+        {
+            "Buss It by Erica Banks": {
+                "readability": 1.0,
+                "uniqueness": 0.2828361468987503
+            }
+        },
+        {
+            "SoulFly by Rod Wave": {
+                "readability": 0.8231,
+                "uniqueness": 0.2375961212539051
+            }
+        },
+        {
+            "Gone Till November by Rod Wave": {
+                "readability": 0.8332999999999999,
+                "uniqueness": 0.1749491829834089
+            }
+        },
+        {
+            "Pills & Billz by Rod Wave": {
+                "readability": 0.4036,
+                "uniqueness": 0.15367238605810768
+            }
+        },
+        {
+            "How The Game Go by Rod Wave": {
+                "readability": 0.9551000000000001,
+                "uniqueness": 0.21292292771772572
+            }
+        },
+        {
+            "OMDB by Rod Wave": {
+                "readability": 0.478,
+                "uniqueness": 0.18280836156558608
+            }
+        },
+        {
+            "Clouds by NF": {
+                "readability": 0.5795,
+                "uniqueness": 0.2623624667948591
+            }
+        },
+        {
+            "Shock Da World by Rod Wave": {
+                "readability": 0.857,
+                "uniqueness": 0.30840162144657635
+            }
+        },
+        {
+            "Sneaky Links by Rod Wave": {
+                "readability": 0.9991,
+                "uniqueness": 0.4141891724514184
+            }
+        },
+        {
+            "Neighbors by Pooh Shiesty Featuring BIG30": {
+                "readability": 0.6709,
+                "uniqueness": 0.2219331545537461
+            }
+        },
+        {
+            "Bandido by Myke Towers & Juhn": {
+                "readability": 0.28859999999999997,
+                "uniqueness": 0.22308836445531272
+            }
+        },
+        {
+            "Opp Stoppa by YBN Nahmir Featuring 21 Savage": {
+                "readability": 0.8231,
+                "uniqueness": 0.2199911791533476
+            }
+        },
+        {
+            "Still Trappin' by Lil Durk & King Von": {
+                "readability": 0.39,
+                "uniqueness": 0.16915318498820445
+            }
+        },
+        {
+            "Finesse Out The Gang Way by Lil Durk Featuring Lil Baby": {
+                "readability": 0.816,
+                "uniqueness": 0.1805004781686978
+            }
+        },
+        {
+            "Holy by Justin Bieber Featuring Chance The Rapper": {
+                "readability": 0.5051,
+                "uniqueness": 0.15888874066562275
+            }
+        },
+        {
+            "Life's A Mess II by Juice WRLD, Clever & Post Malone": {
+                "readability": 0.3224,
+                "uniqueness": 0.1750438918775766
+            }
+        },
+        {
+            "Lonely by Justin Bieber & benny blanco": {
+                "readability": 0.8353,
+                "uniqueness": 0.1490266564446914
+            }
+        },
+        {
+            "Hit Bout It by Lil Yachty Featuring Kodak Black": {
+                "readability": 0.9077,
+                "uniqueness": 0.20475676818662028
+            }
+        },
+        {
+            "ZaZa by 6ix9ine": {
+                "readability": 0.3901,
+                "uniqueness": 0.19675771511366238
+            }
+        },
+        {
+            "Bad Boy by Juice WRLD & Young Thug": {
+                "readability": 0.7199,
+                "uniqueness": 0.17649472221414353
+            }
+        },
+        {
+            "Rockstar by DaBaby Featuring Roddy Ricch": {
+                "readability": 0.5964,
+                "uniqueness": 0.19012143954250638
+            }
+        },
+        {
+            "GNF (OKOKOK) by Polo G": {
+                "readability": 0.5321,
+                "uniqueness": 0.2183329548084266
+            }
+        },
+        {
+            "Box Of Churches by Pooh Shiesty Featuring 21 Savage": {
+                "readability": 0.8045,
+                "uniqueness": 0.1793835794266597
+            }
+        },
+        {
+            "Dangerous by Morgan Wallen": {
+                "readability": 0.4645,
+                "uniqueness": 0.17008936942598024
+            }
+        },
+        {
+            "Warning by Morgan Wallen": {
+                "readability": 0.478,
+                "uniqueness": 0.14125796401839086
+            }
+        },
+        {
+            "Skin by Sabrina Carpenter": {
+                "readability": 0.6472,
+                "uniqueness": 0.18699389498483304
+            }
+        },
+        {
+            "Kanye Krazy by Lil Durk": {
+                "readability": 0.2987,
+                "uniqueness": 0.21048398991892495
+            }
+        },
+        {
+            "Backdoor by Lil Durk": {
+                "readability": 0.4239,
+                "uniqueness": 0.15125398939329798
+            }
+        },
+        {
+            "Fake Woke by Tom MacDonald": {
+                "readability": 0.478,
+                "uniqueness": 0.17973820731874265
+            }
+        },
+        {
+            "Mr. Right Now by 21 Savage & Metro Boomin Featuring Drake": {
+                "readability": 0.5897,
+                "uniqueness": 0.2111309315570477
+            }
+        },
+        {
+            "Kacey Talk by YoungBoy Never Broke Again": {
+                "readability": 0.6065999999999999,
+                "uniqueness": 0.19099872220337438
+            }
+        },
+        {
+            "Adderall (Corvette Corvette) by Popp Hunna": {
+                "readability": 0.8248000000000001,
+                "uniqueness": 0.1963593087457194
+            }
+        },
+        {
+            "Antes by Anuel AA & Ozuna": {
+                "readability": 0.7521,
+                "uniqueness": 0.18422105529021754
+            }
+        },
+        {
+            "Hawai by Maluma & The Weeknd": {
+                "readability": 0.5389,
+                "uniqueness": 0.30116545182543203
+            }
+        },
+        {
+            "Took Her To The O by King Von": {
+                "readability": 0.8299,
+                "uniqueness": 0.18067643231360223
+            }
+        },
+        {
+            "Wonder by Shawn Mendes": {
+                "readability": 0.8332999999999999,
+                "uniqueness": 0.1927706942267274
+            }
+        },
+        {
+            "Reminds Me Of You by The Kid LAROI & Juice WRLD": {
+                "readability": 0.1532,
+                "uniqueness": 0.2574442968624305
+            }
+        },
+        {
+            "Slay3r by Playboi Carti": {
+                "readability": 0.5355,
+                "uniqueness": 0.21265457710613672
+            }
+        },
+        {
+            "Go2DaMoon by Playboi Carti Featuring Kanye West": {
+                "readability": 0.7384999999999999,
+                "uniqueness": 0.19270008802982772
+            }
+        },
+        {
+            "Vamp Anthem by Playboi Carti": {
+                "readability": 0.8806,
+                "uniqueness": 0.22271107657170747
+            }
+        },
+        {
+            "New N3on by Playboi Carti": {
+                "readability": 0.8671,
+                "uniqueness": 0.17321200298968606
+            }
+        },
+        {
+            "Death Ain't Easy by Lil Durk": {
+                "readability": 0.48479999999999995,
+                "uniqueness": 0.18814496292732744
+            }
+        },
+        {
+            "M3tamorphosis by Playboi Carti Featuring Kid Cudi": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.2249154207004159
+            }
+        },
+        {
+            "Gnat by Eminem": {
+                "readability": 0.8332999999999999,
+                "uniqueness": 0.18750410365281392
+            }
+        },
+        {
+            "Tequila Shots by Kid Cudi": {
+                "readability": 0.5389,
+                "uniqueness": 0.17813661915420653
+            }
+        },
+        {
+            "She Knows This by Kid Cudi": {
+                "readability": 0.813,
+                "uniqueness": 0.194763472598376
+            }
+        },
+        {
+            "Happiness by Taylor Swift": {
+                "readability": 0.1431,
+                "uniqueness": 0.3238692670150017
+            }
+        },
+        {
+            "Show Out by Kid Cudi, Skepta & Pop Smoke": {
+                "readability": 0.8809999999999999,
+                "uniqueness": 0.19723794890344434
+            }
+        },
+        {
+            "Sad People by Kid Cudi": {
+                "readability": 0.3224,
+                "uniqueness": 0.21346902280061206
+            }
+        },
+        {
+            "Errbody by Lil Baby": {
+                "readability": 0.48479999999999995,
+                "uniqueness": 0.19467087689787338
+            }
+        },
+        {
+            "Beautiful Trip by Kid Cudi": {
+                "readability": 0.61,
+                "uniqueness": 0.22945238298148865
+            }
+        },
+        {
+            "Real Shit by Juice WRLD x benny blanco": {
+                "readability": 0.6336999999999999,
+                "uniqueness": 0.26755925261698615
+            }
+        },
+        {
+            "Life Goes On by BTS": {
+                "readability": 0.6675,
+                "uniqueness": 0.2086730810241298
+            }
+        },
+        {
+            "Martin & Gina by Polo G": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.192801474190483
+            }
+        },
+        {
+            "Practice by DaBaby": {
+                "readability": 0.7182,
+                "uniqueness": 0.2422163330352053
+            }
+        },
+        {
+            "Te Mudaste by Bad Bunny": {
+                "readability": 0.5558,
+                "uniqueness": 0.17420180658867485
+            }
+        },
+        {
+            "Said Sum by Moneybagg Yo": {
+                "readability": 0.6878,
+                "uniqueness": 0.1739450089295114
+            }
+        },
+        {
+            "Yo Visto Asi by Bad Bunny": {
+                "readability": 0.522,
+                "uniqueness": 0.23973708637861216
+            }
+        },
+        {
+            "Haciendo Que Me Amas by Bad Bunny": {
+                "readability": 0.5931000000000001,
+                "uniqueness": 0.4198851404108891
+            }
+        },
+        {
+            "Te Deseo Lo Mejor by Bad Bunny": {
+                "readability": 0.5964,
+                "uniqueness": 0.17816924098605824
+            }
+        },
+        {
+            "Booker T by Bad Bunny": {
+                "readability": 0.4069,
+                "uniqueness": 0.27604417430138745
+            }
+        },
+        {
+            "El Mundo Es Mio by Bad Bunny": {
+                "readability": 0.5288,
+                "uniqueness": 0.21015114263875737
+            }
+        },
+        {
+            "Hoy Cobre by Bad Bunny": {
+                "readability": 0.8231,
+                "uniqueness": 0.22579975115568995
+            }
+        },
+        {
+            "Maldita Pobreza by Bad Bunny": {
+                "readability": 0.5288,
+                "uniqueness": 0.19605546048986272
+            }
+        },
+        {
+            "La Droga by Bad Bunny": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.20204399735578907
+            }
+        },
+        {
+            "One Beer by HARDY Featuring Lauren Alaina & Devin Dawson": {
+                "readability": 0.5931000000000001,
+                "uniqueness": 0.6836775372783392
+            }
+        },
+        {
+            "Come & Go by Juice WRLD x Marshmello": {
+                "readability": 0.4374,
+                "uniqueness": 0.10823016974090852
+            }
+        },
+        {
+            "Franchise by Travis Scott Featuring Young Thug & M.I.A.": {
+                "readability": 1.0,
+                "uniqueness": 0.19265367920241844
+            }
+        },
+        {
+            "Shots Fired by Megan Thee Stallion": {
+                "readability": 0.38670000000000004,
+                "uniqueness": 0.17653126587192713
+            }
+        },
+        {
+            "U 2 Luv by Ne-Yo & Jeremih": {
+                "readability": 0.8062,
+                "uniqueness": 0.2599424381469101
+            }
+        },
+        {
+            "Wishing Well by Juice WRLD": {
+                "readability": 0.8062,
+                "uniqueness": 0.17805266975994974
+            }
+        },
+        {
+            "Circles by Megan Thee Stallion": {
+                "readability": 0.6979000000000001,
+                "uniqueness": 0.1701553268219173
+            }
+        },
+        {
+            "Stripes Like Burberry by Future & Lil Uzi Vert": {
+                "readability": 0.0,
+                "uniqueness": 0.11785775554767798
+            }
+        },
+        {
+            "Real Baby Pluto by Future & Lil Uzi Vert": {
+                "readability": 0.8231,
+                "uniqueness": 0.20963289746787941
+            }
+        },
+        {
+            "Marni On Me by Future & Lil Uzi Vert": {
+                "readability": 0.0,
+                "uniqueness": 0.12165411675560389
+            }
+        },
+        {
+            "Sleeping On The Floor by Future & Lil Uzi Vert": {
+                "readability": 0.1025,
+                "uniqueness": 0.12291715969554977
+            }
+        },
+        {
+            "Rockstar Chainz by Future": {
+                "readability": 0.613,
+                "uniqueness": 0.11605995676331976
+            }
+        },
+        {
+            "Bought A Bad Bitch by Future & Lil Uzi Vert": {
+                "readability": 0.8028,
+                "uniqueness": 0.20608756279041032
+            }
+        },
+        {
+            "Rags2Riches by Rod Wave Featuring ATR Son Son": {
+                "readability": 0.6609999999999999,
+                "uniqueness": 0.15200634806470947
+            }
+        },
+        {
+            "The Code by King Von Featuring Polo G": {
+                "readability": 0.5694,
+                "uniqueness": 0.2961145250899451
+            }
+        },
+        {
+            "Young Wheezy by NAV With Gunna": {
+                "readability": 0.7216,
+                "uniqueness": 0.24051811925674912
+            }
+        },
+        {
+            "Weeeeee by Trippie Redd": {
+                "readability": 0.23440000000000003,
+                "uniqueness": 0.1961847062816992
+            }
+        },
+        {
+            "Thick by DJ Chose Featuring BeatKing": {
+                "readability": 0.7012999999999999,
+                "uniqueness": 0.2329037475928249
+            }
+        },
+        {
+            "Circles by Post Malone": {
+                "readability": 0.4476,
+                "uniqueness": 0.1826044807069094
+            }
+        },
+        {
+            "Dreams by Fleetwood Mac": {
+                "readability": 0.5863,
+                "uniqueness": 0.16990264600473476
+            }
+        },
+        {
+            "The Bigger Picture by Lil Baby": {
+                "readability": 0.6472,
+                "uniqueness": 0.13049211817326725
+            }
+        },
+        {
+            "Whole Lotta Choppas by Sada Baby Featuring Nicki Minaj": {
+                "readability": 0.4239,
+                "uniqueness": 0.17722399616765933
+            }
+        },
+        {
+            "Un Dia (One Day) by J Balvin, Dua Lipa, Bad Bunny & Tainy": {
+                "readability": 0.2446,
+                "uniqueness": 0.13199371482175304
+            }
+        },
+        {
+            "Glock In My Lap by 21 Savage & Metro Boomin": {
+                "readability": 0.5592,
+                "uniqueness": 0.13475403015473444
+            }
+        },
+        {
+            "Smile by Juice WRLD & The Weeknd": {
+                "readability": 0.6746,
+                "uniqueness": 0.1372868124264388
+            }
+        },
+        {
+            "3 Headed Goat by Lil Durk Featuring Lil Baby & Polo G": {
+                "readability": 0.7453,
+                "uniqueness": 0.34411183838156717
+            }
+        },
+        {
+            "La Jeepeta by Nio Garcia x Anuel AA x Myke Towers x Brray x Juanka": {
+                "readability": 0.8471,
+                "uniqueness": 0.21011602646763292
+            }
+        },
+        {
+            "Dollaz On My Head by Gunna Featuring Young Thug": {
+                "readability": 0.6353,
+                "uniqueness": 0.18885898213373944
+            }
+        },
+        {
+            "Rich N*gga Sh*t by 21 Savage & Metro Boomin Featuring Young Thug": {
+                "readability": 0.23440000000000003,
+                "uniqueness": 0.11959937589212663
+            }
+        },
+        {
+            "Slidin by 21 Savage & Metro Boomin": {
+                "readability": 0.8164,
+                "uniqueness": 0.27960959214598724
+            }
+        },
+        {
+            "My Dawg by 21 Savage & Metro Boomin": {
+                "readability": 0.8972,
+                "uniqueness": 0.12586175711257308
+            }
+        },
+        {
+            "Brand New Draco by 21 Savage & Metro Boomin": {
+                "readability": 0.0,
+                "uniqueness": 0.12862887139166432
+            }
+        },
+        {
+            "Snitches & Rats by 21 Savage & Metro Boomin Featuring Young Nudy": {
+                "readability": 0.1363,
+                "uniqueness": 0.20685891397817288
+            }
+        },
+        {
+            "No Opp Left Behind by 21 Savage & Metro Boomin": {
+                "readability": 0.6827,
+                "uniqueness": 0.14373447460242286
+            }
+        },
+        {
+            "Steppin On N*ggas by 21 Savage & Metro Boomin": {
+                "readability": 0.275,
+                "uniqueness": 0.29674038113410117
+            }
+        },
+        {
+            "RIP Luv by 21 Savage & Metro Boomin": {
+                "readability": 0.363,
+                "uniqueness": 0.2192158692603423
+            }
+        },
+        {
+            "Said N Done by 21 Savage & Metro Boomin": {
+                "readability": 0.6979000000000001,
+                "uniqueness": 0.13091591778746461
+            }
+        },
+        {
+            "Life Is Good by Future Featuring Drake": {
+                "readability": 0.0,
+                "uniqueness": 0.17410193891821793
+            }
+        },
+        {
+            "We Paid by Lil Baby & 42 Dugg": {
+                "readability": 0.3461,
+                "uniqueness": 0.144476519934648
+            }
+        },
+        {
+            "Over Now by Calvin Harris X The Weeknd": {
+                "readability": 0.5389,
+                "uniqueness": 0.1491931046842815
+            }
+        },
+        {
+            "Blueberry Faygo by Lil Mosey": {
+                "readability": 0.7724,
+                "uniqueness": 0.18677663098323008
+            }
+        },
+        {
+            "My Window by YoungBoy Never Broke Again Featuring Lil Wayne": {
+                "readability": 0.0,
+                "uniqueness": 0.11595958567693171
+            }
+        },
+        {
+            "When You Down by Lil Tecca & Polo G Featuring Lil Durk": {
+                "readability": 0.6742,
+                "uniqueness": 0.1459563865009613
+            }
+        },
+        {
+            "Drug Addiction by YoungBoy Never Broke Again": {
+                "readability": 0.319,
+                "uniqueness": 0.13722086873470046
+            }
+        },
+        {
+            "All In by YoungBoy Never Broke Again": {
+                "readability": 0.544,
+                "uniqueness": 0.12968377243041004
+            }
+        },
+        {
+            "Dead Trollz by YoungBoy Never Broke Again": {
+                "readability": 0.0,
+                "uniqueness": 0.15333385462633078
+            }
+        },
+        {
+            "Cross Roads by YoungBoy Never Broke Again": {
+                "readability": 0.0,
+                "uniqueness": 0.10210904257376535
+            }
+        },
+        {
+            "The Last Backyard... by YoungBoy Never Broke Again": {
+                "readability": 1.0,
+                "uniqueness": 0.3160701522588672
+            }
+        },
+        {
+            "Right Foot Creep by YoungBoy Never Broke Again": {
+                "readability": 0.0,
+                "uniqueness": 0.09797813774345462
+            }
+        },
+        {
+            "Lets Link by WhoHeem": {
+                "readability": 0.0,
+                "uniqueness": 0.10420218531372738
+            }
+        },
+        {
+            "Dirty Stick by YoungBoy Never Broke Again": {
+                "readability": 0.0,
+                "uniqueness": 0.10528191852347774
+            }
+        },
+        {
+            "Death Bed by Powfu Featuring beabadoobee": {
+                "readability": 0.9111,
+                "uniqueness": 0.19226756578105203
+            }
+        },
+        {
+            "Party Girl by StaySolidRocky": {
+                "readability": 0.6032,
+                "uniqueness": 0.15720029466399246
+            }
+        },
+        {
+            "Expensive by Ty Dolla $ign Featuring Nicki Minaj": {
+                "readability": 0.5694,
+                "uniqueness": 0.15593033887876742
+            }
+        },
+        {
+            "Done by Chris Janson": {
+                "readability": 0.5355,
+                "uniqueness": 0.15070697148086465
+            }
+        },
+        {
+            "Girl Of My Dreams by Rod Wave": {
+                "readability": 0.5897,
+                "uniqueness": 0.18250246900447198
+            }
+        },
+        {
+            "The Box by Roddy Ricch": {
+                "readability": 0.6809999999999999,
+                "uniqueness": 0.2357687321276213
+            }
+        },
+        {
+            "Hate The Other Side by Juice WRLD & Marshmello Featuring Polo G & The Kid LAROI": {
+                "readability": 0.9279999999999999,
+                "uniqueness": 0.5209246253204107
+            }
+        },
+        {
+            "Emotionally Scarred by Lil Baby": {
+                "readability": 0.61,
+                "uniqueness": 0.25939146620163256
+            }
+        },
+        {
+            "Mamacita by Black Eyed Peas, Ozuna + J.Rey Soul": {
+                "readability": 0.7622,
+                "uniqueness": 0.23353241684266413
+            }
+        },
+        {
+            "Conversations by Juice WRLD": {
+                "readability": 0.478,
+                "uniqueness": 0.1453208965559274
+            }
+        },
+        {
+            "Righteous by Juice WRLD": {
+                "readability": 0.45770000000000005,
+                "uniqueness": 0.17126999001262339
+            }
+        },
+        {
+            "Letter From Houston by Rod Wave": {
+                "readability": 0.6809999999999999,
+                "uniqueness": 0.20084710107012363
+            }
+        },
+        {
+            "Freestyle by Rod Wave": {
+                "readability": 0.2412,
+                "uniqueness": 0.21176842229885898
+            }
+        },
+        {
+            "Life's A Mess by Juice WRLD X Halsey": {
+                "readability": 0.8918,
+                "uniqueness": 0.17244466134917516
+            }
+        },
+        {
+            "Walk Em Down by NLE Choppa Featuring Roddy Ricch": {
+                "readability": 0.40020000000000006,
+                "uniqueness": 0.4512018594354194
+            }
+        },
+        {
+            "No Dribble by DaBaby x Stunna 4 Vegas": {
+                "readability": 0.0,
+                "uniqueness": 0.1370351534632783
+            }
+        },
+        {
+            "Blood On My Jeans by Juice WRLD": {
+                "readability": 0.7273000000000001,
+                "uniqueness": 0.09985472374287924
+            }
+        },
+        {
+            "Lion King On Ice by J. Cole": {
+                "readability": 0.5710000000000001,
+                "uniqueness": 0.14494794269582822
+            }
+        },
+        {
+            "Peace by Taylor Swift": {
+                "readability": 0.6743000000000001,
+                "uniqueness": 0.29139121056438627
+            }
+        },
+        {
+            "Titanic by Juice WRLD": {
+                "readability": 0.40020000000000006,
+                "uniqueness": 0.3566356981356581
+            }
+        },
+        {
+            "Bad Energy by Juice WRLD": {
+                "readability": 0.7927,
+                "uniqueness": 0.34443687044287613
+            }
+        },
+        {
+            "Tell Me U Luv Me by Juice WRLD & Trippie Redd": {
+                "readability": 0.6404000000000001,
+                "uniqueness": 0.1557357519317092
+            }
+        },
+        {
+            "Up Up And Away by Juice WRLD": {
+                "readability": 0.3833,
+                "uniqueness": 0.13733800312177646
+            }
+        },
+        {
+            "Fighting Demons by Juice WRLD": {
+                "readability": 0.7318000000000001,
+                "uniqueness": 0.19173281100301845
+            }
+        },
+        {
+            "Screw Juice by Juice WRLD": {
+                "readability": 0.0754,
+                "uniqueness": 0.1540494734578066
+            }
+        },
+        {
+            "The Adventures Of Moon Man & Slim Shady by Kid Cudi & Eminem": {
+                "readability": 0.8972,
+                "uniqueness": 0.15126512763590408
+            }
+        },
+        {
+            "Gangstas by Pop Smoke": {
+                "readability": 0.6912,
+                "uniqueness": 0.29651179490111645
+            }
+        },
+        {
+            "Gooba by 6ix9ine": {
+                "readability": 0.5186,
+                "uniqueness": 0.14145384493021124
+            }
+        },
+        {
+            "High Fashion by Roddy Ricch Featuring Mustard": {
+                "readability": 0.8464,
+                "uniqueness": 0.14761419144299742
+            }
+        },
+        {
+            "Wash Us In The Blood by Kanye West Featuring Travis Scott": {
+                "readability": 0.30210000000000004,
+                "uniqueness": 0.1356211746271993
+            }
+        },
+        {
+            "Trollz by 6ix9ine & Nicki Minaj": {
+                "readability": 0.027999999999999997,
+                "uniqueness": 0.12059255212994985
+            }
+        },
+        {
+            "Yo Perreo Sola by Bad Bunny": {
+                "readability": 0.16,
+                "uniqueness": 0.1255573893795048
+            }
+        },
+        {
+            "Grace by Lil Baby & 42 Dugg": {
+                "readability": 0.0,
+                "uniqueness": 0.1153370514374908
+            }
+        },
+        {
+            "Believe It by PARTYNEXTDOOR & Rihanna": {
+                "readability": 0.5694,
+                "uniqueness": 0.21917685289900332
+            }
+        },
+        {
+            "X by Jonas Brothers Featuring Karol G": {
+                "readability": 0.6335999999999999,
+                "uniqueness": 0.20346423869101493
+            }
+        },
+        {
+            "Shotta Flow 5 by NLE Choppa": {
+                "readability": 0.5998,
+                "uniqueness": 0.1593215447224394
+            }
+        },
+        {
+            "Snow On Tha Bluff by J. Cole": {
+                "readability": 0.5694,
+                "uniqueness": 0.18874035682345705
+            }
+        },
+        {
+            "Bleed by A Boogie Wit da Hoodie": {
+                "readability": 0.5186,
+                "uniqueness": 0.13719465314457915
+            }
+        },
+        {
+            "One Shot by YoungBoy Never Broke Again Featuring Lil Baby": {
+                "readability": 0.3393,
+                "uniqueness": 0.15986215837496273
+            }
+        },
+        {
+            "All In by Lil Baby": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.16530794275710434
+            }
+        },
+        {
+            "Heartless by Diplo Presents Thomas Wesley Featuring Morgan Wallen": {
+                "readability": 0.3461,
+                "uniqueness": 0.13568368567260108
+            }
+        },
+        {
+            "Deep End Freestyle by Sleepy Hallow": {
+                "readability": 0.4882,
+                "uniqueness": 0.16254345427919
+            }
+        },
+        {
+            "Out West by JACKBOYS Featuring Young Thug": {
+                "readability": 0.9246,
+                "uniqueness": 0.14320801667374608
+            }
+        },
+        {
+            "Turks by NAV, Gunna & Travis Scott": {
+                "readability": 0.0,
+                "uniqueness": 0.13701710894602118
+            }
+        },
+        {
+            "Cooler Than A Bitch by Gunna Featuring Roddy Ricch": {
+                "readability": 0.0,
+                "uniqueness": 0.13926370757383574
+            }
+        },
+        {
+            "Trillionaire by Future Featuring YoungBoy Never Broke Again": {
+                "readability": 0.8434,
+                "uniqueness": 0.19326680041873864
+            }
+        },
+        {
+            "Godzilla by Eminem Featuring Juice WRLD": {
+                "readability": 0.3833,
+                "uniqueness": 0.1322423282155222
+            }
+        },
+        {
+            "T.D by Lil Yachty & Tierra Whack Featuring A$AP Rocky & Tyler, The Creator": {
+                "readability": 0.5490999999999999,
+                "uniqueness": 0.14409059704269578
+            }
+        },
+        {
+            "Hasta Que Dios Diga by Anuel AA & Bad Bunny": {
+                "readability": 1.0,
+                "uniqueness": 0.27570035258440717
+            }
+        },
+        {
+            "Sigues Con El by Arcangel x Sech": {
+                "readability": 0.1837,
+                "uniqueness": 0.1409623826096758
+            }
+        },
+        {
+            "Solitaires by Future Featuring Travis Scott": {
+                "readability": 0.0,
+                "uniqueness": 0.12396786882937497
+            }
+        },
+        {
+            "Sum 2 Prove by Lil Baby": {
+                "readability": 0.9584999999999999,
+                "uniqueness": 0.15817643699243283
+            }
+        },
+        {
+            "Top Floor by Gunna Featuring Travis Scott": {
+                "readability": 0.0,
+                "uniqueness": 0.14483783127798527
+            }
+        },
+        {
+            "Wunna by Gunna": {
+                "readability": 0.3156,
+                "uniqueness": 0.15763260842614643
+            }
+        },
+        {
+            "Blindfold by Gunna Featuring Lil Baby": {
+                "readability": 0.0,
+                "uniqueness": 0.10648797700099753
+            }
+        },
+        {
+            "SkyBox by Gunna": {
+                "readability": 0.18030000000000002,
+                "uniqueness": 0.12590673100477828
+            }
+        },
+        {
+            "Argentina by Gunna": {
+                "readability": 0.3054,
+                "uniqueness": 0.1546688557654958
+            }
+        },
+        {
+            "Met Gala by Gunna": {
+                "readability": 0.434,
+                "uniqueness": 0.15705547853989688
+            }
+        },
+        {
+            "Daechwita by Agust D": {
+                "readability": 0.0,
+                "uniqueness": 0.11067976169302579
+            }
+        },
+        {
+            "Nasty Girl / On Camera by Gunna": {
+                "readability": 0.4239,
+                "uniqueness": 0.14828550153861322
+            }
+        },
+        {
+            "MOTW by Gunna": {
+                "readability": 0.3697,
+                "uniqueness": 0.3543491610527287
+            }
+        },
+        {
+            "Gimmick by Gunna": {
+                "readability": 0.7352,
+                "uniqueness": 0.40194881891806
+            }
+        },
+        {
+            "Go Stupid by Polo G Featuring NLE Choppa & Stunna 4 Vegas": {
+                "readability": 0.8434,
+                "uniqueness": 0.15939498539874994
+            }
+        },
+        {
+            "Be Something by Polo G Featuring Lil Baby": {
+                "readability": 0.8976000000000001,
+                "uniqueness": 0.2124663628871272
+            }
+        },
+        {
+            "Feigning by Gunna": {
+                "readability": 0.0,
+                "uniqueness": 0.11106930477435493
+            }
+        },
+        {
+            "Trapped In The Sun by Future": {
+                "readability": 0.0,
+                "uniqueness": 0.09300307392097597
+            }
+        },
+        {
+            "Hard To Choose One by Future": {
+                "readability": 0.6573,
+                "uniqueness": 0.16546717174908193
+            }
+        },
+        {
+            "Ridin Strikers by Future": {
+                "readability": 0.5223,
+                "uniqueness": 0.14027074240568763
+            }
+        },
+        {
+            "Hitek Tek by Future": {
+                "readability": 0.6912,
+                "uniqueness": 0.14281511953145476
+            }
+        },
+        {
+            "Too Comfortable by Future": {
+                "readability": 0.0,
+                "uniqueness": 0.08574404463358509
+            }
+        },
+        {
+            "Posted With Demons by Future": {
+                "readability": 0.4036,
+                "uniqueness": 0.14353157442705153
+            }
+        },
+        {
+            "Touch The Sky by Future": {
+                "readability": 0.5223,
+                "uniqueness": 0.144606762363997
+            }
+        },
+        {
+            "One Of My by Future": {
+                "readability": 0.0,
+                "uniqueness": 0.10844346011634702
+            }
+        },
+        {
+            "Harlem Shake by Future Featuring Young Thug": {
+                "readability": 0.8518000000000001,
+                "uniqueness": 0.2133680072208533
+            }
+        },
+        {
+            "Beautiful Pain (Losin My Mind) by Polo G": {
+                "readability": 0.3122,
+                "uniqueness": 0.1355188056499505
+            }
+        },
+        {
+            "Me Vs Me by Moneybagg Yo": {
+                "readability": 0.3765,
+                "uniqueness": 0.1286479472387618
+            }
+        },
+        {
+            "Heart On Ice by Rod Wave": {
+                "readability": 0.17010000000000003,
+                "uniqueness": 0.1736651746873259
+            }
+        },
+        {
+            "Zoo York by Lil Tjay Featuring Fivio Foreign & Pop Smoke": {
+                "readability": 0.8536,
+                "uniqueness": 0.13554294337838232
+            }
+        },
+        {
+            "D4L by Future, Drake & Young Thug": {
+                "readability": 0.4949,
+                "uniqueness": 0.24131032321282628
+            }
+        },
+        {
+            "Viral Moment by Lil Durk": {
+                "readability": 0.8332999999999999,
+                "uniqueness": 0.19191247166795708
+            }
+        },
+        {
+            "Losses by Drake": {
+                "readability": 0.7149,
+                "uniqueness": 0.3432759457481875
+            }
+        },
+        {
+            "Social Distancing by Lil Baby": {
+                "readability": 0.18030000000000002,
+                "uniqueness": 0.14372060952853666
+            }
+        },
+        {
+            "Low Down by Lil Baby": {
+                "readability": 0.61,
+                "uniqueness": 0.14818588760757798
+            }
+        },
+        {
+            "Humble by Lil Baby": {
+                "readability": 0.38670000000000004,
+                "uniqueness": 0.15530740664425527
+            }
+        },
+        {
+            "Heatin Up by Lil Baby & Gunna": {
+                "readability": 0.42219999999999996,
+                "uniqueness": 0.09714758872210809
+            }
+        },
+        {
+            "Heartless by The Weeknd": {
+                "readability": 0.13699999999999998,
+                "uniqueness": 0.12313018901195324
+            }
+        },
+        {
+            "HIGHEST IN THE ROOM by Travis Scott": {
+                "readability": 0.38670000000000004,
+                "uniqueness": 0.13986560688481747
+            }
+        },
+        {
+            "Goosebumps by Travis Scott": {
+                "readability": 0.6303,
+                "uniqueness": 0.2245351949731323
+            }
+        },
+        {
+            "Sasuke by Lil Uzi Vert": {
+                "readability": 0.4171,
+                "uniqueness": 0.1840215526282156
+            }
+        },
+        {
+            "Myron by Lil Uzi Vert": {
+                "readability": 0.3122,
+                "uniqueness": 0.14718617872733047
+            }
+        },
+        {
+            "Bout My Business by YoungBoy Never Broke Again Featuring Sherhonda Gaulden": {
+                "readability": 0.19039999999999999,
+                "uniqueness": 0.18271878772192204
+            }
+        },
+        {
+            "Rough Ryder by YoungBoy Never Broke Again": {
+                "readability": 0.0757,
+                "uniqueness": 0.10785742373534303
+            }
+        },
+        {
+            "PTSD by G Herbo Featuring Chance The Rapper, Juice WRLD & Lil Uzi Vert": {
+                "readability": 0.6404000000000001,
+                "uniqueness": 0.19258007906257635
+            }
+        },
+        {
+            "Thug Of Spades by YoungBoy Never Broke Again Featuring DaBaby": {
+                "readability": 0.23440000000000003,
+                "uniqueness": 0.13809323248889083
+            }
+        },
+        {
+            "Safaera by Bad Bunny, Jowell & Randy & Nengo Flow": {
+                "readability": 0.26489999999999997,
+                "uniqueness": 0.20861822538113
+            }
+        },
+        {
+            "@ MEH by Playboi Carti": {
+                "readability": 0.0,
+                "uniqueness": 0.17176886944734876
+            }
+        },
+        {
+            "BOP by DaBaby": {
+                "readability": 0.8329000000000001,
+                "uniqueness": 0.13579958048726912
+            }
+        },
+        {
+            "LIGHTSKIN SH*T by DaBaby Featuring Future & jetsonmade": {
+                "readability": 0.3325,
+                "uniqueness": 0.15212944003969112
+            }
+        },
+        {
+            "BEST ON EARTH by Russ & BIA": {
+                "readability": 0.3917,
+                "uniqueness": 0.11301217182039179
+            }
+        },
+        {
+            "BLAME IT ON BABY by DaBaby": {
+                "readability": 0.7323999999999999,
+                "uniqueness": 0.15771396746008154
+            }
+        },
+        {
+            "CHAMPION by DaBaby": {
+                "readability": 0.0,
+                "uniqueness": 0.1028078169286248
+            }
+        },
+        {
+            "Suicidal by YNW Melly & Juice WRLD": {
+                "readability": 0.9279999999999999,
+                "uniqueness": 0.19869267662881623
+            }
+        },
+        {
+            "The Other Side by SZA X Justin Timberlake": {
+                "readability": 0.0771,
+                "uniqueness": 0.10737347547753483
+            }
+        },
+        {
+            "DND by Polo G": {
+                "readability": 0.8468000000000001,
+                "uniqueness": 0.2375445277520208
+            }
+        },
+        {
+            "The Man by Taylor Swift": {
+                "readability": 0.8079000000000001,
+                "uniqueness": 0.1493523055216538
+            }
+        },
+        {
+            "Oprah's Bank Account by Lil Yachty, Drake & DaBaby": {
+                "readability": 0.5423,
+                "uniqueness": 0.30461320620162
+            }
+        },
+        {
+            "P2 by Lil Uzi Vert": {
+                "readability": 0.6536,
+                "uniqueness": 0.18961358745983742
+            }
+        },
+        {
+            "Pray 4 Love by Rod Wave": {
+                "readability": 0.0,
+                "uniqueness": 0.12365598497296369
+            }
+        },
+        {
+            "Thief In The Night by Rod Wave": {
+                "readability": 0.2243,
+                "uniqueness": 0.14333247965771123
+            }
+        },
+        {
+            "Tycoon by Future": {
+                "readability": 0.3122,
+                "uniqueness": 0.25253963473980123
+            }
+        },
+        {
+            "The Greatest by Rod Wave": {
+                "readability": 0.0348,
+                "uniqueness": 0.213297365523375
+            }
+        },
+        {
+            "Ribbon In The Sky by Rod Wave": {
+                "readability": 0.615,
+                "uniqueness": 0.12778386814028408
+            }
+        },
+        {
+            "Thug Life by Rod Wave": {
+                "readability": 0.0,
+                "uniqueness": 0.1514977718676662
+            }
+        },
+        {
+            "No Weakness by Rod Wave": {
+                "readability": 0.9652,
+                "uniqueness": 0.1978702095736162
+            }
+        },
+        {
+            "Woah by Lil Baby": {
+                "readability": 0.0,
+                "uniqueness": 0.12922237087188645
+            }
+        },
+        {
+            "Loyal by PARTYNEXTDOOR Featuring Drake": {
+                "readability": 0.8367,
+                "uniqueness": 0.385908410992762
+            }
+        },
+        {
+            "Make No Sense by YoungBoy Never Broke Again": {
+                "readability": 0.09230000000000001,
+                "uniqueness": 0.14701757512846786
+            }
+        },
+        {
+            "La Dificil by Bad Bunny": {
+                "readability": 0.4864,
+                "uniqueness": 0.12230313906742662
+            }
+        },
+        {
+            "Si Veo A Tu Mama by Bad Bunny": {
+                "readability": 0.7521,
+                "uniqueness": 0.13055440842766097
+            }
+        },
+        {
+            "Vete by Bad Bunny": {
+                "readability": 0.3765,
+                "uniqueness": 0.1582177528684682
+            }
+        },
+        {
+            "Baby Pluto by Lil Uzi Vert": {
+                "readability": 0.6455,
+                "uniqueness": 0.13019457266578197
+            }
+        },
+        {
+            "Bean (Kobe) by Lil Uzi Vert Featuring Chief Keef": {
+                "readability": 0.2141,
+                "uniqueness": 0.14461359472123225
+            }
+        },
+        {
+            "Lo Mein by Lil Uzi Vert": {
+                "readability": 0.7521,
+                "uniqueness": 0.23697098395813723
+            }
+        },
+        {
+            "Yessirskiii by Lil Uzi Vert & 21 Savage": {
+                "readability": 0.22760000000000002,
+                "uniqueness": 0.1988775535637131
+            }
+        },
+        {
+            "Silly Watch by Lil Uzi Vert": {
+                "readability": 0.7774,
+                "uniqueness": 0.18281199784435753
+            }
+        },
+        {
+            "Wassup by Lil Uzi Vert Featuring Future": {
+                "readability": 0.5423,
+                "uniqueness": 0.18864317596870084
+            }
+        },
+        {
+            "Strawberry Peels by Lil Uzi Vert Featuring Young Thug & Gunna": {
+                "readability": 0.6235,
+                "uniqueness": 0.20852048487299632
+            }
+        },
+        {
+            "Moon Relate by Lil Uzi Vert": {
+                "readability": 0.22089999999999999,
+                "uniqueness": 0.13201567916725654
+            }
+        },
+        {
+            "I Can Show You by Lil Uzi Vert": {
+                "readability": 0.5490999999999999,
+                "uniqueness": 0.16059298337285224
+            }
+        },
+        {
+            "Trap This Way (This Way) by Lil Uzi Vert": {
+                "readability": 0.6640999999999999,
+                "uniqueness": 0.2817592941440899
+            }
+        },
+        {
+            "Leaders by Lil Uzi Vert Featuring NAV": {
+                "readability": 0.7216,
+                "uniqueness": 0.3147760728460035
+            }
+        },
+        {
+            "No Auto by Lil Uzi Vert Featuring Lil Durk": {
+                "readability": 0.0,
+                "uniqueness": 0.08298467781399421
+            }
+        },
+        {
+            "Homecoming by Lil Uzi Vert": {
+                "readability": 0.6607,
+                "uniqueness": 0.25834741456031474
+            }
+        },
+        {
+            "Come This Way by Lil Uzi Vert": {
+                "readability": 0.7622,
+                "uniqueness": 0.2208471953883255
+            }
+        },
+        {
+            "Got The Guap by Lil Uzi Vert Featuring Young Thug": {
+                "readability": 0.7351000000000001,
+                "uniqueness": 0.25603662128200755
+            }
+        },
+        {
+            "Money Spread by Lil Uzi Vert Featuring Young Nudy": {
+                "readability": 0.4949,
+                "uniqueness": 0.2131913214316461
+            }
+        },
+        {
+            "Futsal Shuffle 2020 by Lil Uzi Vert": {
+                "readability": 0.6472,
+                "uniqueness": 0.1905871730605967
+            }
+        },
+        {
+            "Prices by Lil Uzi Vert": {
+                "readability": 0.7352,
+                "uniqueness": 0.1991088595701783
+            }
+        },
+        {
+            "POP by Lil Uzi Vert": {
+                "readability": 0.3461,
+                "uniqueness": 0.16925977243299622
+            }
+        },
+        {
+            "Bigger Than Life by Lil Uzi Vert": {
+                "readability": 0.8667,
+                "uniqueness": 0.35373673821295853
+            }
+        },
+        {
+            "Celebration Station by Lil Uzi Vert": {
+                "readability": 0.0,
+                "uniqueness": 0.12555690482771859
+            }
+        },
+        {
+            "You Better Move by Lil Uzi Vert": {
+                "readability": 0.7723,
+                "uniqueness": 0.5615577730111838
+            }
+        },
+        {
+            "Venetia by Lil Uzi Vert": {
+                "readability": 0.0,
+                "uniqueness": 0.09779792675338973
+            }
+        },
+        {
+            "Chrome Heart Tags by Lil Uzi Vert": {
+                "readability": 0.2953,
+                "uniqueness": 0.16349850228527013
+            }
+        },
+        {
+            "Commercial by Lil Baby Featuring Lil Uzi Vert": {
+                "readability": 0.3122,
+                "uniqueness": 0.1618988028212331
+            }
+        },
+        {
+            "Juicy by Doja Cat & Tyga": {
+                "readability": 0.0,
+                "uniqueness": 0.09669483873440564
+            }
+        },
+        {
+            "Secure The Bag by Lil Uzi Vert": {
+                "readability": 0.6167,
+                "uniqueness": 0.14270872600014933
+            }
+        },
+        {
+            "Urgency by Lil Uzi Vert Featuring Syd": {
+                "readability": 0.001,
+                "uniqueness": 0.12636327242109713
+            }
+        },
+        {
+            "Ignorantes by Bad Bunny & Sech": {
+                "readability": 0.8069,
+                "uniqueness": 0.21699368001711822
+            }
+        },
+        {
+            "La Santa by Bad Bunny X Daddy Yankee": {
+                "readability": 0.5592,
+                "uniqueness": 0.1539638627830702
+            }
+        },
+        {
+            "Live Off My Closet by Lil Baby Featuring Future": {
+                "readability": 0.8332999999999999,
+                "uniqueness": 0.21522459166575617
+            }
+        },
+        {
+            "Get Ugly by Lil Baby": {
+                "readability": 0.7855,
+                "uniqueness": 0.13154145691580157
+            }
+        },
+        {
+            "No Sucker by Lil Baby & Moneybagg Yo": {
+                "readability": 0.6485,
+                "uniqueness": 0.10785313731526987
+            }
+        },
+        {
+            "Pero Ya No by Bad Bunny": {
+                "readability": 0.3122,
+                "uniqueness": 0.1369655535142074
+            }
+        },
+        {
+            "Lil Top by YoungBoy Never Broke Again": {
+                "readability": 0.0,
+                "uniqueness": 0.9324777119358569
+            }
+        },
+        {
+            "Same Thing by Lil Baby": {
+                "readability": 0.2547,
+                "uniqueness": 0.13638908804956562
+            }
+        },
+        {
+            "Bichiyal by Bad Bunny & Yaviah": {
+                "readability": 0.30210000000000004,
+                "uniqueness": 0.1804970242847793
+            }
+        },
+        {
+            "We Should by Lil Baby & Young Thug": {
+                "readability": 0.5795,
+                "uniqueness": 0.16549746167913965
+            }
+        },
+        {
+            "Solia by Bad Bunny": {
+                "readability": 0.0077,
+                "uniqueness": 0.1260738126360291
+            }
+        },
+        {
+            "Esta Cabron Ser Yo by Bad Bunny X Anuel AA": {
+                "readability": 0.1431,
+                "uniqueness": 0.13224509391963804
+            }
+        },
+        {
+            "Red Eye by YoungBoy Never Broke Again": {
+                "readability": 0.6776000000000001,
+                "uniqueness": 0.18633808940690916
+            }
+        },
+        {
+            "Fine By Time by YoungBoy Never Broke Again": {
+                "readability": 0.22089999999999999,
+                "uniqueness": 0.12371773285141631
+            }
+        },
+        {
+            "Knocked Off by YoungBoy Never Broke Again": {
+                "readability": 0.7724,
+                "uniqueness": 0.3371495296158418
+            }
+        },
+        {
+            "RIP Lil Phat by YoungBoy Never Broke Again": {
+                "readability": 0.4645,
+                "uniqueness": 0.17298171455293135
+            }
+        },
+        {
+            "Long RD by YoungBoy Never Broke Again": {
+                "readability": 0.2919,
+                "uniqueness": 0.14954478248475278
+            }
+        },
+        {
+            "Me And My Guitar by A Boogie Wit da Hoodie": {
+                "readability": 0.0466,
+                "uniqueness": 0.10388270130118274
+            }
+        },
+        {
+            "Bandit by Juice WRLD & YoungBoy Never Broke Again": {
+                "readability": 0.884,
+                "uniqueness": 0.20260959015880708
+            }
+        },
+        {
+            "Might Not Give Up by A Boogie Wit da Hoodie Featuring Young Thug": {
+                "readability": 0.9398000000000001,
+                "uniqueness": 0.1951386465188646
+            }
+        },
+        {
+            "Yikes by Nicki Minaj": {
+                "readability": 0.6809999999999999,
+                "uniqueness": 0.2382187564128452
+            }
+        },
+        {
+            "King Of My City by A Boogie Wit da Hoodie": {
+                "readability": 0.3224,
+                "uniqueness": 0.1781441687300946
+            }
+        },
+        {
+            "Cinderella Story by A Boogie Wit da Hoodie": {
+                "readability": 0.4645,
+                "uniqueness": 0.17881836860418268
+            }
+        },
+        {
+            "ORANGE SODA by Baby Keem": {
+                "readability": 0.6912,
+                "uniqueness": 0.22126039203126072
+            }
+        },
+        {
+            "Good News by Mac Miller": {
+                "readability": 0.0,
+                "uniqueness": 0.10269996948029053
+            }
+        },
+        {
+            "Camelot by NLE Choppa": {
+                "readability": 0.1041,
+                "uniqueness": 0.12313819425312894
+            }
+        },
+        {
+            "Blue World by Mac Miller": {
+                "readability": 0.8220999999999999,
+                "uniqueness": 0.13824539391671167
+            }
+        },
+        {
+            "Darkness by Eminem": {
+                "readability": 0.5897,
+                "uniqueness": 0.20238622004188253
+            }
+        },
+        {
+            "Circles by Mac Miller": {
+                "readability": 0.3799,
+                "uniqueness": 0.1863878257367744
+            }
+        },
+        {
+            "Complicated by Mac Miller": {
+                "readability": 0.0652,
+                "uniqueness": 0.22800790921888872
+            }
+        },
+        {
+            "Hand Me Downs by Mac Miller": {
+                "readability": 0.204,
+                "uniqueness": 0.13025827846444624
+            }
+        },
+        {
+            "Premonition (Intro) by Eminem": {
+                "readability": 0.2581,
+                "uniqueness": 0.1482201182657176
+            }
+        },
+        {
+            "I Can See by Mac Miller": {
+                "readability": 0.28859999999999997,
+                "uniqueness": 0.1954602816936825
+            }
+        },
+        {
+            "In Too Deep by Eminem": {
+                "readability": 0.6065999999999999,
+                "uniqueness": 0.16685951044491676
+            }
+        },
+        {
+            "Woods by Mac Miller": {
+                "readability": 0.09910000000000001,
+                "uniqueness": 0.22068484732017682
+            }
+        },
+        {
+            "Everybody by Mac Miller": {
+                "readability": 0.2818,
+                "uniqueness": 0.20318080226786933
+            }
+        },
+        {
+            "Marsh by Eminem": {
+                "readability": 0.0,
+                "uniqueness": 0.16519513384361234
+            }
+        },
+        {
+            "Surf by Mac Miller": {
+                "readability": 0.0,
+                "uniqueness": 0.138886291952459
+            }
+        },
+        {
+            "Stepdad by Eminem": {
+                "readability": 0.593,
+                "uniqueness": 0.1355511044153102
+            }
+        },
+        {
+            "That's On Me by Mac Miller": {
+                "readability": 0.22089999999999999,
+                "uniqueness": 0.2325453038979635
+            }
+        },
+        {
+            "Suge by DaBaby": {
+                "readability": 0.0,
+                "uniqueness": 0.14852143627323702
+            }
+        },
+        {
+            "20/20 by Lil Tjay": {
+                "readability": 0.9699,
+                "uniqueness": 0.27659089770197964
+            }
+        },
+        {
+            "Let Me Know (I Wonder Why Freestyle) by Juice WRLD": {
+                "readability": 0.3325,
+                "uniqueness": 0.14108175940031134
+            }
+        },
+        {
+            "Lucid Dreams by Juice WRLD": {
+                "readability": 0.3427,
+                "uniqueness": 0.19794468260511722
+            }
+        },
+        {
+            "Dirty Iyanna by YoungBoy Never Broke Again": {
+                "readability": 0.0,
+                "uniqueness": 0.11378460990643467
+            }
+        },
+        {
+            "Famous Hoes by NLE Choppa": {
+                "readability": 0.502,
+                "uniqueness": 0.12858347985361138
+            }
+        },
+        {
+            "Legends by Juice WRLD": {
+                "readability": 0.0043,
+                "uniqueness": 0.14090704660613368
+            }
+        },
+        {
+            "Robbery by Juice WRLD": {
+                "readability": 0.33590000000000003,
+                "uniqueness": 0.15853604153695605
+            }
+        },
+        {
+            "Empty by Juice WRLD": {
+                "readability": 0.3089,
+                "uniqueness": 0.18468091965969968
+            }
+        },
+        {
+            "Big Stepper by Roddy Ricch": {
+                "readability": 0.9431999999999999,
+                "uniqueness": 0.3720067664094604
+            }
+        },
+        {
+            "Who Needs Love by Trippie Redd": {
+                "readability": 0.3833,
+                "uniqueness": 0.14332840291602855
+            }
+        },
+        {
+            "Follow God by Kanye West": {
+                "readability": 0.725,
+                "uniqueness": 0.16984380394655454
+            }
+        },
+        {
+            "F.N by Lil Tjay": {
+                "readability": 0.7859,
+                "uniqueness": 0.223609765106849
+            }
+        },
+        {
+            "La Cancion by J Balvin & Bad Bunny": {
+                "readability": 0.884,
+                "uniqueness": 0.19629110158192414
+            }
+        },
+        {
+            "Love Me More by Trippie Redd": {
+                "readability": 0.6065999999999999,
+                "uniqueness": 0.2065366168470455
+            }
+        },
+        {
+            "Lonely Child by YoungBoy Never Broke Again": {
+                "readability": 0.6675,
+                "uniqueness": 0.15884402258033906
+            }
+        },
+        {
+            "Self Control by YoungBoy Never Broke Again": {
+                "readability": 0.6827,
+                "uniqueness": 0.13364424634399077
+            }
+        },
+        {
+            "Hot Now by YoungBoy Never Broke Again": {
+                "readability": 0.5457,
+                "uniqueness": 0.18392196903786603
+            }
+        },
+        {
+            "Immortal by 21 Savage": {
+                "readability": 1.0,
+                "uniqueness": 0.27009172386136326
+            }
+        },
+        {
+            "Closed On Sunday by Kanye West": {
+                "readability": 0.5457,
+                "uniqueness": 0.25778128059722333
+            }
+        },
+        {
+            "Selah by Kanye West": {
+                "readability": 0.0,
+                "uniqueness": 0.10263415301971204
+            }
+        },
+        {
+            "On God by Kanye West": {
+                "readability": 0.1837,
+                "uniqueness": 0.11918619735567827
+            }
+        },
+        {
+            "God Is by Kanye West": {
+                "readability": 0.478,
+                "uniqueness": 0.22723192981934975
+            }
+        },
+        {
+            "Jesus Is Lord by Kanye West": {
+                "readability": 0.6979000000000001,
+                "uniqueness": 0.17198598414788233
+            }
+        },
+        {
+            "INTRO by DaBaby": {
+                "readability": 0.6269,
+                "uniqueness": 0.26227618610632614
+            }
+        },
+        {
+            "Sunflower (Spider-Man: Into The Spider-Verse) by Post Malone & Swae Lee": {
+                "readability": 0.7842,
+                "uniqueness": 0.22766245351092906
+            }
+        },
+        {
+            "Wow. by Post Malone": {
+                "readability": 0.6404000000000001,
+                "uniqueness": 0.1515457803656418
+            }
+        },
+        {
+            "The Git Up by Blanco Brown": {
+                "readability": 0.6658,
+                "uniqueness": 0.17639313383388952
+            }
+        },
+        {
+            "Rich As Hell by YoungBoy Never Broke Again": {
+                "readability": 0.47119999999999995,
+                "uniqueness": 0.18029739039224885
+            }
+        },
+        {
+            "In Control by YoungBoy Never Broke Again": {
+                "readability": 0.41369999999999996,
+                "uniqueness": 0.2012450962937582
+            }
+        },
+        {
+            "Carter Son by YoungBoy Never Broke Again": {
+                "readability": 0.2446,
+                "uniqueness": 0.1808378673925996
+            }
+        },
+        {
+            "Time I'm On by YoungBoy Never Broke Again": {
+                "readability": 0.8734999999999999,
+                "uniqueness": 0.20287072497451888
+            }
+        },
+        {
+            "Saint-Tropez by Post Malone": {
+                "readability": 0.7724,
+                "uniqueness": 0.17493202471867322
+            }
+        },
+        {
+            "Hollywood's Bleeding by Post Malone": {
+                "readability": 0.8671,
+                "uniqueness": 0.24061024507677115
+            }
+        },
+        {
+            "OFF THE RIP by DaBaby": {
+                "readability": 0.44420000000000004,
+                "uniqueness": 0.14846661952802892
+            }
+        },
+        {
+            "XXL by DaBaby": {
+                "readability": 0.7115,
+                "uniqueness": 0.22571917505652989
+            }
+        },
+        {
+            "PROLLY HEARD by DaBaby": {
+                "readability": 0.7384999999999999,
+                "uniqueness": 0.2813979110222418
+            }
+        },
+        {
+            "There He Go by DaBaby": {
+                "readability": 0.7724,
+                "uniqueness": 0.2950927382321029
+            }
+        },
+        {
+            "Did It Again by Lil Tecca": {
+                "readability": 0.6709,
+                "uniqueness": 0.19140989980719886
+            }
+        },
+        {
+            "A Thousand Bad Times by Post Malone": {
+                "readability": 0.5152,
+                "uniqueness": 0.1803444219690063
+            }
+        },
+        {
+            "Mood Swings by A Boogie Wit da Hoodie": {
+                "readability": 0.5457,
+                "uniqueness": 0.180599068983015
+            }
+        },
+        {
+            "Allergic by Post Malone": {
+                "readability": 0.4476,
+                "uniqueness": 0.17859257716182272
+            }
+        },
+        {
+            "Myself by Post Malone": {
+                "readability": 0.8637,
+                "uniqueness": 0.18150671852240885
+            }
+        },
+        {
+            "I Know by Post Malone": {
+                "readability": 0.7047,
+                "uniqueness": 0.21362044686909185
+            }
+        },
+        {
+            "Internet by Post Malone": {
+                "readability": 0.5998,
+                "uniqueness": 0.263286166476978
+            }
+        },
+        {
+            "Shotta Flow by NLE Choppa": {
+                "readability": 0.9584999999999999,
+                "uniqueness": 0.3268129577416286
+            }
+        },
+        {
+            "Babushka Boi by A$AP Rocky": {
+                "readability": 0.7842,
+                "uniqueness": 0.1880443387203288
+            }
+        }
+    ],
+    "rock": [
+        {
+            "Fancy Like by Walker Hayes": {
+                "readability": 0.7724,
+                "uniqueness": 0.2010214856990363
+            }
+        },
+        {
+            "Cold Heart (PNAU Remix) by Elton John & Dua Lipa": {
+                "readability": 0.2107,
+                "uniqueness": 0.1351845727632272
+            }
+        },
+        {
+            "Thinking 'Bout You by Dustin Lynch Featuring Lauren Alaina Or MacKenzie Porter": {
+                "readability": 0.275,
+                "uniqueness": 0.17456676959568806
+            }
+        },
+        {
+            "Same Boat by Zac Brown Band": {
+                "readability": 0.6573,
+                "uniqueness": 0.24119685985945924
+            }
+        },
+        {
+            "Tequila Little Time by Jon Pardi": {
+                "readability": 0.5457,
+                "uniqueness": 0.18953333703726105
+            }
+        },
+        {
+            "Like A Lady by Lady A": {
+                "readability": 0.6133,
+                "uniqueness": 0.24824557610547643
+            }
+        },
+        {
+            "Stressed by Young Thug With J. Cole & T-Shyne": {
+                "readability": 0.6506000000000001,
+                "uniqueness": 0.23035170601783383
+            }
+        },
+        {
+            "Drinkin' Beer. Talkin' God. Amen. by Chase Rice Featuring Florida Georgia Line": {
+                "readability": 0.6303,
+                "uniqueness": 0.24028604959604133
+            }
+        },
+        {
+            "Drunk (And I Don't Wanna Go Home) by Elle King & Miranda Lambert": {
+                "readability": 0.4238,
+                "uniqueness": 0.5190890286534412
+            }
+        },
+        {
+            "Ride For You by Meek Mill Featuring Kehlani": {
+                "readability": 1.0,
+                "uniqueness": 0.38360902480411113
+            }
+        },
+        {
+            "Single Saturday Night by Cole Swindell": {
+                "readability": 0.23440000000000003,
+                "uniqueness": 0.2250039184572327
+            }
+        },
+        {
+            "Lord I Need You by Kanye West": {
+                "readability": 1.0,
+                "uniqueness": 0.27049844145384494
+            }
+        },
+        {
+            "Fiel by Los Legendarios, Wisin & Jhay Cortez": {
+                "readability": 0.8823000000000001,
+                "uniqueness": 0.1955031578523649
+            }
+        },
+        {
+            "Way Less Sad by AJR": {
+                "readability": 0.30210000000000004,
+                "uniqueness": 0.15662480152999492
+            }
+        },
+        {
+            "Working by Tate McRae X Khalid": {
+                "readability": 0.3461,
+                "uniqueness": 0.22525506382015514
+            }
+        },
+        {
+            "Made For You by Jake Owen": {
+                "readability": 0.4289,
+                "uniqueness": 0.11715157775989796
+            }
+        },
+        {
+            "Modern Day by Migos": {
+                "readability": 0.7318000000000001,
+                "uniqueness": 0.14001836298095333
+            }
+        },
+        {
+            "If You Want To by Lil Baby & Lil Durk": {
+                "readability": 0.5727,
+                "uniqueness": 0.16444633399514377
+            }
+        },
+        {
+            "On Me by Lil Baby": {
+                "readability": 0.7521,
+                "uniqueness": 0.17600596326247567
+            }
+        },
+        {
+            "Killer by Eminem Featuring Jack Harlow & Cordae": {
+                "readability": 0.522,
+                "uniqueness": 0.26917018705893553
+            }
+        },
+        {
+            "amari by J. Cole": {
+                "readability": 0.7521,
+                "uniqueness": 0.2036660921862548
+            }
+        },
+        {
+            "close by J. Cole": {
+                "readability": 0.44420000000000004,
+                "uniqueness": 0.38307193766065273
+            }
+        },
+        {
+            "Damage by H.E.R.": {
+                "readability": 0.9043000000000001,
+                "uniqueness": 0.15499237688711873
+            }
+        },
+        {
+            "Proud Of You by Young Thug Featuring Lil Uzi Vert & Yung Kayo": {
+                "readability": 1.0,
+                "uniqueness": 0.1741714815091486
+            }
+        },
+        {
+            "Momma's House by Dustin Lynch": {
+                "readability": 0.45770000000000005,
+                "uniqueness": 0.24313021114460162
+            }
+        },
+        {
+            "Shy Away by twenty one pilots": {
+                "readability": 0.7587999999999999,
+                "uniqueness": 0.19400522291447816
+            }
+        },
+        {
+            "Bang! by AJR": {
+                "readability": 0.813,
+                "uniqueness": 0.1942485496813943
+            }
+        },
+        {
+            "Run Rudolph Run by Chuck Berry": {
+                "readability": 0.8096,
+                "uniqueness": 0.2454012724898984
+            }
+        },
+        {
+            "Here Comes Santa Claus (Right Down Santa Claus Lane) by Gene Autry": {
+                "readability": 0.9246,
+                "uniqueness": 0.2264942819451157
+            }
+        },
+        {
+            "Wonderful Christmastime by Paul McCartney": {
+                "readability": 0.49829999999999997,
+                "uniqueness": 0.22083780224915472
+            }
+        },
+        {
+            "Blue Christmas by Elvis Presley": {
+                "readability": 0.45770000000000005,
+                "uniqueness": 0.21068368366894566
+            }
+        },
+        {
+            "Break My Heart by Dua Lipa": {
+                "readability": 0.0,
+                "uniqueness": 0.08108401499191147
+            }
+        },
+        {
+            "Lonely If You Are by Chase Rice": {
+                "readability": 0.34950000000000003,
+                "uniqueness": 0.14948910244932212
+            }
+        },
+        {
+            "Be A Light by Thomas Rhett Featuring Reba McEntire, Hillary Scott, Chris Tomlin & Keith Urban": {
+                "readability": 0.6167,
+                "uniqueness": 0.3038380495799678
+            }
+        },
+        {
+            "Seven by Taylor Swift": {
+                "readability": 0.3258,
+                "uniqueness": 0.12792022503492442
+            }
+        },
+        {
+            "In Between by Scotty McCreery": {
+                "readability": 0.7994,
+                "uniqueness": 0.26825299775504147
+            }
+        },
+        {
+            "Memories by Maroon 5": {
+                "readability": 0.4391,
+                "uniqueness": 0.14573087550661085
+            }
+        },
+        {
+            "Daisies by Katy Perry": {
+                "readability": 0.7994,
+                "uniqueness": 0.21352115757527193
+            }
+        },
+        {
+            "My Truck by Breland": {
+                "readability": 0.7149,
+                "uniqueness": 0.2269836498322993
+            }
+        },
+        {
+            "Level Of Concern by twenty one pilots": {
+                "readability": 0.884,
+                "uniqueness": 0.34419989771356674
+            }
+        },
+        {
+            "The Man Who Loves You The Most by Zac Brown Band": {
+                "readability": 0.505,
+                "uniqueness": 0.21577313903384807
+            }
+        },
+        {
+            "Hard Days by Brantley Gilbert": {
+                "readability": 0.7724,
+                "uniqueness": 0.25619562882603203
+            }
+        },
+        {
+            "Jump by DaBaby Featuring YoungBoy Never Broke Again": {
+                "readability": 0.6759000000000001,
+                "uniqueness": 0.1554717852523847
+            }
+        },
+        {
+            "Demons by Drake Featuring Fivio Foreign & Sosa Geek": {
+                "readability": 0.4239,
+                "uniqueness": 0.21358181703605258
+            }
+        },
+        {
+            "Find My Way by DaBaby": {
+                "readability": 0.8468000000000001,
+                "uniqueness": 0.2695756245456119
+            }
+        },
+        {
+            "Ain't Easy by YoungBoy Never Broke Again": {
+                "readability": 0.5254,
+                "uniqueness": 0.18805083059646258
+            }
+        },
+        {
+            "I Dare You by Kelly Clarkson": {
+                "readability": 0.4746,
+                "uniqueness": 0.2208150429221867
+            }
+        },
+        {
+            "Ridin' Roads by Dustin Lynch": {
+                "readability": 0.4205,
+                "uniqueness": 0.22604702579885186
+            }
+        },
+        {
+            "Too Late by The Weeknd": {
+                "readability": 0.7825,
+                "uniqueness": 0.19354575982262534
+            }
+        },
+        {
+            "Faith by The Weeknd": {
+                "readability": 0.41369999999999996,
+                "uniqueness": 0.1802495016627274
+            }
+        },
+        {
+            "TOES by DaBaby Featuring Lil Baby & Moneybagg Yo": {
+                "readability": 0.7521,
+                "uniqueness": 0.1841294096806358
+            }
+        },
+        {
+            "Feel Me by Selena Gomez": {
+                "readability": 0.5964,
+                "uniqueness": 0.1910042981863983
+            }
+        },
+        {
+            "All Around Me by Justin Bieber": {
+                "readability": 0.434,
+                "uniqueness": 0.18893699747030962
+            }
+        },
+        {
+            "Into The Unknown by Panic! At The Disco": {
+                "readability": 0.7927,
+                "uniqueness": 0.22156688947861586
+            }
+        },
+        {
+            "Good Vibes by Chris Janson": {
+                "readability": 0.0,
+                "uniqueness": 0.6467597795454029
+            }
+        },
+        {
+            "What Happens In A Small Town by Brantley Gilbert + Lindsay Ell": {
+                "readability": 0.7521,
+                "uniqueness": 0.17786329882406826
+            }
+        },
+        {
+            "Love You Too Late by Cole Swindell": {
+                "readability": 0.0,
+                "uniqueness": 0.09596642160494954
+            }
+        },
+        {
+            "The Ones That Didn't Make It Back Home by Justin Moore": {
+                "readability": 0.8231,
+                "uniqueness": 0.21761360408334313
+            }
+        },
+        {
+            "Hey Look Ma, I Made It by Panic! At The Disco": {
+                "readability": 0.3765,
+                "uniqueness": 0.17538719876485517
+            }
+        },
+        {
+            "God Only Knows by for KING & COUNTRY": {
+                "readability": 0.5288,
+                "uniqueness": 0.23903064046596623
+            }
+        },
+        {
+            "Raised On Country by Chris Young": {
+                "readability": 0.7219,
+                "uniqueness": 0.18313057619072126
+            }
+        },
+        {
+            "Fear Inoculum by Tool": {
+                "readability": 1.0,
+                "uniqueness": 0.26668445954330594
+            }
+        },
+        {
+            "High Hopes by Panic! At The Disco": {
+                "readability": 0.8532,
+                "uniqueness": 0.18248517981694595
+            }
+        },
+        {
+            "Eyes On You by Chase Rice": {
+                "readability": 0.7757999999999999,
+                "uniqueness": 0.39600287675994145
+            }
+        },
+        {
+            "Love Someone by Brett Eldredge": {
+                "readability": 0.7825,
+                "uniqueness": 0.1738780233477028
+            }
+        },
+        {
+            "Night Shift by Jon Pardi": {
+                "readability": 0.2953,
+                "uniqueness": 0.21715098759626808
+            }
+        },
+        {
+            "You Say by Lauren Daigle": {
+                "readability": 0.4543,
+                "uniqueness": 0.19550528312504892
+            }
+        },
+        {
+            "Bad Liar by Imagine Dragons": {
+                "readability": 0.2852,
+                "uniqueness": 0.18164042027430263
+            }
+        },
+        {
+            "This Is It by Scotty McCreery": {
+                "readability": 0.0,
+                "uniqueness": 0.5729321447437518
+            }
+        }
+    ]
+}
