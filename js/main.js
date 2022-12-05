@@ -82,6 +82,24 @@ function updateVisualization() {
     let textPop = document.getElementById('genreTextPop');
     let textRock = document.getElementById('genreTextRock');
     let textRap = document.getElementById('genreTextRap');
+    let num = 0;
+    if (selectBox2 !== 'love') {
+        if (selectBox === "pop") {
+            num = (Math.round(selectBox2 / 10) - 198) * 9;
+        } else if (selectBox === "rap") {
+            num = (Math.round(selectBox2 / 10) - 198) * 9 + 3;
+        } else {
+            num = (Math.round(selectBox2 / 10) - 198) * 9 + 6;
+        }
+        document.getElementById('song1').innerHTML = lyricData[num].song + " by " + lyricData[num].artist;
+        document.getElementById('song1').setAttribute('value', num);
+        document.getElementById('song2').innerHTML = lyricData[num + 1].song + " by " + lyricData[num + 1].artist;
+        document.getElementById('song2').setAttribute('value', num + 1);
+        document.getElementById('song3').innerHTML = lyricData[num + 2].song + " by " + lyricData[num + 2].artist;
+        document.getElementById('song3').setAttribute('value', num + 2);
+        updateVisualization3();
+    }
+
     if (selectBox == 'pop') {
         textPop.style.display = 'block';
         textRock.style.display = 'none';
@@ -121,12 +139,14 @@ function updateVisualization2() {
     } else {
         num = (Math.round( selectBox2 / 10) - 198) * 9 + 6
     }
-    document.getElementById('song1').innerHTML = lyricData[num].song
-    document.getElementById('song1').setAttribute('value', num)
-    document.getElementById('song2').innerHTML = lyricData[num + 1].song
-    document.getElementById('song2').setAttribute('value', num + 1)
-    document.getElementById('song3').innerHTML = lyricData[num + 2].song
-    document.getElementById('song3').setAttribute('value', num + 2)
+    document.getElementById('song1').innerHTML = lyricData[num].song + " by " + lyricData[num].artist;
+    document.getElementById('song1').setAttribute('value', num);
+    document.getElementById('song2').innerHTML = lyricData[num + 1].song + " by " + lyricData[num + 1].artist;
+    document.getElementById('song2').setAttribute('value', num + 1);
+    document.getElementById('song3').innerHTML = lyricData[num + 2].song + " by " + lyricData[num + 2].artist;
+    document.getElementById('song3').setAttribute('value', num + 2);
+
+    updateVisualization3();
 
     if (selectBox2 == 1980) {
         decade1980.style.display = 'block';

@@ -58,6 +58,13 @@ h1 {
     font-family: GothamBold;
 }
 
+.header {
+    padding-top: 0%;
+    color: #1DB954;
+    font-size: 32px;
+    font-family: GothamBold;
+}
+
 body {
     margin-left: 15%;
     margin-right: 15%;

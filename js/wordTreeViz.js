@@ -46,11 +46,14 @@ class wordTreeViz {
     wrangleData(i) {
         let vis = this;
 
-
         let tree = new Tree();
 
         let lyric = vis.data[i]['lyrics_text'];
-        document.getElementById("lyricContainer").innerText = vis.data[i]['lyrics'];
+        // censor the lyrics
+        lyric = lyric.replaceAll('nigga', 'n****');
+
+        // add them to the tree structure
+        document.getElementById("lyricContainer").innerText = lyric;
         let lyrics = lyric.split(" ");
         for (let i = 0; i < lyrics.length; i++) {
             tree.addNode(lyrics.slice(i, lyrics.length));
@@ -92,9 +95,19 @@ class wordTreeViz {
 
         vis.svg.selectAll("*").remove();
 
+        // tree layout d3
         vis.treemap = d3.tree().size([vis.height, vis.width/4])
             .separation(function(a,b){
-                return (a.width+b.width)/2+50;
+                if (a.children && b.children) {
+                    return 7
+                }
+                if (a.parent === b.parent && a.parent.depth !== 0) {
+                    return 5
+                }
+                if ((a.children && !b.children) || (b.children && !a.children)) {
+                    return 7
+                }
+                return 2
             });
         nodes2 = vis.treemap(nodes1);
 
@@ -108,14 +121,6 @@ class wordTreeViz {
         let vis = this;
 
         let first = true;
-        // vis.displayData.forEach(function(d) {
-        //     if (!first) {
-        //        // d.parent.y += 10;
-        //         d.y += d.parent.width;
-        //         d.parent.width = d.y;
-        //     }
-        //     first = false;
-        // });
 
         const link = vis.svg.selectAll(".link")
             .data(vis.displayData.slice(1))
@@ -161,7 +166,9 @@ class wordTreeViz {
 
         node.append("text")
             .attr("class", "tree")
-            .attr('transform', 'translate(-30, 0)')
+            .attr('transform', function (d) {
+                return 'translate(-30, 0)'
+            })
             .attr("dy", ".35em")
             .attr('fill', '#FAEBD7FF')
             .style("font-size", function (d) {
@@ -172,6 +179,7 @@ class wordTreeViz {
                     return "10px"
                 }
             })
+            .attr('click', false)
             .on('mouseover', function (event, d) {
                 d3.select(this).attr('fill', "#1DB954");
                 var inputText = document.getElementById("lyricContainer");
@@ -180,11 +188,12 @@ class wordTreeViz {
 
             })
             .on('mouseout', function (event, d) {
-                d3.select(this).attr('fill', '#FAEBD7FF');
-                var inputText = document.getElementById("lyricContainer");
-                var innerHTML = inputText.innerHTML;
-                inputText.innerHTML = innerHTML.replaceAll(`<span class="highlight">`+d.data.word+"</span>", d.data.word);
-
+                if (!d3.select(this).attr('clicked')) {
+                    d3.select(this).attr('fill', '#FAEBD7FF');
+                    var inputText = document.getElementById("lyricContainer");
+                    var innerHTML = inputText.innerHTML;
+                    inputText.innerHTML = innerHTML.replaceAll(`<span class="highlight">` + d.data.word + "</span>", d.data.word);
+                }
             })
             .attr("x", 0)
             .attr("y", 0)
