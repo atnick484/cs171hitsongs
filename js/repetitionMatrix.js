@@ -111,6 +111,7 @@ class RepetitionMatrix {
             repetitiveness = 0;
         }
         console.log(repetitiveness);
+        return repetitiveness;
     }
 }
 

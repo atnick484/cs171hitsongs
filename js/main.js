@@ -63,6 +63,17 @@ d3.json("data/all_songs.json", row => {
     return row
 }).then(data => {
     songData = Object.entries(data).map((song) => ( { [song[0]]: song[1] } ));
+    console.log(songData);
+
+    let choruses = [];
+    for (let index in songData.map(song => Object.values(song)[0].song)) {
+        choruses.push(songData[index][index].chorus);
+    }
+    console.log(choruses);
+
+    let repetitionScores = [];
+    console.log(songData[0][0]);
+    console.log(calculateRepetitiveness(songData[0][0].chorus));
 });
 
 function updateVisualization() {
@@ -91,7 +102,7 @@ function updateVisualization() {
         textRap.style.display = 'block';
     }
     // console.log(selectBox);
-    genreViz.updateViz();
+    // genreViz.updateViz();
 }
 
 function updateVisualization2() {
@@ -168,11 +179,11 @@ function updateVisualization2() {
         document.getElementById('frequencyInstructions').innerHTML =
             "We plotted the distribution of song durations and tempos for all " + d3.select("#genre-box").property("value") + " songs from the " + selectBox2.toString() + "s!"
 
-        durationViz = new DurationViz("durationViz", data_specific);
-        durationViz.initViz();
-
-        tempoViz = new TempoViz("tempoViz", data_specific);
-        tempoViz.initViz();
+        // durationViz = new DurationViz("durationViz", data_specific);
+        // durationViz.initViz();
+        //
+        // tempoViz = new TempoViz("tempoViz", data_specific);
+        // tempoViz.initViz();
 
     })
 }
@@ -281,3 +292,50 @@ function stopLyricVis1() {
 // function createRadarChart() {
 //
 // }
+
+function calculateRepetitiveness(chorus) {
+
+    async function createSimilarityArray() {
+        let embeddings = await use.load().then(model => {
+            return model.embed(chorus);
+        });
+        let embeddingsArray = embeddings.arraySync();
+        console.log(embeddingsArray);
+
+        let similarityArray = Array(embeddingsArray.length).fill().map(() => Array(embeddingsArray.length));
+        let lineIndices = [...Array(embeddingsArray.length).keys()];
+        const dot = (a, b) => a.map((x, i) => a[i] * b[i]).reduce((m, n) => m + n);
+        for (let i in lineIndices) {
+            for (let j in lineIndices) {
+                similarityArray[i][j] = dot(embeddingsArray[i], embeddingsArray[j]);
+                if (similarityArray[i][j] > 0.99) {
+                    similarityArray[i][j] = 1;
+                }
+            }
+        }
+
+        let countNotIdentity = Math.pow(similarityArray.length, 2) - similarityArray.length;
+        let repetitiveness = 0;
+
+        let arrayIndices = [...Array(similarityArray.length).keys()];
+        for (let row in arrayIndices) {
+            for (let col in arrayIndices) {
+                if (row != col) {
+                    repetitiveness += similarityArray[row][col] / countNotIdentity;
+                }
+            }
+        }
+        console.log(similarityArray);
+
+        repetitiveness = Math.round(repetitiveness * 100) / 100
+        if (repetitiveness > 1) {
+            repetitiveness = 1;
+        } else if (repetitiveness < 0) {
+            repetitiveness = 0;
+        }
+        console.log("Repetitiveness:", repetitiveness);
+        return repetitiveness;
+    }
+
+    createSimilarityArray();
+}

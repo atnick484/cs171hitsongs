@@ -8,6 +8,12 @@
 //For a bit of extra information check the blog about it:
 //http://nbremer.blogspot.nl/2013/09/making-d3-radar-chart-look-bit-better.html
 
+let repetitivenessGenres = {
+    'pop': 0.2967372499160073,
+    'rap': 0.2665232064116793,
+    'rock': 0.2659479192314834
+};
+
 var RadarChart = {
     draw: function (id, d, options) {
         var cfg = {
