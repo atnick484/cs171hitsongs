@@ -55,17 +55,17 @@
             </select>
         </div>
         <div class="textContainer" id="decadeTextContainer">
-            <p class='textInContainer' id="decade1980"> You chose 1980! Here are a few top songs from that decade in your selected genre</p>
-            <p class='textInContainer' id="decade1990"> You chose 1990! Here are a few top songs from that decade in your selected genre</p>
-            <p class='textInContainer' id="decade2000"> You chose 2000! It's giving y2k... Here are a few top songs from that decade in your selected genre</p>
-            <p class='textInContainer' id="decade2010"> You chose 2010! Here are a few top songs from that decade in your selected genre</p>
-            <p class='textInContainer' id="decade2020"> You chose 2020! Here are a few top songs from that decade in your selected genre</p>
+            <p class='textInContainer' id="decade1980"> You chose 1980! We've picked a few top songs from the '80s in your selected genre. Press "Play Song" to hear one of our selections play while we animate lyrical sentiment.</p>
+            <p class='textInContainer' id="decade1990"> You chose 1990! We've picked a few top songs from the '90s in your selected genre. Press "Play Song" to hear one of our selections play while we animate lyrical sentiment.</p>
+            <p class='textInContainer' id="decade2000"> You chose 2000! We've picked a few top songs from the 2000s in your selected genre. Press "Play Song" to hear one of our selections play while we animate lyrical sentiment.</p>
+            <p class='textInContainer' id="decade2010"> You chose 2010! We've picked a few top songs from the '10s in your selected genre. Press "Play Song" to hear one of our selections play while we animate lyrical sentiment.</p>
+            <p class='textInContainer' id="decade2020"> You chose 2020! We've picked a few top songs from the '20s in your selected genre. Press "Play Song" to hear one of our selections play while we animate lyrical sentiment.</p>
         </div>
         <button type="button" class="btn btn-primary" id="play-button1">Play Song</button>
         <button type="button" class="btn btn-primary" id="stop-button1">Stop Song</button>
         <div id="lyricViz"></div>
-        <p>[example text] From the positivity score, we can generally see whether these kind of songs tend to be positive or negative. These pop songs from
-        the 2010s were on the happier side!</p>
+        <p>At every 10% duration through each song, we took a chunk of our lyrics (corresponding to that portion of the song) and ran sentiment 
+            analysis on each set of words, after which each proportion is given a positivity score between 1 (being most positive) and -1 (being most negative)</p>
     </div>
 </div>
 
@@ -109,9 +109,23 @@
 <!-- - - - - - - - - - - - >
 <    Load JS libraries     >
 <- - - - - - - - - - - - -->
-
+<!--Audio-->
+<audio id="audio1" src="audio/audio1.mp3"></audio>
+<audio id="audio2" src="audio/audio2.mp3"></audio>
+<audio id="audio3" src="audio/audio3.mp3"></audio>
+<audio id="audio4" src="audio/audio4.mp3"></audio>
+<audio id="audio5" src="audio/audio5.mp3"></audio>
+<audio id="audio6" src="audio/audio6.mp3"></audio>
+<audio id="audio7" src="audio/audio7.mp3"></audio>
+<audio id="audio8" src="audio/audio8.mp3"></audio>
+<audio id="audio9" src="audio/audio9.mp3"></audio>
+<audio id="audio10" src="audio/audio10.mp3"></audio>
+<audio id="audio11" src="audio/audio11.mp3"></audio>
+<audio id="audio12" src="audio/audio12.mp3"></audio>
+<audio id="audio13" src="audio/audio13.mp3"></audio>
+<audio id="audio14" src="audio/audio14.mp3"></audio>
+<audio id="audio15" src="audio/audio15.mp3"></audio>
 <!-- BOOTSTRAP -->
-<audio id="audio1" src="radioactive.mp3"></audio>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 <!-- d3 -->

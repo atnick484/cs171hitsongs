@@ -72,7 +72,7 @@ class LyricViz {
             .transition()
             .ease(d3.easeLinear)
             .attr("stroke-dashoffset", 0)
-            .duration(1000)
+            .duration(timems)
             .on("end", () => setTimeout(repeat, 1000)); // this will repeat the animation after waiting 1 second
     }
 
@@ -89,7 +89,18 @@ class LyricViz {
         //     .datum(vis.displayData)
         //     .attr("class", "line");
 
-        vis.colors = ['#b9767e', '#6da87f', '#ffa64a', '#b61629', '#6da87f', '#ffa64a']
+        vis.colors = ['#b9767e', '#6da87f', '#ffa64a']
+
+        vis.decade = d3.select("#decade-box").property("value");
+        vis.genre = d3.select("#genre-box").property("value");
+
+        vis.idxPop = (Math.round(vis.decade / 10) - 198) * 9
+        vis.idxRap = (Math.round(vis.decade / 10) - 198) * 9 + 3
+        vis.idxRock = (Math.round(vis.decade / 10) - 198) * 9 + 6
+
+        vis.displayPop = [vis.displayData.columns.slice(1)[vis.idxPop], vis.displayData.columns.slice(1)[vis.idxPop + 1], vis.displayData.columns.slice(1)[vis.idxPop + 2]];
+        vis.displayRap = [vis.displayData.columns.slice(1)[vis.idxRap], vis.displayData.columns.slice(1)[vis.idxRap + 1], vis.displayData.columns.slice(1)[vis.idxRap + 2]];
+        vis.displayRock = [vis.displayData.columns.slice(1)[vis.idxRock], vis.displayData.columns.slice(1)[vis.idxRock + 1], vis.displayData.columns.slice(1)[vis.idxRock + 2]]
 
         // Add the links
         let pathSelect = vis.svg
@@ -98,23 +109,68 @@ class LyricViz {
             .enter();
 
         vis.displayData.columns.slice(1).forEach(function (songName, index) {
-            let line = d3.line()
-                .curve(d3.curveBasis)
-                .x(d => vis.x(d.percent))
-                .y(d => vis.y(d[songName]))
-            let path = pathSelect
-                .append("path")
-                .datum(vis.displayData)
-                .attr("class", "line")
-                .attr("d", line(vis.displayData))
-                .style("fill", "none")
-                .attr('stroke-width', "10px")
-                .style("opacity", 0.05)
-                .attr("stroke", function (d) {
-                    return vis.colors[index]
-                });
+            console.log(index)
+            if (vis.genre == 'pop' && (index == vis.idxPop || index == vis.idxPop + 1 || index == vis.idxPop + 2)) {
+                let line = d3.line()
+                    .curve(d3.curveBasis)
+                    .x(d => vis.x(d.percent))
+                    .y(d => vis.y(d[songName]))
+                let path = pathSelect
+                    .append("path")
+                    .datum(vis.displayData)
+                    .attr("class", "line")
+                    .attr("d", line(vis.displayData))
+                    .style("fill", "none")
+                    .attr('stroke-width', "10px")
+                    .style("opacity", 0.05)
+                    .attr("stroke", function (d) {
+                        return vis.colors[index - vis.idxPop]
+                    });
 
-            vis.paths.push(path);
+                vis.paths.push(path);
+            }
+            else if (vis.genre == 'rap' && (index == vis.idxRap || index == vis.idxRap + 1 || index == vis.idxRap + 2)) {
+                let line = d3.line()
+                    .curve(d3.curveBasis)
+                    .x(d => vis.x(d.percent))
+                    .y(d => vis.y(d[songName]))
+                let path = pathSelect
+                    .append("path")
+                    .datum(vis.displayData)
+                    .attr("class", "line")
+                    .attr("d", line(vis.displayData))
+                    .style("fill", "none")
+                    .attr('stroke-width', "10px")
+                    .style("opacity", 0.05)
+                    .attr("stroke", function (d) {
+                        return vis.colors[index - vis.idxRap]
+                    });
+
+                vis.paths.push(path);
+            }
+            else if (vis.genre == 'rock' && (index == vis.idxRock || index == vis.idxRock + 1 || index == vis.idxRock + 2)) {
+                let line = d3.line()
+                    .curve(d3.curveBasis)
+                    .x(d => vis.x(d.percent))
+                    .y(d => vis.y(d[songName]))
+                let path = pathSelect
+                    .append("path")
+                    .datum(vis.displayData)
+                    .attr("class", "line")
+                    .attr("d", line(vis.displayData))
+                    .style("fill", "none")
+                    .attr('stroke-width', "10px")
+                    .style("opacity", 0.05)
+                    .attr("stroke", function (d) {
+                        return vis.colors[index - vis.idxRock]
+                    });
+
+                vis.paths.push(path);
+            }
+            else {
+                console.log('issue')
+            }
+
             // vis.repeat(path, 10000);
 
 
@@ -137,27 +193,96 @@ class LyricViz {
             .text("Positivity Score");
 
 
-        // legend
-        vis.svg.selectAll("mylabels")
-            .data(vis.displayData.columns.slice(1))
-            .enter()
-            .append("text")
-            .attr("x", vis.width - 350 + 20)
-            .attr("y", function(d,i){ return 100 + i*25 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
-            .style("fill", function(d, i){ return vis.colors[i]})
-            .text(function(d){ return d})
-            .attr("text-anchor", "left")
-            .style("alignment-baseline", "middle")
+        if (vis.genre == 'pop') {
+            // legend
+            vis.svg.selectAll("mylabels")
+                .data(vis.displayPop)
+                .enter()
+                .append("text")
+                .attr("x", vis.width - 350 + 20)
+                .attr("y", function(d,i){ return 100 + i*25 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
+                .style("fill", function(d, i){ return vis.colors[i]})
+                .text(function(d){ return d})
+                .attr("text-anchor", "left")
+                .style("alignment-baseline", "middle")
 
-        vis.svg.selectAll("mydots")
-            .data(vis.displayData.columns.slice(1))
-            .enter()
-            .append("rect")
-            .attr("x", vis.width - 350)
-            .attr("y", function(d,i){ return 100 + i*25 - 7 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
-            .attr("height", 15)
-            .attr("width", 15)
-            .style("fill", function(d, i){ return vis.colors[i]})
+            vis.svg.selectAll("mydots")
+                .data(vis.displayPop)
+                .enter()
+                .append("rect")
+                .attr("x", vis.width - 350)
+                .attr("y", function(d,i){ return 100 + i*25 - 7 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
+                .attr("height", 15)
+                .attr("width", 15)
+                .style("fill", function(d, i){ return vis.colors[i]})
+        }
+        else if (vis.genre == 'rap') {
+            // legend
+            vis.svg.selectAll("mylabels")
+                .data(vis.displayRap)
+                .enter()
+                .append("text")
+                .attr("x", vis.width - 350 + 20)
+                .attr("y", function(d,i){ return 100 + i*25 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
+                .style("fill", function(d, i){ return vis.colors[i]})
+                .text(function(d){ return d})
+                .attr("text-anchor", "left")
+                .style("alignment-baseline", "middle")
+
+            vis.svg.selectAll("mydots")
+                .data(vis.displayRap)
+                .enter()
+                .append("rect")
+                .attr("x", vis.width - 350)
+                .attr("y", function(d,i){ return 100 + i*25 - 7 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
+                .attr("height", 15)
+                .attr("width", 15)
+                .style("fill", function(d, i){ return vis.colors[i]})
+        }
+        else if (vis.genre == 'rock') {
+            // legend
+            vis.svg.selectAll("mylabels")
+                .data(vis.displayRock)
+                .enter()
+                .append("text")
+                .attr("x", vis.width - 350 + 20)
+                .attr("y", function(d,i){ return 100 + i*25 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
+                .style("fill", function(d, i){ return vis.colors[i]})
+                .text(function(d){ return d})
+                .attr("text-anchor", "left")
+                .style("alignment-baseline", "middle")
+
+            vis.svg.selectAll("mydots")
+                .data(vis.displayRock)
+                .enter()
+                .append("rect")
+                .attr("x", vis.width - 350)
+                .attr("y", function(d,i){ return 100 + i*25 - 7 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
+                .attr("height", 15)
+                .attr("width", 15)
+                .style("fill", function(d, i){ return vis.colors[i]})
+        }
+        // // legend
+        // vis.svg.selectAll("mylabels")
+        //     .data(vis.displayData.columns.slice(1))
+        //     .enter()
+        //     .append("text")
+        //     .attr("x", vis.width - 350 + 20)
+        //     .attr("y", function(d,i){ return 100 + i*25 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
+        //     .style("fill", function(d, i){ return vis.colors[i]})
+        //     .text(function(d){ return d})
+        //     .attr("text-anchor", "left")
+        //     .style("alignment-baseline", "middle")
+        //
+        // vis.svg.selectAll("mydots")
+        //     .data(vis.displayData.columns.slice(1))
+        //     .enter()
+        //     .append("rect")
+        //     .attr("x", vis.width - 350)
+        //     .attr("y", function(d,i){ return 100 + i*25 - 7 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
+        //     .attr("height", 15)
+        //     .attr("width", 15)
+        //     .style("fill", function(d, i){ return vis.colors[i]})
 
 
     }

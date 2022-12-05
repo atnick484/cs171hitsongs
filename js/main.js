@@ -20,7 +20,7 @@ loadData();
 function loadData() {
     d3.json("data/data.json").then(data_genres=>{
 
-        d3.csv("data/df_positivity_2010_pop_processed.csv", row => {
+        d3.csv("data/df_positivity_all_processed.csv", row => {
             row.percent = +row.percent;
             row.song1 = parseFloat(row.song1);
             row.song2 = parseFloat(row.song2);
@@ -133,18 +133,84 @@ function updateVisualization2() {
         decade2010.style.display = 'none';
         decade2020.style.display = 'block';
     }
+    lyricViz.updateViz();
 }
 
 function playLyricVis1() {
-    let audio = document.getElementById("audio1");
+
+    let times = [
+        224000,
+        207000,
+        246000,
+        241000,
+        258000,
+        334000,
+        234000,
+        209000,
+        196000,
+        246000,
+        202000,
+        246000,
+        180000,
+        253000,
+        175000
+    ]
+
+    let names = [
+        "Physical by Olivia Newton-John",
+        "You Be Illin' by Run-D.M.C.",
+        "I Hate Myself For Loving You by Joan Jett & the Blackhearts",
+        "All I Want For Christmas Is You by Mariah Carey",
+        "I Get Around by 2Pac",
+        "Always by Bon Jovi",
+        "Love Story by Taylor Swift",
+        "Heartless by Kanye West",
+        "Beverly Hills by Weezer",
+        "Rolling In The Deep by Adele",
+        "Super Bass by Nicki Minaj",
+        "Love Remains The Same by Gavin Rossdale",
+        "Heat Waves by Glass Animals",
+        "I Like It by Cardi B, Bad Bunny & J Balvin",
+        "Shy Away by twenty one pilots",
+    ]
+
+    let decade = d3.select("#decade-box").property("value");
+    let genre = d3.select("#genre-box").property("value");
+    let aux_num;
+    if (genre == 'pop') {
+        aux_num = 1;
+    }
+    else if (genre == 'rap') {
+        aux_num = 2;
+    }
+    else {
+        aux_num = 3;
+    }
+    let audioNumber = (Math.round(decade / 10) - 198) * 3 + aux_num;
+    let audioString = "audio" + audioNumber.toString();
+    let audio = document.getElementById(audioString);
     audio.play();
     lyricViz.paths.forEach(function (pathObj, index) {
-        lyricViz.repeat(pathObj, 187000);
+        lyricViz.repeat(pathObj, times[audioNumber-1]);
     })
 }
 
 function stopLyricVis1() {
-    let audio = document.getElementById("audio1");
+    let decade = d3.select("#decade-box").property("value");
+    let genre = d3.select("#genre-box").property("value");
+    let aux_num;
+    if (genre == 'pop') {
+        aux_num = 1;
+    }
+    else if (genre == 'rap') {
+        aux_num = 2;
+    }
+    else {
+        aux_num = 3;
+    }
+    let audioNumber = (Math.round(decade / 10) - 198) * 3 + aux_num;
+    let audioString = "audio" + audioNumber.toString();
+    let audio = document.getElementById(audioString);
     audio.pause();
     lyricViz.updateViz();
 }
