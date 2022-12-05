@@ -3,18 +3,34 @@
 let genreViz, wordTree, lyricViz;
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
-let selectBox = "pop";
+let selectBox = "all";
 let selectBox2 = 'love';
+let selectBox3 = 1;
 
 d3.select("#genre-box").on('change', updateVisualization);
 
 d3.select("#decade-box").on('change', updateVisualization2);
 
+d3.select("#song-box").on('change', updateVisualization3);
+
 // Start application by loading the data
 loadData();
 
 function loadData() {
-    d3.json("data/data.json").then(data_genres=>{
+    Promise.all([
+        d3.csv("data_scrape/genre_viz_data.csv", row => {
+            // console.log(row.rank);
+            let newRank = row.rank.replaceAll("{", "");
+            newRank = newRank.replaceAll("}", "");
+            newRank = "[{" + newRank + "}]";
+            newRank = newRank.replaceAll(',', '}, {');
+            newRank = newRank.replaceAll("'", '"')
+            row.rank = JSON.parse(newRank);
+            return row;
+        }),
+    ]).then(function(files) {
+        // files[0] will contain file1.csv
+        // files[1] will contain file2.csv
 
         d3.csv("data/df_positivity_2010_pop_processed.csv", row => {
             row.percent = +row.percent;
@@ -23,23 +39,20 @@ function loadData() {
             return row;
         }).then(data_sentiment=>{
 
-            // prepare data
-            console.log(data_genres);
-
-            genreViz = new GenreViz("genreViz", data_genres);
+            genreViz = new GenreViz("genreViz", files[0]);
             genreViz.initViz();
 
             lyricViz = new LyricViz("lyricViz", data_sentiment);
             lyricViz.initViz();
 
-            lyrics = "";
+            // lyrics = "";
 
-            d3.csv("data_scrape/chart_with_lyrics_genres_split_1.csv", row => {
-                return row
-            }).then(lyric_data => {
-                wordTree = new wordTreeViz("wordTreeViz", lyric_data);
-                wordTree.initViz();
-            })
+            // d3.csv("data_scrape/chart_with_lyrics_genres_split_1.csv", row => {
+            //     return row
+            // }).then(lyric_data => {
+            //     wordTree = new wordTreeViz("wordTreeViz", lyric_data);
+            //     wordTree.initViz();
+            // })
 
             // prepare data
             console.log(data_sentiment);
@@ -129,4 +142,11 @@ function updateVisualization2() {
         decade2010.style.display = 'none';
         decade2020.style.display = 'block';
     }
+}
+
+function updateVisualization3() {
+    selectBox3 = d3.select("#song-box").property("value");
+
+    wordTree.svg.selectAll("*").remove();
+    wordTree.wrangleData(parseInt(selectBox3));
 }
