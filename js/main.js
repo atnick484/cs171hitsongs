@@ -2,6 +2,7 @@
 let genreViz, wordTree, lyricViz, durationViz, tempoViz, repetitionMatrix;
 
 let songData;
+let lyricData;
 
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
@@ -48,9 +49,10 @@ function loadData() {
             // lyrics = "";
 
 
-            d3.csv("data_scrape/chart_with_lyrics_genres_split_1.csv", row => {
+            d3.csv("data/positivity_on_selection.csv", row => {
                 return row
             }).then(lyric_data => {
+                lyricData = lyric_data;
                 wordTree = new wordTreeViz("wordTreeViz", lyric_data);
                 wordTree.initViz();
             })
@@ -107,6 +109,20 @@ function updateVisualization2() {
     if (selectBox2 != 'none') {
         textContainer.style.display = 'block';
     }
+    let num = 0;
+    if (selectBox === "pop") {
+        num = (Math.round( selectBox2 / 10) - 198) * 9
+    } else if (selectBox === "rap") {
+        num = (Math.round( selectBox2 / 10) - 198) * 9 + 3
+    } else {
+        num = (Math.round( selectBox2 / 10) - 198) * 9 + 6
+    }
+    document.getElementById('song1').innerHTML = lyricData[num].song
+    document.getElementById('song1').setAttribute('value', num)
+    document.getElementById('song2').innerHTML = lyricData[num + 1].song
+    document.getElementById('song2').setAttribute('value', num + 1)
+    document.getElementById('song3').innerHTML = lyricData[num + 2].song
+    document.getElementById('song3').setAttribute('value', num + 2)
 
     if (selectBox2 == 1980) {
         decade1980.style.display = 'block';
@@ -114,6 +130,7 @@ function updateVisualization2() {
         decade2000.style.display = 'none';
         decade2010.style.display = 'none';
         decade2020.style.display = 'none';
+
     }
     else if (selectBox2 == 1990) {
         decade1980.style.display = 'none';

@@ -181,9 +181,6 @@ class wordTreeViz {
             })
             .on('mouseover', function (event, d) {
                 d3.select(this).attr('fill', "#1DB954");
-                d.children.forEach((elt) => {
-                    d3.select(elt).attr('fill', "#1DB954");
-                })
                 var inputText = document.getElementById("lyricContainer");
                 var innerHTML = inputText.innerHTML;
                 inputText.innerHTML = innerHTML.replaceAll(d.data.word, "<span class='highlight'>"+d.data.word+"</span>");;
