@@ -61,7 +61,6 @@ class LyricViz {
         let vis = this;
 
         vis.updateViz();
-
     }
 
     repeat(pathObj, timems) {
@@ -76,17 +75,10 @@ class LyricViz {
             .on("end", () => setTimeout(repeat, 1000)); // this will repeat the animation after waiting 1 second
     }
 
-
-
     updateViz() {
         let vis = this;
         vis.svg.select('.y-axis').call(vis.yAxis)
         vis.svg.select('.x-axis').call(vis.xAxis)
-
-
-        // let path = vis.svg.append("path")
-        //     .datum(vis.displayData)
-        //     .attr("class", "line");
 
         vis.colors = ['#b9767e', '#6da87f', '#ffa64a']
 
