@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -6,18 +6,134 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 
+    <!--FullPage Js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js" integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css" integrity="sha512-hGBKkjAVJUXoImyDezOKpzuY4LS1eTvJ4HTC/pbxn47x5zNzGA1vi3vFQhhOehWLTNHdn+2Yqh/IRNPw/8JF/A==" crossorigin="anonymous" />
+    <!--End FullPage Js-->
+
+
 </head>
 <body>
 
-<!-- HEADING -->
-<div class="row d-flex align-items-center" id="heading">
-    <h1>Can you write a hit song?</h1>
-    <p>An interactive story by Chris Barber, Xavier Evans, and Andrew Nickerson</p>
+<!-- HEADING-->
+<!--<div class="row d-flex align-items-center" id="heading">-->
+<!--    <h1>Can you write a hit song?</h1>-->
+<!--    <p>An interactive story by Chris Barber, Xavier Evans, and Andrew Nickerson</p>-->
 
-</div>
+<!--</div>-->
 <!-- INTRO -->
-<div class="row d-flex align-items-center">
-    <div class="col">
+<!--<div class="row d-flex align-items-center">-->
+<!--    <div class="col">-->
+<!--        <h2>Step 1</h2>-->
+<!--        <p>Pick a genre to discover more about that genre's success on the billboard top 100 music board. The genre you pick will be the type of song you write! Hover over each line to learn which song it is!</p>-->
+<!--        <div class="form-group">-->
+<!--            &lt;!&ndash; Select box to choose the ranking type &ndash;&gt;-->
+<!--            <select class="form-select" id="genre-box">-->
+<!--                <option selected value="none">Choose a genre</option>-->
+<!--                <option value="pop">Pop</option>-->
+<!--                <option value="rap">Rap</option>-->
+<!--                <option value="rock">Rock</option>-->
+<!--                <option value="other">Other</option>-->
+<!--            </select>-->
+<!--        </div>-->
+<!--        <div class="textContainer" id="genreTextContainer">-->
+<!--            <p class='textInContainer' id="genreTextPop"> Nice choice! Close to 90% of the songs with the most weeks on the board in the last 20 years are pop songs. Isn't that nuts?!</p>-->
+<!--            <p class='textInContainer' id="genreTextRock"> Nice choice! Surprisingly, out of the top 50 songs with the most weeks on the board in the last 20 years, only 6 of them have been rock songs. Crazy!</p>-->
+<!--            <p class='textInContainer' id="genreTextRap"> Nice choice! Rap seems to rarely be on the billboard top 100 for a long amount of time, but it's on the rise in recent years.</p>-->
+<!--        </div>-->
+<!--        <div id="genreViz"></div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row d-flex align-items-center">-->
+<!--    <div class="col">-->
+<!--        <h2>Step 2</h2>-->
+<!--        <p>Tell us which decade you'd like your hit song to be from! We'll use this to help you create a hit chorus.</p>-->
+<!--        <div class="form-group">-->
+<!--            &lt;!&ndash; Select box to choose the ranking type &ndash;&gt;-->
+<!--            <select class="form-select" id="decade-box">-->
+<!--                <option selected value="none">Choose a decade</option>-->
+<!--                <option value=1980>1980</option>-->
+<!--                <option value=1990>1990</option>-->
+<!--                <option value=2000>2000</option>-->
+<!--                <option value=2010>2010</option>-->
+<!--                <option value=2020>2020</option>-->
+<!--            </select>-->
+<!--        </div>-->
+<!--        <div class="textContainer" id="decadeTextContainer">-->
+<!--            <p class='textInContainer' id="decade1980"> You chose 1980! We've picked a few top songs from the '80s in your selected genre. Press "Play Song" to hear one of our selections play while we animate lyrical sentiment.</p>-->
+<!--            <p class='textInContainer' id="decade1990"> You chose 1990! We've picked a few top songs from the '90s in your selected genre. Press "Play Song" to hear one of our selections play while we animate lyrical sentiment.</p>-->
+<!--            <p class='textInContainer' id="decade2000"> You chose 2000! We've picked a few top songs from the 2000s in your selected genre. Press "Play Song" to hear one of our selections play while we animate lyrical sentiment.</p>-->
+<!--            <p class='textInContainer' id="decade2010"> You chose 2010! We've picked a few top songs from the '10s in your selected genre. Press "Play Song" to hear one of our selections play while we animate lyrical sentiment.</p>-->
+<!--            <p class='textInContainer' id="decade2020"> You chose 2020! We've picked a few top songs from the '20s in your selected genre. Press "Play Song" to hear one of our selections play while we animate lyrical sentiment.</p>-->
+<!--        </div>-->
+<!--        <button type="button" class="btn btn-primary" id="play-button1">Play Song</button>-->
+<!--        <button type="button" class="btn btn-primary" id="stop-button1">Stop Song</button>-->
+<!--        <div id="lyricViz"></div>-->
+<!--        <p>At every 10% duration through each song, we took a chunk of our lyrics (corresponding to that portion of the song) and ran sentiment-->
+<!--            analysis on each set of words, after which each proportion is given a positivity score between 1 (being most positive) and -1 (being most negative)</p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row d-flex align-items-center">-->
+<!--    <div class="col">-->
+<!--        <h2>Step 3</h2>-->
+<!--        <p>It's time to write a chorus for your song! Check out the most popular phrases used in the songs that fit your theme and genre below to help you write a few lines in the text box underneath.</p>-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-8">-->
+<!--                <div class="form-group">-->
+<!--                    &lt;!&ndash; Select box to choose the ranking type &ndash;&gt;-->
+<!--                    <select class="form-select" id="song-box">-->
+<!--                        <option selected value="none">Choose a song</option>-->
+<!--                        <option value="1">Song 1</option>-->
+<!--                        <option value="2">Song 2</option>-->
+<!--                        <option value="3">Song 3</option>-->
+<!--                        <option value="4">Song 4</option>-->
+<!--                        <option value="12">Song 5</option>-->
+<!--                    </select>-->
+<!--                </div>-->
+<!--                <div id="wordTreeViz"></div>-->
+<!--            </div>-->
+<!--            <div class="col-md-4">-->
+<!--                <div id="lyricContainer">hello</div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row d-flex align-items-center">-->
+<!--    <div class="col">-->
+<!--        <h2>Step 4</h2>-->
+<!--        <p>See how your chorus did against other similar songs</p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row d-flex align-items-center">-->
+<!--    <h2>Step 5</h2>-->
+<!--    <p>Pick a song duration and tempo (beats per minute). You can see the length of other similar songs below.</p>-->
+<!--    <div class="col">-->
+<!--        <div id="durationViz"></div>-->
+<!--    </div>-->
+<!--    <div class="col">-->
+<!--        <div id="tempoViz"></div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="row d-flex align-items-center">-->
+<!--    <div class="col">-->
+<!--        <h2>Step 6</h2>-->
+<!--        <p>Success! You've successfully written a hit chorus. Based on our numbers, your song would be on the Billboard Hot 100 for 6 weeks and have a peak rank of 45.</p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div id="fullpage">
+
+    <div class="vertical-scrolling">
+        <h1>Can you write a hit song?</h1>
+        <p>An interactive story by Chris Barber, Xavier Evans, and Andrew Nickerson</p>
+    </div>
+
+    <div class="vertical-scrolling">
         <h2>Step 1</h2>
         <p>Pick a genre to discover more about that genre's success on the billboard top 100 music board. The genre you pick will be the type of song you write! Hover over each line to learn which song it is!</p>
         <div class="form-group">
@@ -37,10 +153,8 @@
         </div>
         <div id="genreViz"></div>
     </div>
-</div>
 
-<div class="row d-flex align-items-center">
-    <div class="col">
+    <div class="vertical-scrolling">
         <h2>Step 2</h2>
         <p>Tell us which decade you'd like your hit song to be from! We'll use this to help you create a hit chorus.</p>
         <div class="form-group">
@@ -67,10 +181,8 @@
         <p>At every 10% duration through each song, we took a chunk of our lyrics (corresponding to that portion of the song) and ran sentiment
             analysis on each set of words, after which each proportion is given a positivity score between 1 (being most positive) and -1 (being most negative)</p>
     </div>
-</div>
 
-<div class="row d-flex align-items-center">
-    <div class="col">
+    <div class="vertical-scrolling">
         <h2>Step 3</h2>
         <p>It's time to write a chorus for your song! Check out the most popular phrases used in the songs that fit your theme and genre below to help you write a few lines in the text box underneath.</p>
         <div class="row">
@@ -93,31 +205,41 @@
             </div>
         </div>
     </div>
-</div>
 
-<div class="row d-flex align-items-center">
-    <div class="col">
-        <h2>Step 4</h2>
-        <p>See how your chorus did against other similar songs</p>
+    <div class="vertical-scrolling">
+        <div class="row d-flex align-items-center">
+            <div class="col">
+                <h2>Step 4</h2>
+                <p>See how your chorus did against other similar songs</p>
+            </div>
+        </div>
     </div>
-</div>
 
-<div class="row d-flex align-items-center">
-    <h2>Step 5</h2>
-    <p>Pick a song duration and tempo (beats per minute). You can see the length of other similar songs below.</p>
-    <div class="col">
-        <div id="durationViz"></div>
+    <div class="vertical-scrolling" id="step5">
+        <h2>Step 5</h2>
+        <p id="frequencyInstructions"></p>
+        <p>Hover over each visualization and click to select your song's duration and tempo. To maximize the likelihood of your song being a hit, we recommend choosing a value near the peak of the distribution. To undo, click again and make a new selection.</p>
+        <div class="row d-flex align-items-center">
+            <div class="col">
+                <div id="durationViz"></div>
+            </div>
+            <div class="col">
+                <div id="tempoViz"></div>
+            </div>
+        </div>
+<!--        <div class="row d-flex align-items-center">-->
+<!--            <div class="col">-->
+<!--                <div id="tempoViz"></div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
-    <div class="col">
-        <div id="tempoViz"></div>
-    </div>
-</div>
 
-<div class="row d-flex align-items-center">
-    <div class="col">
+    <div class="vertical-scrolling">
         <h2>Step 6</h2>
         <p>Success! You've successfully written a hit chorus. Based on our numbers, your song would be on the Billboard Hot 100 for 6 weeks and have a peak rank of 45.</p>
     </div>
+
+
 </div>
 
 
@@ -158,5 +280,16 @@
 <script src="js/lyricViz.js"></script>
 <script src="js/durationViz.js"></script>
 <script src="js/tempoViz.js"></script>
+ <script>
+     new fullpage("#fullpage", {
+         sectionSelector: '.vertical-scrolling',
+         navigation: true,
+         scrollBar: true,
+         scrollingSpeed: 900,
+         navigationTooltips: ['firstSlide', 'secondSlide', 'firstSlide', 'secondSlide', 'firstSlide', 'secondSlide'],
+         showActiveTooltip: true,
+
+     });
+ </script>
 </body>
 </html>

@@ -3,6 +3,7 @@ class TempoViz {
         this.parentElement = parentElement;
         this.data = data;
         this.displayData = [];
+        this.chosenDuration = null;
 
         this.colors = ['#b9767e', '#6da87f', '#ffa64a', "#000000"];
     }
@@ -47,7 +48,7 @@ class TempoViz {
             .attr("text-anchor", "middle")
             .attr("x", vis.width / 2)
             .attr("y", vis.height + 50)
-            .text("Song Tempo (beats per minute)");
+            .text("Tempo (beats per minute)");
 
         vis.svg.append("text")
             .attr("class", "y label")
@@ -72,24 +73,6 @@ class TempoViz {
             .attr("class", "x-axis axis")
             .attr('transform', 'translate(0,' + vis.height + ")");
 
-        // Interactivity
-        //
-        // vis.svg.append('line').classed('hoverLine', true)
-        // vis.svg.append('circle').classed('hoverPoint', true);
-        // vis.svg.append("text").classed('hoverText', true);
-        //
-        // vis.svg.append('rect')
-        //     .attr('fill', 'transparent')
-        //     .attr('x', 0)
-        //     .attr('y', 0)
-        //     .attr('width', vis.width)
-        //     .attr('height', vis.height)
-        // ;
-
-        // vis.svg.on("mousemove", (event) => {
-        //     vis.mouseMove(event);
-        // })
-
         vis.wrangleData();
 
     }
@@ -105,6 +88,8 @@ class TempoViz {
 
     updateViz() {
         let vis = this;
+
+
         vis.svg.select('.y-axis').transition().call(vis.yAxis)
         vis.svg.select('.x-axis').transition().call(vis.xAxis)
 
@@ -128,14 +113,88 @@ class TempoViz {
                 .y0(vis.y(0))
                 .y1(function(d) { return vis.y(d[1]); })
             );
-            // .attr("d",  d3.line()
-            //     .curve(d3.curveBasis)
-            //     .x(function(d) { return vis.x(d[0]); })
-            //     .y(function(d) { return vis.y(d[1]); })
-            // );
 
+        vis.bisectDuration = d3.bisector(d => d[0]).right;
 
+        vis.tooltipGroup = vis.svg.append("g")
+            .attr("class", "tooltip-group")
 
+        // append tooltip
+        vis.tooltip = d3.select("body").append('div')
+            .attr('class', "tooltip")
+            .attr('id', 'tempoTooltip')
+
+        vis.tooltipGroup
+            .append("rect")
+            .attr("class", "tooltip-rect")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("height", vis.height)
+            .attr("width", vis.width)
+            .attr("fill", "none")
+            .attr("pointer-events", "all")
+            .on("mousemove", function (event) {
+                if (!vis.chosenDuration) {
+                    vis.mousemove(event);
+                }
+            })
+            .on("click", function (event) {
+                vis.mouseUnclick(event);
+            });
+        vis.tooltipLine = vis.tooltipGroup
+            .append("line")
+            .attr("class", "tooltip-line")
+            .attr("x1", 0)
+            .attr("x2", 0)
+            .attr("y1", vis.height)
+            .attr("y2", 0)
+            .attr("stroke-width", 3)
+            .attr("stroke", "blue")
+            .on("click", function (event) {
+                // vis.tooltipGroup.style("visibility", "visible");
+                vis.mouseClick(event);
+                // console.log(event);
+            });
+
+    }
+
+    mousemove(event) {
+        let vis = this;
+        let x_pos = d3.pointer(event)[0];
+        let x_inv = vis.x.invert(x_pos);
+        let loc = vis.bisectDuration(vis.density, x_inv);
+        vis.datum = vis.density[loc];
+        vis.tooltipLine.attr("transform", "translate(" + x_pos + ", " + 0 + ")");
+        vis.tooltip
+            .style("opacity", 1)
+            .style("left", event.pageX + 20 + "px")
+            .style("top", event.pageY + 50 + "px")
+            .html(`
+                 <div style="border: thin solid grey; border-radius: 5px; background: #212121; padding: 5px; text-align: left">
+                     <h3>${vis.datum[0]}bpm</h3>
+                      <p><b>Frequency:</b> ${Number((vis.datum[1] * 100).toFixed(3))}%</p>
+                 </div>`
+            );
+    }
+
+    mouseClick(event) {
+        let vis = this;
+        let x_pos = d3.pointer(event)[0];
+        let x_inv = vis.x.invert(x_pos);
+        let loc = vis.bisectDuration(vis.density, x_inv);
+        vis.datum = vis.density[loc];
+        vis.chosenDuration = vis.datum;
+        vis.tooltipLine
+            .attr("stroke", "black")
+            .attr("stroke-width", 5);
+    }
+
+    mouseUnclick(event) {
+        let vis = this;
+        vis.tooltipLine
+            .attr("stroke", "blue")
+            .attr("stroke-width", 3);
+        vis.chosenDuration = null;
     }
 
     // Function to compute density
@@ -151,57 +210,4 @@ class TempoViz {
             return Math.abs(v /= k) <= 1 ? 0.75 * (1 - v * v) / k : 0;
         };
     }
-
-    mouseMove = (event) => {
-        let vis = this;
-        event.preventDefault();
-        const mouse = d3.pointer(event.target);
-        const [
-            xCoord,
-            yCoord,
-        ] = mouse;
-        console.log(mouse);
-
-        const mouseTime = vis.x.invert(xCoord);
-
-        if (vis.x(mouseTime) < vis.margin.left ||
-            vis.x(mouseTime) > vis.width - vis.margin.right) {
-            return;
-        }
-
-        console.log(mouseTime)
-
-        const bisectTime = d3.bisector(d => d[0]).right;
-        const xIndex = bisectTime(vis.density, mouseTime, 1);
-        console.log(vis.density[xIndex])
-        const mouseDensity = vis.density[xIndex][1];
-
-        svg.selectAll('.hoverLine')
-            .attr('x1', vis.x(mouseTime))
-            .attr('y1', vis.margin.top)
-            .attr('x2', vis.x(mouseTime))
-            .attr('y2', vis.height - vis.margin.bottom)
-            .attr('stroke', '#147F90')
-            .attr('fill', '#A6E8F2')
-        ;
-
-        svg.selectAll('.hoverPoint')
-            .attr('cx', vis.x(mouseTime))
-            .attr('cy', vis.y(mouseTime))
-            .attr('r', '7')
-            .attr('fill', '#147F90')
-        ;
-
-        const isLessThanHalf = xIndex > vis.density.length / 2;
-        const hoverTextX = isLessThanHalf ? '-0.75em' : '0.75em';
-        const hoverTextAnchor = isLessThanHalf ? 'end' : 'start';
-
-        svg.selectAll('.hoverText')
-            .attr('x', vis.x(mouseTime))
-            .attr('y', vis.y(mouseDensity))
-            .attr('dx', hoverTextX)
-            .attr('dy', '-1.25em')
-            .style('text-anchor', hoverTextAnchor)
-            .text(d3.format('.5s')(mouseDensity));
-    };
 }

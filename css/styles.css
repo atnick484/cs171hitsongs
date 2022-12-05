@@ -63,6 +63,12 @@ body {
     margin-right: 15%;
 }
 
+.vertical-scrolling {
+    padding-left: 8%;
+    padding-right: 8%;
+    width: 90%;
+}
+
 h2 {
     color: #1DB954;
     font-family: GothamMedium;
@@ -74,13 +80,14 @@ h3 {
 }
 
 p {
-    color: rgba(7, 51, 26, 0.37);
+    color: rgba(7, 51, 26, 0.53);
+    /*color: rgba(152, 255, 152, 0.61);*/
     font-family: GothamMedium;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .row {
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .form-select {
@@ -116,6 +123,7 @@ p {
 .textInContainer {
     display: none;
     color: rgba(0, 0, 0, 0.68);
+    /*color: rgba(255, 255, 255, 0.68);*/
 }
 
 .lyricContainer {

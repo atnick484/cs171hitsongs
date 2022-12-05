@@ -7,6 +7,7 @@ let selectBox = "all";
 let selectBox2 = 'love';
 let selectBox3 = 1;
 
+
 d3.select("#genre-box").on('change', updateVisualization);
 
 d3.select("#decade-box").on('change', updateVisualization2);
@@ -17,6 +18,7 @@ d3.select("#song-box").on('change', updateVisualization3);
 d3.select("#play-button1").on('click', playLyricVis1);
 
 d3.select("#stop-button1").on('click', stopLyricVis1);
+
 
 
 // Start application by loading the data
@@ -35,8 +37,6 @@ function loadData() {
             return row;
         }),
     ]).then(function(files) {
-        // files[0] will contain file1.csv
-        // files[1] will contain file2.csv
 
 
             genreViz = new GenreViz("genreViz", files[0]);
@@ -82,18 +82,6 @@ function updateVisualization() {
     }
     // console.log(selectBox);
     genreViz.updateViz();
-
-    d3.csv("data/df_positivity_all_processed.csv", row => {
-        row.percent = +row.percent;
-        return row;
-    }).then(data_sentiment=>{
-
-
-        lyricViz = new LyricViz("lyricViz", data_sentiment);
-        lyricViz.initViz();
-
-
-    });
 }
 
 function updateVisualization2() {
@@ -145,7 +133,18 @@ function updateVisualization2() {
         decade2010.style.display = 'none';
         decade2020.style.display = 'block';
     }
-    lyricViz.updateViz();
+    d3.csv("data/df_positivity_all_processed.csv", row => {
+        row.percent = +row.percent;
+        return row;
+    }).then(data_sentiment=>{
+
+
+        lyricViz = new LyricViz("lyricViz", data_sentiment);
+        lyricViz.initViz();
+
+
+    });
+    // lyricViz.updateViz();
 
     let csv_string = "data_scrape/chart_" + selectBox2.toString() + "_" + d3.select("#genre-box").property("value") + ".csv"
 
@@ -155,6 +154,9 @@ function updateVisualization2() {
         return row;
     }).then(data_specific=> {
         console.log(data_specific);
+
+        document.getElementById('frequencyInstructions').innerHTML =
+            "We plotted the distribution of song durations and tempos for all " + d3.select("#genre-box").property("value") + " songs from the " + selectBox2.toString() + "s!"
 
         durationViz = new DurationViz("durationViz", data_specific);
         durationViz.initViz();
@@ -252,3 +254,8 @@ function stopLyricVis1() {
     audio.pause();
     lyricViz.updateViz();
 }
+
+function updateVisualization4() {
+    console.log('testing');
+}
+
