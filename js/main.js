@@ -33,7 +33,6 @@ loadData();
 function loadData() {
     Promise.all([
         d3.csv("data_scrape/genre_viz_data.csv", row => {
-            // console.log(row.rank);
             let newRank = row.rank.replaceAll("{", "");
             newRank = newRank.replaceAll("}", "");
             newRank = "[{" + newRank + "}]";
@@ -80,7 +79,6 @@ function updateVisualization() {
     let textRock = document.getElementById('genreTextRock');
     let textRap = document.getElementById('genreTextRap');
     if (selectBox == 'pop') {
-        console.log(selectBox)
         textPop.style.display = 'block';
         textRock.style.display = 'none';
         textRap.style.display = 'none';
@@ -95,7 +93,6 @@ function updateVisualization() {
         textRock.style.display = 'none';
         textRap.style.display = 'block';
     }
-    // console.log(selectBox);
     genreViz.updateViz();
 }
 
@@ -183,7 +180,6 @@ function updateVisualization2() {
         row.tempo = parseFloat(row.tempo);
         return row;
     }).then(data_specific=> {
-        console.log(data_specific);
 
         document.getElementById('frequencyInstructions').innerHTML =
             "We plotted the distribution of song durations and tempos for all " + d3.select("#genre-box").property("value") + " songs from the " + selectBox2.toString() + "s!"
@@ -201,9 +197,7 @@ function select(element) {
     let selectData = element.textContent;
     inputBox.value = selectData.trim();
     icon.onclick = () => {
-        console.log(inputBox.value);
         let index = songData.map(song => Object.values(song)[0].song).indexOf(inputBox.value);
-        console.log(songData[index][index]);
         document.getElementById("repetition-matrix").innerHTML = "";
         repetitionMatrix = new RepetitionMatrix("repetition-matrix", songData[index][index]);
     }
@@ -301,7 +295,6 @@ function stopLyricVis1() {
 function chorusWritten(){
     let myChorus = document.getElementById("chorusTextArea").value;
     myChorusLines = myChorus.split(/\r?\n|\r|\n/g);
-    console.log(myChorusLines);
 }
 
 // function createRadarChart() {

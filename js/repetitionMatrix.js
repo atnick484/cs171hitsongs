@@ -44,7 +44,6 @@ class RepetitionMatrix {
                 return model.embed(chorus);
             });
             let embeddingsArray = embeddings.arraySync();
-            console.log(embeddingsArray);
 
             let similarityArray = Array(embeddingsArray.length).fill().map(() => Array(embeddingsArray.length));
             let lineIndices = [...Array(embeddingsArray.length).keys()];
@@ -73,7 +72,6 @@ class RepetitionMatrix {
     updateVis() {
         let vis = this;
 
-        console.log("displayData", vis.displayData);
 
         let countNotIdentity = Math.pow(vis.displayData.similarityArray.length, 2) - vis.displayData.similarityArray.length;
         let repetitiveness = 0;

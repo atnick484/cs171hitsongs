@@ -106,7 +106,6 @@ class GenreViz {
     wrangleData() {
         let vis = this;
 
-        console.log(vis.data);
 
         vis.unique_songs = [];
 
@@ -125,7 +124,6 @@ class GenreViz {
                 points: newRank
             })
         })
-        console.log(vis.displayData);
 
         vis.displayData = vis.displayData.slice(0,50);
 
@@ -159,7 +157,6 @@ class GenreViz {
         vis.svg.select('.y-axis').transition().call(vis.yAxis)
         vis.svg.select('.x-axis').transition().call(vis.xAxis)
 
-        // console.log(this.displayData);
         // Add the links
         let lines = vis.svg
             .selectAll('.mylinks')
@@ -201,7 +198,6 @@ class GenreViz {
                 return vis.curve(points);
             })
             .on("mouseover", function (event, d) {
-                console.log('hello');
                 d3.selectAll('.mylinks').transition().attr('stroke', '#00000033').attr('stroke-width', "3px");
                 d3.select(this).transition().attr('stroke', "#1DB954").attr('stroke-width', "8px");
 
@@ -218,7 +214,6 @@ class GenreViz {
                     );
             })
             .on("mouseout", function (event, d) {
-                console.log('hello');
                 d3.selectAll('.mylinks').transition().attr('stroke', j => vis.strokeColor(j)).attr('stroke-width', "3px");
 
                 vis.tooltip

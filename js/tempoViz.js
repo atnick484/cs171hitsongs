@@ -93,7 +93,6 @@ class TempoViz {
         vis.svg.select('.y-axis').transition().call(vis.yAxis)
         vis.svg.select('.x-axis').transition().call(vis.xAxis)
 
-        console.log(this.displayData);
         // Add the links
 
         let kde = vis.kernelDensityEstimator(vis.kernelEpanechnikov(7),vis.x.ticks(1000))
@@ -101,7 +100,6 @@ class TempoViz {
 
         vis.y.domain([0, d3.max(vis.density, function (d) { return d[1]; })])
 
-        console.log(vis.density);
 
         vis.svg.append("path")
             .attr("class", "mypath")
@@ -153,7 +151,6 @@ class TempoViz {
             .on("click", function (event) {
                 // vis.tooltipGroup.style("visibility", "visible");
                 vis.mouseClick(event);
-                // console.log(event);
             });
 
     }

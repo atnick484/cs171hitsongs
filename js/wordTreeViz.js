@@ -49,9 +49,7 @@ class wordTreeViz {
 
         let tree = new Tree();
 
-        console.log(i);
         let lyric = vis.data[i]['lyrics_text'];
-        console.log(lyric);
         document.getElementById("lyricContainer").innerText = vis.data[i]['lyrics'];
         let lyrics = lyric.split(" ");
         for (let i = 0; i < lyrics.length; i++) {
@@ -59,9 +57,6 @@ class wordTreeViz {
         }
 
         tree.sortTree();
-
-
-        console.log("tree", tree);
 
         vis.displayData = tree.root.children[0];
 
@@ -111,8 +106,6 @@ class wordTreeViz {
 
     updateViz() {
         let vis = this;
-
-        console.log("nodes", vis.displayData);
 
         let first = true;
         // vis.displayData.forEach(function(d) {

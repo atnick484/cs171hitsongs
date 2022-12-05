@@ -91,15 +91,12 @@ class DurationViz {
         vis.svg.select('.y-axis').transition().call(vis.yAxis)
         vis.svg.select('.x-axis').transition().call(vis.xAxis)
 
-        console.log(this.displayData);
         // Add the links
 
         let kde = vis.kernelDensityEstimator(vis.kernelEpanechnikov(7),vis.x.ticks(1000))
         vis.density =  kde( vis.data.map(function(d){  return d.duration_ms; }) )
 
         vis.y.domain([0, d3.max(vis.density, function (d) { return d[1]; })])
-
-        console.log(vis.density);
 
         vis.svg.append("path")
             .attr("class", "mypath")
@@ -137,7 +134,6 @@ class DurationViz {
                 }
             })
             .on("click", function (event) {
-                console.log("test");
                 vis.mouseUnclick(event);
             })
         vis.tooltipLine = vis.tooltipGroup

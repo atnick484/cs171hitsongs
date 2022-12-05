@@ -83,7 +83,6 @@ class LyricViz {
         vis.svg.select('.y-axis').call(vis.yAxis)
         vis.svg.select('.x-axis').call(vis.xAxis)
 
-        // console.log(this.displayData);
 
         // let path = vis.svg.append("path")
         //     .datum(vis.displayData)
@@ -109,7 +108,6 @@ class LyricViz {
             .enter();
 
         vis.displayData.columns.slice(1).forEach(function (songName, index) {
-            console.log(index)
             if (vis.genre == 'pop' && (index == vis.idxPop || index == vis.idxPop + 1 || index == vis.idxPop + 2)) {
                 let line = d3.line()
                     .curve(d3.curveBasis)
