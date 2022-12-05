@@ -204,9 +204,20 @@ p {
 }
 
 .lyricContainer {
-    overflow: scroll;
-    width: auto;
-    height: 100%;
+    /*overflow: scroll;*/
+    /*width: auto;*/
+    /*border: 1px solid black;*/
+    /*!*height: 100%;*!*/
+    /*!*display: -webkit-box;*!*/
+    /*height: 100px;*/
+    /*!*-webkit-line-clamp: 4;*!*/
+    /*!*-webkit-box-orient: vertical;*!*/
+    /*overflow: scroll;*/
+    /*width:150px;*/
+    /*height:150px;*/
+    /*line-height:3em;*/
+    /*overflow:scroll;*/
+    /*padding:5px;*/
 }
 .tooltip {
     position: absolute;
@@ -224,7 +235,8 @@ p {
 }
 
 .highlight {
-    background-color: yellow;
+    background-color: #1DB954;
+    color: white;
 }
 
 
