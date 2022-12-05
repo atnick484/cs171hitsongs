@@ -48,12 +48,12 @@ function loadData() {
             // lyrics = "";
 
 
-            // d3.csv("data_scrape/chart_with_lyrics_genres_split_1.csv", row => {
-            //     return row
-            // }).then(lyric_data => {
-            //     wordTree = new wordTreeViz("wordTreeViz", lyric_data);
-            //     wordTree.initViz();
-            // })
+            d3.csv("data_scrape/chart_with_lyrics_genres_split_1.csv", row => {
+                return row
+            }).then(lyric_data => {
+                wordTree = new wordTreeViz("wordTreeViz", lyric_data);
+                wordTree.initViz();
+            })
         });
     };
 
