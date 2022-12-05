@@ -3,12 +3,12 @@ let genreViz, wordTree, lyricViz, durationViz, tempoViz, repetitionMatrix;
 
 let songData;
 
+let dateFormatter = d3.timeFormat("%d/%m/%Y");
+let dateParser = d3.timeParse("%d/%m/%Y");
+
 let selectBox = "all";
 let selectBox2 = 'love';
 let selectBox3 = 1;
-
-let dateFormatter = d3.timeFormat("%d/%m/%Y");
-let dateParser = d3.timeParse("%d/%m/%Y");
 
 d3.select("#genre-box").on('change', updateVisualization);
 
@@ -36,7 +36,6 @@ function loadData() {
             newRank = newRank.replaceAll("'", '"')
             row.rank = JSON.parse(newRank);
             return row;
-
         }).then(data_sentiment => {
 
             // prepare data
@@ -46,8 +45,9 @@ function loadData() {
         // files[0] will contain file1.csv
         // files[1] will contain file2.csv
 
-        genreViz = new GenreViz("genreViz", files[0]);
-        genreViz.initViz();
+
+            genreViz = new GenreViz("genreViz", files[0]);
+            genreViz.initViz();
 
         lyricViz = new LyricViz("lyricViz", data_sentiment);
         lyricViz.initViz();
@@ -69,6 +69,7 @@ function loadData() {
             // })
         });
     };
+
 
 d3.json("data/all_songs.json", row => {
     row.chorus = eval(row.chorus);
