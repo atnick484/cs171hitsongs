@@ -1,6 +1,6 @@
 
 // Variables for the visualization instances
-let genreViz, wordTree, lyricViz;
+let genreViz, wordTree, lyricViz, durationViz, tempoViz;
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
 let selectBox = "all";
@@ -11,13 +11,13 @@ d3.select("#genre-box").on('change', updateVisualization);
 
 d3.select("#decade-box").on('change', updateVisualization2);
 
-<<<<<<< HEAD
+
 d3.select("#song-box").on('change', updateVisualization3);
-=======
+
 d3.select("#play-button1").on('click', playLyricVis1);
 
 d3.select("#stop-button1").on('click', stopLyricVis1);
->>>>>>> 891b20ea7f92c12400c1de00fb389588bae6d5e5
+
 
 // Start application by loading the data
 loadData();
@@ -38,18 +38,9 @@ function loadData() {
         // files[0] will contain file1.csv
         // files[1] will contain file2.csv
 
-        d3.csv("data/df_positivity_all_processed.csv", row => {
-            row.percent = +row.percent;
-            row.song1 = parseFloat(row.song1);
-            row.song2 = parseFloat(row.song2);
-            return row;
-        }).then(data_sentiment=>{
 
             genreViz = new GenreViz("genreViz", files[0]);
             genreViz.initViz();
-
-            lyricViz = new LyricViz("lyricViz", data_sentiment);
-            lyricViz.initViz();
 
             // lyrics = "";
 
@@ -60,14 +51,8 @@ function loadData() {
             //     wordTree.initViz();
             // })
 
-            // prepare data
-            console.log(data_sentiment);
-
-
         });
 
-
-    });
 }
 
 function updateVisualization() {
@@ -97,6 +82,18 @@ function updateVisualization() {
     }
     // console.log(selectBox);
     genreViz.updateViz();
+
+    d3.csv("data/df_positivity_all_processed.csv", row => {
+        row.percent = +row.percent;
+        return row;
+    }).then(data_sentiment=>{
+
+
+        lyricViz = new LyricViz("lyricViz", data_sentiment);
+        lyricViz.initViz();
+
+
+    });
 }
 
 function updateVisualization2() {
@@ -152,13 +149,18 @@ function updateVisualization2() {
 
     let csv_string = "data_scrape/chart_" + selectBox2.toString() + "_" + d3.select("#genre-box").property("value") + ".csv"
 
-    d3.csv("csv_string", row => {
-        row.percent = +row.percent;
-        row.song1 = parseFloat(row.song1);
-        row.song2 = parseFloat(row.song2);
+    d3.csv(csv_string, row => {
+        row.duration_ms = parseFloat(row.duration_ms) / 1000;
+        row.tempo = parseFloat(row.tempo);
         return row;
-    }).then(data_sentiment=> {
+    }).then(data_specific=> {
+        console.log(data_specific);
 
+        durationViz = new DurationViz("durationViz", data_specific);
+        durationViz.initViz();
+
+        tempoViz = new TempoViz("tempoViz", data_specific);
+        tempoViz.initViz();
 
     })
 }
@@ -208,6 +210,8 @@ function playLyricVis1() {
         "Shy Away by twenty one pilots",
     ]
 
+    let sequence = [0, 2, 0, 0, 2, 0, 1, 0, 1, 0, 1, 2, 2, 0, 2]
+
     let decade = d3.select("#decade-box").property("value");
     let genre = d3.select("#genre-box").property("value");
     let aux_num;
@@ -224,9 +228,9 @@ function playLyricVis1() {
     let audioString = "audio" + audioNumber.toString();
     let audio = document.getElementById(audioString);
     audio.play();
-    lyricViz.paths.forEach(function (pathObj, index) {
-        lyricViz.repeat(pathObj, times[audioNumber-1]);
-    })
+    // lyricViz.paths.forEach(function (pathObj, index) {
+    lyricViz.repeat(lyricViz.paths[sequence[audioNumber-1]], times[audioNumber-1]);
+    // })
 }
 
 function stopLyricVis1() {

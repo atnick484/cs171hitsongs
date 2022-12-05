@@ -31,7 +31,7 @@ class LyricViz {
 
         // axes and legends
         vis.x = d3.scaleLinear()
-            .domain([0, 1])
+            .domain([0, 0.9])
             .range([0, vis.width])
 
         vis.y = d3.scaleLinear()

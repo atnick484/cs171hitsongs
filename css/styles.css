@@ -145,3 +145,19 @@ p {
 .unhighlight {
     background-color: transparent;
 }
+
+.tooltip2 {
+    position: absolute;
+    text-align: left;
+    font-family: "SuisseIntl";
+    font-size: 12px;
+    width: 80px;
+    height: 52px;
+    padding: 8px;
+    background: white;
+    pointer-events: none;
+    background-color: white;
+    line-height: 0.05em;
+    /* border: solid;
+    border-width: 1px; */
+}
