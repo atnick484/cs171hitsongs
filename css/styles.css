@@ -103,6 +103,7 @@ p {
     font-family: GothamMedium;
     color: white;
     margin-bottom: 20px;
+    margin-top: 15px;
     border-radius: 15px;
 
 }
@@ -236,7 +237,6 @@ p {
 
 .highlight {
     background-color: #1DB954;
-    color: white;
 }
 
 

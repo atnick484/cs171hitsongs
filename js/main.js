@@ -3,6 +3,7 @@ let genreViz, wordTree, lyricViz, durationViz, tempoViz, repetitionMatrix;
 
 let songData;
 let lyricData;
+let myChorusLines;
 
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
@@ -21,6 +22,8 @@ d3.select("#song-box").on('change', updateVisualization3);
 d3.select("#play-button1").on('click', playLyricVis1);
 
 d3.select("#stop-button1").on('click', stopLyricVis1);
+
+d3.select("#submit-chorus-button").on('click', chorusWritten);
 
 
 
@@ -293,6 +296,12 @@ function stopLyricVis1() {
     let audio = document.getElementById(audioString);
     audio.pause();
     lyricViz.updateViz();
+}
+
+function chorusWritten(){
+    let myChorus = document.getElementById("chorusTextArea").value;
+    myChorusLines = myChorus.split(/\r?\n|\r|\n/g);
+    console.log(myChorusLines);
 }
 
 // function createRadarChart() {
