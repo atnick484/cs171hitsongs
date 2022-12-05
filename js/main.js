@@ -4,6 +4,8 @@ let genreViz, wordTree, lyricViz, durationViz, tempoViz, repetitionMatrix;
 let songData;
 let lyricData;
 let myChorusLines;
+let myDuration;
+let myTempo;
 
 let dateFormatter = d3.timeFormat("%d/%m/%Y");
 let dateParser = d3.timeParse("%d/%m/%Y");
@@ -24,6 +26,8 @@ d3.select("#play-button1").on('click', playLyricVis1);
 d3.select("#stop-button1").on('click', stopLyricVis1);
 
 d3.select("#submit-chorus-button").on('click', chorusWritten);
+
+d3.select("#submit-duration-tempo").on('click', updateVisualization4);
 
 
 
@@ -295,6 +299,14 @@ function stopLyricVis1() {
 function chorusWritten(){
     let myChorus = document.getElementById("chorusTextArea").value;
     myChorusLines = myChorus.split(/\r?\n|\r|\n/g);
+    console.log(myChorusLines);
+}
+
+function updateVisualization4(){
+    myDuration = durationViz.getChosenDuration()[0];
+    myTempo = tempoViz.getChosenTempo()[0];
+    console.log(myDuration);
+    console.log(myTempo);
 }
 
 // function createRadarChart() {

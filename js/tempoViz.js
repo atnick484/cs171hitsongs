@@ -3,7 +3,7 @@ class TempoViz {
         this.parentElement = parentElement;
         this.data = data;
         this.displayData = [];
-        this.chosenDuration = null;
+        this.chosenTempo = null;
 
         this.colors = ['#b9767e', '#6da87f', '#ffa64a', "#000000"];
     }
@@ -132,7 +132,7 @@ class TempoViz {
             .attr("fill", "none")
             .attr("pointer-events", "all")
             .on("mousemove", function (event) {
-                if (!vis.chosenDuration) {
+                if (!vis.chosenTempo) {
                     vis.mousemove(event);
                 }
             })
@@ -176,11 +176,7 @@ class TempoViz {
 
     mouseClick(event) {
         let vis = this;
-        let x_pos = d3.pointer(event)[0];
-        let x_inv = vis.x.invert(x_pos);
-        let loc = vis.bisectDuration(vis.density, x_inv);
-        vis.datum = vis.density[loc];
-        vis.chosenDuration = vis.datum;
+        vis.chosenTempo = vis.datum;
         vis.tooltipLine
             .attr("stroke", "black")
             .attr("stroke-width", 5);
@@ -191,7 +187,7 @@ class TempoViz {
         vis.tooltipLine
             .attr("stroke", "blue")
             .attr("stroke-width", 3);
-        vis.chosenDuration = null;
+        vis.chosenTempo = null;
     }
 
     // Function to compute density
@@ -206,5 +202,9 @@ class TempoViz {
         return function(v) {
             return Math.abs(v /= k) <= 1 ? 0.75 * (1 - v * v) / k : 0;
         };
+    }
+    getChosenTempo() {
+        let vis = this;
+        return vis.chosenTempo;
     }
 }

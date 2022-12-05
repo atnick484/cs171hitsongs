@@ -252,28 +252,10 @@ class LyricViz {
                 .attr("width", 15)
                 .style("fill", function(d, i){ return vis.colors[i]})
         }
-        // // legend
-        // vis.svg.selectAll("mylabels")
-        //     .data(vis.displayData.columns.slice(1))
-        //     .enter()
-        //     .append("text")
-        //     .attr("x", vis.width - 350 + 20)
-        //     .attr("y", function(d,i){ return 100 + i*25 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
-        //     .style("fill", function(d, i){ return vis.colors[i]})
-        //     .text(function(d){ return d})
-        //     .attr("text-anchor", "left")
-        //     .style("alignment-baseline", "middle")
-        //
-        // vis.svg.selectAll("mydots")
-        //     .data(vis.displayData.columns.slice(1))
-        //     .enter()
-        //     .append("rect")
-        //     .attr("x", vis.width - 350)
-        //     .attr("y", function(d,i){ return 100 + i*25 - 7 - 125}) // 100 is where the first dot appears. 25 is the distance between dots
-        //     .attr("height", 15)
-        //     .attr("width", 15)
-        //     .style("fill", function(d, i){ return vis.colors[i]})
+
+
 
 
     }
+
 }
