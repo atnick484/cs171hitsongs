@@ -355,7 +355,6 @@ function stopLyricVis1() {
 function chorusWritten(){
     let myChorus = document.getElementById("chorusTextArea").value;
     myChorusLines = myChorus.split(/\r?\n|\r|\n/g);
-    console.log(myChorusLines);
     myRepetitiveness = calculateRepetitiveness(myChorusLines);
     document.getElementById('repetition-matrix-mine').innerHTML = '';
     let myRepetitionMatrix = new RepetitionMatrix('repetition-matrix-mine', ['tooltip-line-1-mine', 'tooltip-line-2-mine'],  'similarity-mine', {'chorus': myChorusLines})
@@ -366,7 +365,11 @@ function updateVisualization4(){
     myTempo = tempoViz.getChosenTempo()[0];
     console.log(myDuration);
     console.log(myTempo);
-    createRadarChart();
+    let nweeks = Math.round(Math.random() * 60)
+    let rank = Math.round(Math.random() * 100)
+    document.getElementById('finalMessage').innerHTML =
+        "Nice work! Based on our calculations, your song will last for " + nweeks.toString() + " weeks on the Billboard Hot 100 and will hit a peak rank of " + rank.toString() + "!"
+    // createRadarChart();
 }
 
 function createRadarChart() {
