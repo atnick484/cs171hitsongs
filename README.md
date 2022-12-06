@@ -4,7 +4,7 @@
 **Note**: Since our code and data is rather space-heavy, we have kept it in GitHub for TF grading. If needed, we can resubmit our code in the .zip format.
 
 [_Live Demo on GitHub Pages_](https://atnick484.github.io/cs171hitsongs/)
-[_LVideo Demo (Google Drive)_](https://drive.google.com/drive/folders/18FLDJjwq9kbPjtrooZVVE90h0iyRZSCE?usp=sharing)
+[_Video Demo (Google Drive)_](https://drive.google.com/drive/folders/18FLDJjwq9kbPjtrooZVVE90h0iyRZSCE?usp=sharing)
 
 ## Running Locally
 To run the code, create a local server to run `index.html` after downloading a copy of the entire repository. All JavaScript and other files are included in tags within this HTML file.
