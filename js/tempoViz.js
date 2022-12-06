@@ -60,19 +60,6 @@ class TempoViz {
             .text("Frequency");
 
 
-        vis.xAxis = d3.axisBottom()
-            .scale(vis.x);
-
-        vis.yAxis = d3.axisLeft()
-            .scale(vis.y);
-
-        vis.svg.append("g")
-            .attr("class", "y-axis axis")
-
-        vis.svg.append("g")
-            .attr("class", "x-axis axis")
-            .attr('transform', 'translate(0,' + vis.height + ")");
-
         vis.wrangleData();
 
     }
@@ -89,6 +76,18 @@ class TempoViz {
     updateViz() {
         let vis = this;
 
+        vis.xAxis = d3.axisBottom()
+            .scale(vis.x);
+
+        vis.yAxis = d3.axisLeft()
+            .scale(vis.y);
+
+        vis.svg.append("g")
+            .attr("class", "y-axis axis")
+
+        vis.svg.append("g")
+            .attr("class", "x-axis axis")
+            .attr('transform', 'translate(0,' + vis.height + ")");
 
         vis.svg.select('.y-axis').transition().call(vis.yAxis)
         vis.svg.select('.x-axis').transition().call(vis.xAxis)
